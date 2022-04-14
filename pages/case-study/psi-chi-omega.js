@@ -63,7 +63,6 @@ export default function PsiChiOmega() {
                 <p>HTML, CSS, JS</p>
                 <p>Next.js, React</p>
                 <p>TailwindCSS</p>
-                <p>Figma</p>
               </div>
             </section>
             <section
@@ -72,7 +71,7 @@ export default function PsiChiOmega() {
             >
               <div className='2xl:mt-20'>
                 <h2 className='cs-h3'>What is Psi Chi Omega?</h2>
-                <p className='cs-paragraph--sans cs-paragraph-first'>
+                <p className='cs-paragraph--sans cs-paragraph-first enlarge-first'>
                   Psi Chi Omega is an Asian-American social fraternity with several chapters
                   throughout California. Fraternities afford college students an exciting social
                   environment with opportunities to develop personally and professionally. However,

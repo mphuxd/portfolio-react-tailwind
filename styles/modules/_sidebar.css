@@ -1,0 +1,11 @@
+/*------------------------------------*\
+  #SIDEBAR
+\*------------------------------------*/
+
+
+.sidebar-external-link-arrow::before {
+    content:"↑" ;
+    position: absolute;
+    transform: rotate(45deg);
+    left: 0px;
+}

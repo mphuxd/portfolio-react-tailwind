@@ -1,0 +1,223 @@
+/*------------------------------------*\
+  #HERO
+\*------------------------------------*/
+
+/* The typewriter cursor effect */
+@keyframes cursor {
+  from,
+  to {
+    background-color: transparent;
+  }
+  50% {
+    background-color: #111;
+  }
+}
+
+@layer components {
+  .hero-theme-bg {
+    background: linear-gradient(to right, #fff, #ffffff 50%, #f2f2f2 50%, #f2f2f2);
+  }
+  .hero {
+    @apply h-screen min-h-[700px] max-h-[775px] md:max-h-[none] grid grid-cols-16 p-4 sm:px-8 gap-2 w-screen md:px-6 lg:p-8 2xl:p-0 max:max-w-screen-max max:mx-auto;
+  }
+
+  .hero2 {
+    @apply h-screen grid grid-cols-16 p-4 sm:px-8 gap-2 w-screen md:px-6 lg:p-8 2xl:p-0;
+  }
+  .hero--image-bg {
+    content: "";
+    position: absolute;
+    z-index: 0;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    width: auto;
+    height: 100%;
+    background-repeat: no-repeat;
+    display: block;
+    background-image: url(../../assets/images/ratio_full-partialwhite.svg);
+  }
+  .hero--image {
+    @apply bg-right-top bg-auto hero-pb-calc md:bg-[length:150%] lg:bg-[length:100%] lg:bg-left-top 2xl:bg-right-top 2xl:bg-cover;
+  }
+  .project-accent__title:before {
+    position: absolute;
+    content: "PROJECT";
+    font-family: officecode;
+    font-weight: lighter;
+    font-size: 0.75rem;
+    top: -20px;
+  }
+  .project-accent__line:after {
+    height: 1px;
+    width: 50px;
+    position: absolute;
+    content: " ";
+    background-color: white;
+    left: 60px;
+    bottom: 50px;
+    top: -13px;
+  }
+  .hero-text__line:after {
+    height: 1px;
+    width: 50px;
+    position: absolute;
+    content: " ";
+    background-color: white;
+    left: 60px;
+    bottom: 50px;
+    top: -9px;
+  }
+  .hero_title-cursor-default::after {
+    content: "";
+    position: absolute;
+    top: 36px;
+    right: -12px;
+    height: 3px;
+    width: 10px;
+    background-color: #111;
+    animation: cursor 1.5s step-end infinite;
+  }
+  .hero_title-cursor-xs::after {
+    content: "";
+    position: absolute;
+    top: 50px;
+    right: -16px;
+    height: 3px;
+    width: 12px;
+    background-color: #111;
+    animation: cursor 1.5s step-end infinite;
+  }
+  .hero_title-cursor-sm::after {
+    content: "";
+    position: absolute;
+    top: 56px;
+    right: -18px;
+    height: 3px;
+    width: 14px;
+    background-color: #111;
+    animation: cursor 1.5s step-end infinite;
+  }
+  .hero_title-cursor-md::after {
+    content: "";
+    position: absolute;
+    top: 56px;
+    right: -18px;
+    height: 3px;
+    width: 14px;
+    background-color: #111;
+    animation: cursor 1.5s step-end infinite;
+  }
+  .hero_title-cursor-lg::after {
+    content: "";
+    position: absolute;
+    top: 56px;
+    right: -18px;
+    height: 3px;
+    width: 14px;
+    background-color: #111;
+    animation: cursor 1.5s step-end infinite;
+  }
+  .hero_title-cursor-xl::after {
+    content: "";
+    position: absolute;
+    top: 56px;
+    right: -18px;
+    height: 3px;
+    width: 14px;
+    background-color: #111;
+    animation: cursor 1.5s step-end infinite;
+  }
+  .hero_title-cursor-2xl::after {
+    content: "";
+    position: absolute;
+    top: 66px;
+    right: -32px;
+    height: 5px;
+    width: 24px;
+    background-color: #111;
+    animation: cursor 1.5s step-end infinite;
+  }
+  .hero_title-cursor-max::after {
+    content: "";
+    position: absolute;
+    top: 85px;
+    right: -32px;
+    height: 5px;
+    width: 24px;
+    background-color: #111;
+    animation: cursor 1.5s step-end infinite;
+  }
+  .hero-theme-bg {
+    background: linear-gradient(to right, #fff, #ffffff 50%, #f2f2f2 50%, #f2f2f2);
+  }
+  .hero-theme-bg2 {
+    background: linear-gradient(to right, #e5e5e5, #e5e5e5 50%, #f2f2f2 50%, #f2f2f2);
+  }
+  .hero-theme-bg-reverse {
+    background: linear-gradient(to left, #fff, #ffffff 50%, #f2f2f2 50%, #f2f2f2);
+  }
+  .hero-theme-bg-2 {
+    background: linear-gradient(to left, #e5e5e5, #e5e5e5 50%, #f2f2f2 50%, #f2f2f2);
+  }
+  .hero-title-cursor-all {
+    @apply hero_title-cursor-default xs:hero_title-cursor-xs sm:hero_title-cursor-sm md:hero_title-cursor-md lg:hero_title-cursor-lg xl:hero_title-cursor-xl 2xl:hero_title-cursor-2xl max:sm:hero_title-cursor-max;
+  }
+  .hero--content-container {
+    @apply col-start-1 col-span-16 sm:col-span-12 xl:col-start-2 xl:col-span-8 content-center h-fit my-auto max:col-start-2;
+  }
+  .hero--title {
+    @apply font-display text-4xl xs:text-5xl sm:text-6xl md:text-6xl xl:text-6xl 2xl:text-[64px] max:text-7xl relative inline-block hero-title-cursor-all;
+  }
+  .hero--subtext {
+    @apply block font-base text-base md:text-2xl lg:text-3xl max:text-[32px];
+  }
+}
+
+/* 
+  .project-image-bg:after {
+    content: "";
+    display: block;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-size: auto;
+    background-color: rgba(#111111, 0.35);
+    background-image: url(../../assets/images/ratio_pt1.svg);
+  } 
+  .hero-container {
+    @apply flex relative min-h-screen h-full pt-64 mb-7 
+    md:min-h-0 md:pt-20 md:mb-16;
+  }
+  .hero-featured-project {
+    @apply flex flex-row-reverse items-center justify-center mt-0 mr-auto ml-auto pb-64
+    md:pb-28 md:pt-20 
+    2xl:pt-24 2xl:pb-16;
+  }
+  .hero-text-container {
+    @apply z-30 
+    md:w-1/2 md:ml-10 
+    2xl:ml-12 
+    max:ml-24;
+  }
+  .hero-project-category {
+    @apply relative inline font-accent text-xs uppercase text-white 
+  md:text-black
+    lg:text-sm 
+    xl:text-base;
+  }
+  .hero-project-title {
+    @apply inline font-display text-white text-4xl relative text-left md:text-black 
+    lg:text-5xl lg:w-3/5 
+    xl:text-6xl;
+  }
+  .hero-featured-image-container {
+    @apply overflow-hidden md:w-1/2 md:mr-10 2xl:mr-12 max:mr-24;
+  }
+  .hero-featured-image {
+    @apply hidden max-w-full md:block md:relative transform hover:scale-105 hover:filter-brightness transition-transform duration-200;
+  }
+*/

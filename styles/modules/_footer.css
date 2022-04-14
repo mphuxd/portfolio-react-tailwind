@@ -1,0 +1,72 @@
+/*------------------------------------*\
+  #FOOTER
+\*------------------------------------*/
+
+.footer-arrow-up {
+  position: absolute;
+  top: -23px;
+  bottom: 0px;
+  left: 90%;
+  right: 0px;
+}
+
+.footer-accent-line::after {
+  position: absolute;
+  top: 57%;
+  bottom: 0;
+  left: 5%;
+  right: 0;
+  content: "";
+  height: 1px;
+  width: 90%;
+  background-color: #949494;
+}
+
+.footer-accent-line--test::after {
+  position: absolute;
+  top: 57%;
+  bottom: 0;
+  left: 5%;
+  right: 0;
+  content: "";
+  height: 1px;
+  width: 90%;
+  background-color: #949494;
+}
+
+@layer components {
+  .footer--link {
+    @apply text-white underline uppercase font-accent text-sm;
+  }
+
+  .footer--link-light {
+    @apply text-black underline uppercase font-accent text-sm;
+  }
+  .footer {
+    @apply relative bg-black mt-7 pt-12 pb-6 md:pt-20 md:mt-10 lg:pt-24 lg:py-20 2xl:mt-0 2xl:pt-32 2xl:pb-28 max:py-40;
+  }
+  .footer--links-section {
+    @apply order-2 col-span-full gap-y-8 mt-8 2xl:col-span-3 2xl:col-start-13 2xl:order-2 flex flex-col md:col-span-6 md:items-end md:col-start-11 2xl:items-end 2xl:gap-y-6;
+  }
+  .footer--socials {
+    @apply flex flex-row-reverse sm:flex-col justify-between sm:gap-y-8;
+  }
+  .footer--summary-section {
+    @apply order-1 col-span-full md:col-span-9 md:max-w-[500px] 2xl:col-start-2 max:col-start-2 max:col-span-4 max:order-1 flex flex-col;
+  }
+  .footer--divider-horizontal {
+    @apply col-span-full 2xl:col-start-2 mt-8 mb-3 2xl:col-span-14 border-b order-3 border-white 2xl:mt-12 2xl:mb-3;
+  }
+
+  .footer--divider-horizontal-light {
+    @apply col-span-full 2xl:col-start-2 mt-8 mb-3 2xl:col-span-14 border-b order-3 border-black 2xl:mt-12 2xl:mb-3;
+  }
+
+
+  .footer--legal {
+    @apply col-span-full 2xl:col-start-2 2xl:col-span-14 flex flex-row w-full order-4 justify-between;
+  }
+  .footer--logo {
+    @apply mt-8 order-5 col-start-13 col-span-4 justify-self-end max:mt-6 2xl:col-start-15 2xl:col-span-1;
+  }
+}

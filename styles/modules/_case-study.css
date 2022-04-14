@@ -127,7 +127,7 @@
     @apply mt-2 xs:mt-3 md:mt-6 lg:mt-5 2xl:mt-7 max:mt-10 text-lg leading-relaxed font-base;
   }
   .cs-paragraph--sans {
-    @apply mt-2 xs:mt-3 md:mt-6 lg:mt-5 text-base 2xl:mt-4 max:mt-10 xl:text-base font-base leading-relaxed;
+    @apply mt-2 xs:mt-3 md:mt-6 lg:mt-5 text-base 2xl:mt-4 max:mt-10 font-base leading-relaxed;
   }
   .cs-paragraph-first {
     @apply max:mt-5;

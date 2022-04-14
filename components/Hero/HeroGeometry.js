@@ -49,17 +49,17 @@ function HeroGeometry({ classNames }) {
     const geometry = new THREE.IcosahedronGeometry(2, 0);
     // const material = new THREE.MeshBasicMaterial({ color: 0x00ff00 });
     const lineMaterial = new THREE.LineBasicMaterial({
-      color: 0xCE5374,
+      color: 0xce5374,
       transparent: true,
       opacity: 0,
     });
     const meshMaterial = new THREE.MeshPhongMaterial({
       wireframe: true,
-      color: 0xCE5374,
+      color: 0xce5374,
       // emissive: 0x072534,
       // side: THREE.DoubleSide,
       // flatShading: true,
-      opacity: 1
+      opacity: 1,
     });
 
     group.add(new THREE.LineSegments(geometry, lineMaterial));
@@ -74,7 +74,7 @@ function HeroGeometry({ classNames }) {
       renderer.render(scene, camera);
     }
 
-    console.log("rendered!");
+    // console.log("rendered!");
 
     // const icosahedron = new THREE.Mesh(geometry, material);
     // scene.add(icosahedron);
@@ -82,17 +82,19 @@ function HeroGeometry({ classNames }) {
     window.addEventListener(
       "resize",
       function () {
-        camera.aspect =
-          document.getElementById("hero-geometry").clientWidth /
-          document.getElementById("hero-geometry").clientHeight;
+        if (document.getElementById("hero-geometry")) {
+          camera.aspect =
+            document.getElementById("hero-geometry").clientWidth /
+            document.getElementById("hero-geometry").clientHeight;
 
-        // camera.aspect = window.innerWidth / window.innerHeight;
-        camera.updateProjectionMatrix();
+          // camera.aspect = window.innerWidth / window.innerHeight;
+          camera.updateProjectionMatrix();
 
-        renderer.setSize(
-          document.getElementById("hero-geometry").clientWidth,
-          document.getElementById("hero-geometry").clientHeight
-        );
+          renderer.setSize(
+            document.getElementById("hero-geometry").clientWidth,
+            document.getElementById("hero-geometry").clientHeight
+          );
+        }
         renderer.render(scene, camera);
       },
       false

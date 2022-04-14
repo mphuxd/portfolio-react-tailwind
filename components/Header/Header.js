@@ -5,8 +5,8 @@ import Link from "next/link";
 function Header(props) {
   return (
     <header className='header w-full 2max:pt-8'>
-      <div className=' cs-grid my-auto w-full'>
-        <div className='header-inner col-span-full max:col-start-2 max:col-span-14'>
+      <div className=' cs-grid my-auto w-full 2xl:px-4'>
+        <div className='header-inner col-span-full 2xl:col-start-2 2xl:col-span-14'>
           <Link href='/'>
             <a className='my-auto py-4'>
               <span className='header-text-logo'>MATTHEW PHAM</span>
@@ -15,8 +15,8 @@ function Header(props) {
           <nav className='header-nav-bar'>
             <ul className='header-nav-container'>
               <li>
-                <Link href='#work'>
-                  <a className='header-nav-item header-nav-item--hover'>Work</a>
+                <Link href='/'>
+                  <a className='header-nav-item'>Work</a>
                 </Link>
               </li>
               <li>

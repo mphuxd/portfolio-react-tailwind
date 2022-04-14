@@ -12,7 +12,7 @@ export default function Layout({ children }) {
   return (
     <>
       <NextNProgress
-        color='#29D'
+        color='#ce5374'
         startPosition={0.3}
         stopDelayMs={200}
         height={6}

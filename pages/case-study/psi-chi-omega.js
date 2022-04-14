@@ -138,8 +138,7 @@ export default function PsiChiOmega() {
               <h2 className='cs-h2'>User Research</h2>
               <p className='mt-4 cs-paragraph--sans cs-paragraph-first'>
                 We begin by discovering and defining our <strong>archetypal user</strong> to
-                understand their
-                <strong>motives</strong>, <strong>needs</strong>, and <strong>pain-points</strong>.
+                understand their <strong>motives</strong>, <strong>needs</strong>, and <strong>pain-points</strong>.
                 As a starting point, I leverage my experience to create user personas, empathy maps,
                 and user journeys to explain the complex social dynamics behind Asian-American
                 fraternities.
@@ -181,7 +180,7 @@ export default function PsiChiOmega() {
                 <h4 className='cs-topic font-bold'>Demographics</h4>
                 <p className='cs-paragraph--sans cs-paragraph-first'>
                   Our primary users are male Asian-American undergraduate students between the ages
-                  of 18-21. They are 1st-3rd year students, generally middle-className or above, and
+                  of 18-21. They are 1st-3rd year students, generally middle-class or above, and
                   are socially and academically motivated. Chinese-Americans and
                   Vietnamese-Americans make up roughly 60% while the remaining identify as
                   Taiwanese, Filipino, Cambodian, Asian Indian, Thai, Hmong, and Korean, or other.

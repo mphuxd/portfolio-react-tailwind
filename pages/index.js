@@ -1,7 +1,7 @@
 import Head from "next/head";
 import Image from "next/image";
 import Link from "next/link";
-import { Layout, HeroGeometry } from "@/components";
+import { Layout, HeroGeometry, FeaturedArticle, FeaturedArticleReverse } from "@/components";
 
 export default function Home() {
   return (
@@ -30,50 +30,45 @@ export default function Home() {
         </section>
 
         <article id='work' className='article-section'>
-          <section className='article-project-container lg:my-32 2xl:my-40 max:mt-42'>
-            <Link href='/case-study/psi-chi-omega'>
-              <a className='mx-auto cs-grid p-0 lg:p-8 2xl:p-0'>
-                <div className='col-start-1 col-span-16 xl:col-start-2 xl:col-span-14 2xl:max:col-start-2 max:col-span-14 article-project hover:custom-shadow-tablet max:max-w-screen-max'>
-                  <div className='article-project-left bg-grey2'>
-                    <Image
-                      className=''
-                      src='/images/pxo-website-image-nobg.png'
-                      alt='Mockup of Psi Chi Omega fraternity website on macbook laptop'
-                      width={2577}
-                      height={1611}
-                    />
-                  </div>
-                  <div className='article-project-right'>
-                    <div className='article-project-right--inner'>
-                      <h2 className='article-project-title'>Psi Chi Omega Fraternity Website</h2>
-                      <p className='article-project-description'>
-                        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc diam in
-                        consequat, at adipiscing tristique amet sed vel. Molestie semper viverra et
-                        vulputate sit eu, varius. Massa magna enim enim gravida convallis turpis
-                        porta. Eget non gravida a mauris ultrices consectetur.
-                      </p>
-                      <span className='article-link'>
-                        <Image
-                          className='article-link-icon'
-                          src='/images/arrow.svg'
-                          width={26}
-                          height={14}
-                          alt=''
-                        />
-                        View Case Study
-                      </span>
-                    </div>
-                  </div>
-                </div>
-              </a>
-            </Link>
-          </section>
+          <FeaturedArticle
+            title='Psi Chi Omega Fraternity Website'
+            copy=' Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc diam in consequat, at adipiscing tristique amet sed vel. Molestie semper viverra et vulputate sit eu, varius. Massa magna enim enim gravida convallis turpis porta. Eget non gravida a mauris ultrices consectetur.'
+            imageSrc='/images/pxo-website-image-nobg.png'
+            imageAlt='Mockup of Psi Chi Omega fraternity website on macbook laptop'
+            imageWidth={2577}
+            imageHeight={1611}
+            linkHref='/case-study/psi-chi-omega'
+            linkAlt=''
+          />
+
+          <FeaturedArticleReverse
+            title='Clear View Escapes Travel Website'
+            copy='Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc diam in consequat, at adipiscing tristique amet sed vel. Molestie semper viverra et vulputate sit eu, varius. Massa magna enim enim gravida convallis turpis porta. Eget non gravida a mauris ultrices consectetur.'
+            imageSrc='/images/cs-travel-website/travel-website.png'
+            imageAlt='Clear View Escapes Homepage'
+            imageTagID='featured-image-blue'
+            imageWidth={2577}
+            imageHeight={1611}
+            linkHref='/case-study/travel-website'
+            linkAlt='Read More'
+          />
+
+          <FeaturedArticle
+            title='About Me'
+            copy=' Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc diam in consequat, at adipiscing tristique amet sed vel. Molestie semper viverra et vulputate sit eu, varius. Massa magna enim enim gravida convallis turpis porta. Eget non gravida a mauris ultrices consectetur.'
+            imageSrc='/images/pxo-website-image-nobg.png'
+            imageAlt='Mockup of Psi Chi Omega fraternity website on macbook laptop'
+            imageWidth={2577}
+            imageHeight={1611}
+            linkHref='/about'
+            linkAlt=''
+          />
 
           <section className='article-section mt-6 md:mt-8 md:pt-8 lg:pt-0 lg:mt-0'>
-            <Link href='/about'>
-              <a className='article-project-container lg:my-32 2xl:my-40'>
+            <Link href='/about' passHref>
+              <div className='article-project-container lg:my-32 2xl:my-40'>
                 <div className='mx-auto cs-grid p-0 lg:p-8 2xl:p-0'>
-                  <div className='col-start-1 col-span-16 xl:col-start-2 xl:col-span-14 article-project flex flex-col-reverse lg:flex-row hover:custom-shadow-tablet max:max-w-screen-max'>
+                  <div className='col-start-1 col-span-16 xl:col-start-2 xl:col-span-14 article-project flex flex-col-reverse lg:flex-row hover:custom-shadow-tablet hover:cursor-pointer  max:max-w-screen-max'>
                     <div className='block bg-none p-4 sm:p-8 xl:pr-20 w-full xl:w-1/2'>
                       <div className='article-project-right--inner lg:float-right lg:text-right lg:items-end'>
                         <h2 className='article-project-title'>About Me</h2>
@@ -105,7 +100,7 @@ export default function Home() {
                     </div>
                   </div>
                 </div>
-              </a>
+              </div>
             </Link>
           </section>
         </article>

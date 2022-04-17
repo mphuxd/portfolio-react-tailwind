@@ -6,8 +6,6 @@ export default function PsiChiOmega() {
   return (
     <div className=''>
       <Head>
-        <title>MPH Portfolio</title>
-
         <title>Psi Chi Omega | Matthew Pham Portfolio</title>
       </Head>
 
@@ -22,7 +20,7 @@ export default function PsiChiOmega() {
                   <br />
                   Fraternity Website
                 </h1>
-                <div className='inline-block relative mt-3 w-full md:mt-2 lg:mt-4 2xl:mt-12'>
+                <div className='inline-block relative w-full mt-3 md:mt-2 lg:mt-4 2xl:mt-12'>
                   <h5 className='cs-hero--center-category_desktop'>Case Study</h5>
                   <div className='cs-hero-image min-w-full'>
                     <Image
@@ -137,10 +135,10 @@ export default function PsiChiOmega() {
               <h2 className='cs-h2'>User Research</h2>
               <p className='mt-4 cs-paragraph--sans cs-paragraph-first'>
                 We begin by discovering and defining our <strong>archetypal user</strong> to
-                understand their <strong>motives</strong>, <strong>needs</strong>, and <strong>pain-points</strong>.
-                As a starting point, I leverage my experience to create user personas, empathy maps,
-                and user journeys to explain the complex social dynamics behind Asian-American
-                fraternities.
+                understand their <strong>motives</strong>, <strong>needs</strong>, and{" "}
+                <strong>pain-points</strong>. As a starting point, I leverage my experience to
+                create user personas, empathy maps, and user journeys to explain the complex social
+                dynamics behind Asian-American fraternities.
               </p>
               <p className='mt-4 cs-paragraph--sans'>
                 To validate and support my findings, I review <strong>scientific literature</strong>{" "}
@@ -179,10 +177,10 @@ export default function PsiChiOmega() {
                 <h4 className='cs-topic font-bold'>Demographics</h4>
                 <p className='cs-paragraph--sans cs-paragraph-first'>
                   Our primary users are male Asian-American undergraduate students between the ages
-                  of 18-21. They are 1st-3rd year students, generally middle-class or above, and
-                  are socially and academically motivated. Chinese-Americans and
-                  Vietnamese-Americans make up roughly 60% while the remaining identify as
-                  Taiwanese, Filipino, Cambodian, Asian Indian, Thai, Hmong, and Korean, or other.
+                  of 18-21. They are 1st-3rd year students, generally middle-class or above, and are
+                  socially and academically motivated. Chinese-Americans and Vietnamese-Americans
+                  make up roughly 60% while the remaining identify as Taiwanese, Filipino,
+                  Cambodian, Asian Indian, Thai, Hmong, and Korean, or other.
                 </p>
               </div>
 
@@ -1510,12 +1508,10 @@ export default function PsiChiOmega() {
           <div className='cs-grid'>
             <div className='cs-section--default-region'>
               <p className='mt-4 cs-paragraph--sans'>
-                You can view the interactive prototype
-                <a
+                You can view the interactive prototype <a
                   className='underline text-[#0000EE]'
                   href='https://www.figma.com/proto/psn3sijN7IPiiFg9dSEcNZ/Psi-Chi-Omega-Website?page-id=4191%3A31847&node-id=4191%3A46499&viewport=276%2C48%2C0.04&scaling=min-zoom&starting-point-node-id=4191%3A46499&show-proto-sidebar=1'
-                >
-                  here
+                >here
                 </a>
                 .
               </p>

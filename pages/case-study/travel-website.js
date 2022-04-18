@@ -12,11 +12,11 @@ export default function TravelWebsiteTest() {
       <Layout>
         <section className='bg-beige2 pt-36 md:pt-16 lg:pt-20 xl:pt-24'>
           <div className='cs-grid md:pr-0 pb-20 gap-y-0 mt-3 md:mt-2 lg:mt-4 2xl:mt-12'>
-            <h1 className='font-display text-2xl font-bold inline-block col-span-full md:col-start-1 lg:col-start-2 xl:text-3xl max:col-start-6 max:col-span-6'>
+            <h1 className='font-display text-2xl font-bold inline-block col-span-full md:col-start-1 lg:col-start-2 xl:text-3xl max:col-start-6 max:col-span-7'>
               Case Study
             </h1>
 
-            <h2 className='font-display inline-block text-4xl leading-tight mt-4 col-span-full md:col-start-1 lg:col-start-2 max:col-start-6 max:col-span-6 xs:text-5xl sm:text-6xl md:mt-0 md:text-6xl lg:text-6xl lg:self-start 2xl:text-7xl'>
+            <h2 className='font-display inline-block text-4xl leading-tight mt-4 col-span-full md:col-start-1 lg:col-start-2 max:col-start-6 max:col-span-7 xs:text-5xl sm:text-6xl md:mt-0 md:text-6xl lg:text-6xl lg:self-start 2xl:text-7xl'>
               Clear View Escapes Travel Website
             </h2>
             <div className='inline-block mt-3 col-span-full md:col-start-1 lg:col-start-2 max:col-start-4 max:col-span-13 2max:col-start-2 2max:col-span-14 xl:mt-4 md:mt-2 lg:mt-4 2xl:mt-12'>

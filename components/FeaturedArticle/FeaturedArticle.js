@@ -19,6 +19,7 @@ function FeaturedArticle({
   hoverImageBGColor,
 }) {
   let classNames = cx([]);
+  let imageClassNames = cx("article-project-left lg:bg-grey2", imageBgColor )
   let router = useRouter();
   const mainLink = useRef(null);
 
@@ -45,7 +46,7 @@ function FeaturedArticle({
           href={linkHref}
           onClick={redirectClick}
         >
-          <div id='featured-image' className='article-project-left bg-grey2'>
+          <div id='featured-image' className={imageClassNames}>
             <Image src={imageSrc} alt={imageAlt} width={imageWidth} height={imageHeight} />
           </div>
           <div className='article-project-right'>
@@ -59,10 +60,9 @@ function FeaturedArticle({
               <Link href={linkHref}>
                 <a ref={mainLink} onClick={handleClick} className='article-link'>
                   <Image
-                    className='article-link-icon'
-                    src='/images/arrow.svg'
-                    width={26}
-                    height={14}
+                    src='/icons/arrow_thin.png'
+                    width={20}
+                    height={12}
                     alt={linkAlt}
                   />
                   View Case Study

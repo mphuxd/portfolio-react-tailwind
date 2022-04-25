@@ -18,7 +18,7 @@ export default function Home() {
               Hey, I&apos;m Matt
             </h1>
             <span className='hero--subtext block font-base text-base md:text-xl text-center lg:text-center lg:text-xl max:text-[28px]'>
-              Trying my best to do good things by making great products. Aspiring UX Engineer with a
+              Trying my best to do good things by making great products. UX Engineer with a
               background in Computational Cognitive Science.
             </span>
           </div>
@@ -32,7 +32,7 @@ export default function Home() {
         <article id='work' className='article-section'>
           <FeaturedArticle
             title='Psi Chi Omega Fraternity Website'
-            copy=' Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc diam in consequat, at adipiscing tristique amet sed vel. Molestie semper viverra et vulputate sit eu, varius. Massa magna enim enim gravida convallis turpis porta. Eget non gravida a mauris ultrices consectetur.'
+            copy='Corporate style website for an Asian-American interest fraternity to help members recruit students. Involves validation, user research, UX strategy, and branding with custom design system & UI designed in Figma. Developed with JAMstack architecture. Deployed on Heroku & Vercel. Indepedent project from start to finish.'
             imageSrc='/images/pxo-website-image-nobg.png'
             imageAlt='Mockup of Psi Chi Omega fraternity website on macbook laptop'
             imageWidth={2577}
@@ -43,7 +43,7 @@ export default function Home() {
 
           <FeaturedArticleReverse
             title='Clear View Escapes Travel Website'
-            copy='Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc diam in consequat, at adipiscing tristique amet sed vel. Molestie semper viverra et vulputate sit eu, varius. Massa magna enim enim gravida convallis turpis porta. Eget non gravida a mauris ultrices consectetur.'
+            copy='Travel company website developed as part of an online web development course. Redesigned the website homepage for UX practice.'
             imageSrc='/images/cs-travel-website/travel-website.png'
             imageAlt='Clear View Escapes Homepage'
             imageTagID='featured-image-blue'
@@ -51,11 +51,12 @@ export default function Home() {
             imageHeight={1611}
             linkHref='/case-study/travel-website'
             linkAlt='Read More'
+            linkLabel="View Case Study"
           />
 
           <FeaturedArticle
-            title='About Me'
-            copy=' Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc diam in consequat, at adipiscing tristique amet sed vel. Molestie semper viverra et vulputate sit eu, varius. Massa magna enim enim gravida convallis turpis porta. Eget non gravida a mauris ultrices consectetur.'
+            title='Portfolio Website'
+            copy='First independent website. Initially created as a static website in HTML/CSS/JS, then migrated to Next.js. With four major redesigns.'
             imageSrc='/images/pxo-website-image-nobg.png'
             imageAlt='Mockup of Psi Chi Omega fraternity website on macbook laptop'
             imageWidth={2577}

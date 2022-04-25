@@ -7,6 +7,7 @@ export default function Layout({ children }) {
   const variants = {
     initial: { opacity: 0 },
     animate: { opacity: 1 },
+    exit: { opacity: 0 },
   };
 
   return (
@@ -32,7 +33,8 @@ export default function Layout({ children }) {
         variants={variants}
         initial='initial'
         animate='animate'
-        transition={{ duration: 0.3 }}
+        exit='exit'
+        transition={{ duration: 0.5 }}
         className='min-h-screen text-midnight'
       >
         {children}

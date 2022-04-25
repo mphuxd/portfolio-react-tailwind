@@ -3,7 +3,8 @@ import PropTypes from "prop-types";
 import cx from "classnames";
 import Image from "next/image";
 import Link from "next/link";
-
+import { useRouter } from "next/router";
+import { useRef } from "react";
 function FeaturedArticleReverse({
   title,
   copy,
@@ -12,13 +13,70 @@ function FeaturedArticleReverse({
   imageWidth,
   imageHeight,
   imageTagID,
+  imageBGColor,
   linkHref,
   linkAlt,
-
+  linkLabel,
 }) {
-  let classNames = cx([]);
+  let imageClassNames = cx("article-project-right pt-4 sm:p-8 2xl:p-20 lg:bg-grey2", imageBGColor);
+
+  let router = useRouter();
+  const mainLink = useRef(null);
+
+  function redirectClick(e) {
+    e.stopPropagation();
+    const isTextSelected = window.getSelection().toString();
+    if (!isTextSelected) {
+      mainLink.current.click();
+    }
+  }
+
+  function handleClick(e) {
+    e.stopPropagation();
+    if (e.type === "click") {
+      router.push(linkHref);
+    }
+  }
+
   return (
-    <section className='article-section mt-6 md:mt-8 md:pt-8 lg:pt-0 lg:mt-0'>
+    <section className='article-project-container lg:my-20 2xl:my-40 max:mt-42'>
+      <div className='mx-auto cs-grid p-0 lg:p-8 2xl:p-0'>
+        <div
+          className='col-start-1 col-span-16 xl:col-start-2 xl:col-span-14 article-project flex flex-col-reverse lg:flex-row hover:custom-shadow-tablet hover:cursor-pointer max:max-w-screen-max'
+          href={linkHref}
+          onClick={redirectClick}
+        >
+          <div className='block bg-none p-4 sm:p-8 xl:pr-20 w-full xl:w-1/2'>
+            <div className='article-project-right--inner lg:float-right lg:text-right lg:items-end'>
+              <Link href={linkHref}>
+                <a>
+                  <h2 className='article-project-title'>{title}</h2>
+                </a>
+              </Link>
+              <span className='article-project-description'>{copy}</span>
+              <Link href={linkHref}>
+                <a ref={mainLink} onClick={handleClick} className='article-link'>
+                  <Image src='/icons/arrow_thin.png' width={20} height={12} alt={linkAlt} />
+                  {linkLabel}
+                </a>
+              </Link>
+            </div>
+          </div>
+          <div id={imageTagID} className={imageClassNames}>
+            <Image src={imageSrc} alt={imageAlt} width={imageWidth} height={imageHeight} />
+          </div>
+        </div>
+      </div>
+    </section>
+  );
+}
+
+FeaturedArticleReverse.propTypes = {};
+
+export default FeaturedArticleReverse;
+
+{
+  /* <section className='article-section mt-6 md:mt-8 md:pt-8 lg:pt-0 lg:mt-0'>
       <Link href={linkHref} passHref>
         <div className='article-project-container lg:my-20 2xl:my-40'>
           <div className='mx-auto cs-grid p-0 lg:p-8 2xl:p-0'>
@@ -28,28 +86,17 @@ function FeaturedArticleReverse({
                   <h2 className='article-project-title'>{title}</h2>
                   <span className='article-project-description'>{copy}</span>
                   <span className='article-link'>
-                    <Image
-                      className='article-link-icon'
-                      src='/images/arrow.svg'
-                      alt={linkAlt}
-                      width={26}
-                      height={14}
-                    />
-                    More About Me
+                    <Image src='/icons/arrow_thin.png' width={20} height={12} alt={linkAlt} />
+                    {linkLabel}
                   </span>
                 </div>
               </div>
-              <div id={imageTagID} className='article-project-right pt-4 sm:p-8 2xl:p-20 bg-grey2'>
+              <div id={imageTagID} className={imageClassNames}>
                 <Image src={imageSrc} alt={imageAlt} width={imageWidth} height={imageHeight} />
               </div>
             </div>
           </div>
         </div>
       </Link>
-    </section>
-  );
+    </section> */
 }
-
-FeaturedArticleReverse.propTypes = {};
-
-export default FeaturedArticleReverse;

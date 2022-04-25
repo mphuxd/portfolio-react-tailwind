@@ -2,6 +2,11 @@
   #ARTICLES
 \*------------------------------------*/
 
+.article-project:hover > #about-image {
+  background-color: #0062A9;
+  transition: 0.15s cubic-bezier(0.2, 0, 0.38, 0.9);
+}
+
 .article-project:hover > #featured-image {
   background-color: #111111;
   transition: 0.15s cubic-bezier(0.2, 0, 0.38, 0.9);
@@ -99,7 +104,7 @@
     @apply text-2xl md:text-[32px] 2xl:text-4xl max:text-5xl font-display leading-tight;
   }
   .article-project-description {
-    @apply font-base text-base md:text-lg lg:text-base 2xl:text-lg leading-normal mt-3 xl:mt-6;
+    @apply font-base text-base md:text-lg lg:text-base 2xl:text-base leading-normal mt-3 xl:mt-6;
   }
   .article-link {
     @apply pl-0 p-2 mt-4 md:p-4 md:py-1 md:pl-1 w-fit-content inline-flex font-accent uppercase text-tiny md:text-base md:mt-6 2xl:text-base flex-row items-center hover:custom-shadow-blue;

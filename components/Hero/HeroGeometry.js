@@ -40,26 +40,26 @@ function HeroGeometry({ classNames }) {
     lights[1].position.set(100, 200, 100);
     lights[2].position.set(-100, -200, -100);
 
-    scene.add(lights[0]);
-    scene.add(lights[1]);
-    scene.add(lights[2]);
+    // scene.add(lights[0]);
+    // scene.add(lights[1]);
+    // scene.add(lights[2]);
 
     const group = new THREE.Group();
 
     const geometry = new THREE.IcosahedronGeometry(2, 0);
     // const material = new THREE.MeshBasicMaterial({ color: 0x00ff00 });
     const lineMaterial = new THREE.LineBasicMaterial({
-      color: 0xce5374,
+      color: 0xFFFFFF,
       transparent: true,
       opacity: 0,
     });
-    const meshMaterial = new THREE.MeshPhongMaterial({
+    const meshMaterial = new THREE.MeshStandardMaterial({
       wireframe: true,
-      color: 0xce5374,
+      color: 0xFFFFFF,
       // emissive: 0x072534,
       // side: THREE.DoubleSide,
       // flatShading: true,
-      opacity: 1,
+      opacity: 0,
     });
 
     group.add(new THREE.LineSegments(geometry, lineMaterial));
@@ -69,8 +69,8 @@ function HeroGeometry({ classNames }) {
 
     function render() {
       requestAnimationFrame(render);
-      group.rotation.x -= 0.001;
-      group.rotation.y += 0.002;
+      group.rotation.x += 0.001;
+      group.rotation.y += 0.001;
       renderer.render(scene, camera);
     }
 

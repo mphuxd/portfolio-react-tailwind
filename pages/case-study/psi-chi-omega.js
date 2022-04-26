@@ -61,6 +61,7 @@ export default function PsiChiOmega() {
                 <p>HTML, CSS, JS</p>
                 <p>Next.js, React</p>
                 <p>TailwindCSS</p>
+                <p>Strapi</p>
               </div>
             </section>
             <section
@@ -71,12 +72,12 @@ export default function PsiChiOmega() {
                 <h2 className='cs-h3'>What is Psi Chi Omega?</h2>
                 <p className='cs-paragraph--sans cs-paragraph-first enlarge-first'>
                   Psi Chi Omega is an Asian-American social fraternity with several chapters
-                  throughout California. Fraternities afford college students an exciting social
-                  environment with opportunities to develop personally and professionally. However,
-                  Asian-American fraternities are unique because they cater towards the
-                  Asian-American community who often struggle with identity issues and other
-                  race-related issues. During my time at UC Davis, I was an active member for four
-                  years and held several leadership positions.
+                  throughout California. Fraternities afford college students a dynamic social
+                  environment with opportunities to develop personally and professionally.
+                  Asian-American fraternities are unique because they cater towards Asian-American
+                  communities who often struggle with identity issues and other race-related issues.
+                  During my time at UC Davis, I was an active member for four years and held several
+                  leadership positions.
                 </p>
               </div>
               <div className='2xl:mt-20'>
@@ -102,7 +103,7 @@ export default function PsiChiOmega() {
               <div className='2xl:mt-20'>
                 <h2 className='cs-h3'>The Solution</h2>
                 <p className='cs-paragraph--sans cs-paragraph-first'>
-                  Create a fraternity website with the following business requirements.
+                  Create a fraternity website with the following business requirements:
                 </p>
 
                 <ol className='list-inside list-decimal mt-6'>
@@ -115,7 +116,7 @@ export default function PsiChiOmega() {
                     our fraternity.
                   </li>
                   <li className='ml-2 mt-2'>
-                    Represent, refine, and shape the UC Davis fraternity chapter, brand identity,
+                    Represent and shape the UC Davis fraternity chapter and its&apos; brand identity,
                     image, and culture.
                   </li>
                 </ol>
@@ -134,21 +135,19 @@ export default function PsiChiOmega() {
             <div className='cs-article-header'>
               <h2 className='cs-h2'>User Research</h2>
               <p className='mt-4 cs-paragraph--sans cs-paragraph-first'>
-                We begin by discovering and defining our <strong>archetypal user</strong> to
-                understand their <strong>motives</strong>, <strong>needs</strong>, and{" "}
-                <strong>pain-points</strong>. As a starting point, I leverage my experience to
-                create user personas, empathy maps, and user journeys to explain the complex social
-                dynamics behind Asian-American fraternities.
+                We begin by discovering and defining our archetypal user to understand their
+                motives, needs, and pain-points. As a starting point, I leveraged my previous
+                experience as a fraternity member to create user personas, empathy maps, and user
+                journeys to map the complex social dynamics behind Asian-American fraternities.
               </p>
               <p className='mt-4 cs-paragraph--sans'>
-                To validate and support my findings, I review <strong>scientific literature</strong>{" "}
-                that examine Asian-American issues in college, the role of Asian-American
-                fraternities, and the psychology of college students.
+                To validate and support my findings, I review scientific literature that examine
+                Asian-American issues in college, the role of Asian-American fraternities, and the
+                psychology of college students.
               </p>
               <p className='mt-4 cs-paragraph--sans'>
-                In addition, I conducted a <strong>competitive analysis</strong> to compare
-                competing organizations. These findings define our <strong>UX strategy</strong> and
-                help develop empathy among stakeholders.
+                In addition, I conducted a competitive analysis to compare competing organizations.
+                These findings define our UX strategy and help develop empathy among stakeholders.
               </p>
             </div>
 
@@ -235,9 +234,11 @@ export default function PsiChiOmega() {
                   success (Samura, 2016). Many of our members experienced intense feelings of
                   alienation and isolation when they first entered college. They attributed those
                   feelings to difficulties associated with college transition both in terms of
-                  adjusting to a new social life and living in a new, unfamiliar area. During member
-                  application interviews, <em>students reported that a high sense of belonging</em>{" "}
-                  within the community was one of the primary reasons for joining.
+                  adjusting to a new social life and living in a new, unfamiliar area.{" "}
+                  <em>
+                    During member application interviews, students reported that a high sense of
+                    belonging within the community was one of the primary reasons for joining.
+                  </em>
                 </p>
               </div>
 
@@ -290,11 +291,11 @@ export default function PsiChiOmega() {
               <h3 className='cs-h3'>How will the website be used?</h3>
               <p className='cs-paragraph--sans cs-paragraph-first'>
                 Now that we understand the users needs and motives, we can begin to narrow the
-                research scope to the user needs in relation to the website. To do so, I draw on{" "}
-                <strong>user journeys</strong> to contextually map the user in their environment. An{" "}
-                <strong>empathy map</strong> was used to explore user emotions and how they might
-                influence thought and behavior. These methods provide insights towards use cases, UX
-                strategy, website specifications, and direction in which to structure the product.
+                research scope to the user needs in relation to the website. To do so, I draw on
+                user journeys to contextually map the user in their environment. An empathy map was
+                used to explore user emotions and how they might influence thought and behavior.
+                These methods provide insights towards use cases, UX strategy, website
+                specifications, and direction in which to structure the product.
               </p>
               <div className='flex flex-row content-start'>
                 <figure className='cs-figure'>
@@ -536,9 +537,9 @@ export default function PsiChiOmega() {
                     Students. New Directions for Student Services. 2002. 11 - 20. 10.1002/ss.35.
                   </li>
                   <li className='cs-li'>
-                    LeSueur, Ian, &quotAn Investigation of Existential and Positive Psychological
-                    Resources in College Students&quot (2019). Seton Hall University Dissertations
-                    and Theses (ETDs). 2669. https://scholarship.shu.edu/dissertations/2669
+                    LeSueur, Ian, An Investigation of Existential and Positive Psychological
+                    Resources in College Students (2019). Seton Hall University Dissertations and
+                    Theses (ETDs). 2669. https://scholarship.shu.edu/dissertations/2669
                   </li>
                   <li className='cs-li'>
                     Museus, Samuel D. and Julie J. Park. &quotThe Continuing Significance of Racism
@@ -581,9 +582,8 @@ export default function PsiChiOmega() {
               <p className='mt-4 cs-paragraph--sans cs-paragraph-first'>
                 Using the user research, I define the direction and architecture for the website. By
                 first formulating the design principles, I create standards in which the
-                appropriateness of the design is determined. Following the design principle of{" "}
-                <strong>content based design</strong>, I define the{" "}
-                <strong>information architecture</strong> and <strong>content strategy</strong>{" "}
+                appropriateness of the design is determined. Following the design principle of
+                content based design, I define the information architecture and content strategy
                 which informs the visual hierarchy and design. I end by exploring emotional design
                 and brand identity to amplify the user experience.
               </p>
@@ -715,7 +715,7 @@ export default function PsiChiOmega() {
                 <em>designer-based</em> in which meaning is communicated through design for users to
                 discover, and <em>theory-based</em> in which scientific theory and literature guide
                 the emotional design. My recommendations are surmised using an emotional design
-                framework as general guidelines and product specifications.
+                framework to create general guidelines and product specifications.
               </p>
               <p className='cs-paragraph--sans'>
                 To begin, I researched emotional design. First, considering the mechanism in which
@@ -723,15 +723,15 @@ export default function PsiChiOmega() {
                 cause behavior; instead, <em>emotions induce reflection</em>. Reflection results in
                 an awareness and evaluation of oneself in relation to their surroundings which
                 motivates users to take action (Baumeister et al., 2007). In{" "}
-                <strong>cognitive appraisal theory</strong>, this automatic and subjective
-                evaluation is based on specific properties of the stimulus such as relevance and
-                congruence to personal goals or agency, coping potential and control (Moors et al.,
-                2013). The results of such evaluations bring about specific discrete emotions. The
-                more intense the emotional state, the more cognitive reflection is likely to occur
-                (cf. Roese, 1997). However, awareness of oneself in the context of existentialism &
-                identity can result in self-reflexive anxiety (Tietjen, 2020). Therefore, it&apos;s
-                important that emotional design, especially when dealing with challenging topics,
-                induces reflexivity through net positive affect and emotion.{" "}
+                <strong>cognitive appraisal theory</strong>, automatic and subjective evaluations
+                are based on specific properties of the stimulus such as relevance and congruence to
+                personal goals or agency, coping potential and control (Moors et al., 2013). The
+                results of such evaluations bring about specific discrete emotions. The more intense
+                the emotional state, the more cognitive reflection is likely to occur (cf. Roese,
+                1997). However, awareness of oneself in the context of existentialism & identity can
+                result in self-reflexive anxiety (Tietjen, 2020). Therefore, it&apos;s important
+                that emotional design, especially when dealing with challenging topics, induces
+                reflexivity through net positive affect and emotion.{" "}
                 <em>
                   These findings highlight the importance of user research to identify relevant,
                   meaningful topics, goals, and needs to emotionalize design.
@@ -781,53 +781,6 @@ export default function PsiChiOmega() {
                 can be used to affect reflexivity. Because of this, I included UX writing within the
                 reflective level.
               </p>
-
-              {/* <!-- <ul className="cs-ul 2xl:mt-10">
-              <li className="cs-li">
-                <strong>Focus on drawing a wide range of positive emotions</strong> — The cumulative emotional intensity of these responses could elicit powerful reflective states to motivate behavior.
-              </li>
-              <li className="cs-li">
-                <strong>Positive emotions to convey</strong> — Happiness, Vastness, Awe, Surprise,
-                Optimism, Trust, Anticipation, Warmth, Admiration, Trust, Acceptance, Calm,
-                Intrigued, Curiosity, Pride
-              </li>
-              <li className="cs-li">
-                <strong>Negative emotions to convey</strong> — Fear, Regret, Envy
-              </li>
-              <li className="cs-li">
-                <strong>Emotions to avoid</strong> — Envy, Jealousy, Confusion, Anxiety
-              </li>
-            </ul> --> */}
-
-              {/* <!-- <div className="mt-16">
-                <div className="overflow-hidden">
-                  <h5 className="cs-topic max:mt-24">Visercal Recommendations</h5>
-                </div>
-                <ul className="list-inside list-disc mt-3 font-base">
-                  <li className="mt-2">
-                    <strong>Use a distinct design separate from our competitors. </strong>Thackara
-                    (1997) realized that many products in the current market were similar in respect
-                    of their technical characteristics, quality and price. In order to increase the
-                    attractiveness and market competitiveness, new products would have to be
-                    innovative in design to enrich the users’ experiences.
-                  </li>
-                  <li className="mt-2">
-                    <strong>Motion and color can make the website immersive. </strong>Spatial
-                    immersion captures the user's attention and can focus important elements. The
-                    relationship between color and emotion is well established.
-                  </li>
-                  <li className="mt-2">
-                    <strong>Use relatable, powerful imagery. </strong>For example, pictures of nature,
-                    fraternity members, social events (such as festivals), UC Davis campus, or images
-                    related to Asian-American identity. Imagery can be effective in communicating
-                    meaning, emotions and ideas to the users.
-                  </li>
-                  <li className="mt-2">
-                    <strong>Focus on the people. </strong>Help users connect and identify with real
-                    people. Focusing content on real people can build trust.
-                  </li>
-                </ul>
-              </div> --> */}
 
               <div className=''>
                 <h5 className='cs-topic'>Visercal Recommendations</h5>
@@ -1061,92 +1014,6 @@ export default function PsiChiOmega() {
               <figure className='cs-figure inline-block w-full'>
                 <Image src='/images/cs-pxo/moodboard2.png' alt='' width={4743} height={2925} />
               </figure>
-              {/* <div className="swiper-container mt-8 mb-6 xs:mb-3 lg:mt-10 lg:mb-6 2xl:mt-16 2xl:mb-16">
-                <div className="swiper-wrapper">
-                  <div className="swiper-slide">
-                    <figure className="cs-figure m-0">
-                      <img src="assets/images/cs-pxo/brand-guidelines/cover.png" alt="" />
-                    </figure>
-                  </div>
-                  <div className="swiper-slide">
-                    <figure className="cs-figure m-0">
-                      <img src="assets/images/cs-pxo/brand-guidelines/toc.png" alt="" />
-                    </figure>
-                  </div>
-                  <div className="swiper-slide">
-                    <figure className="cs-figure m-0">
-                      <img src="assets/images/cs-pxo/brand-guidelines/bi1.png" alt="" />
-                    </figure>
-                  </div>
-                  <div className="swiper-slide">
-                    <figure className="cs-figure m-0">
-                      <img src="assets/images/cs-pxo/brand-guidelines/bi2.png" alt="" />
-                    </figure>
-                  </div>
-                  <div className="swiper-slide">
-                    <figure className="cs-figure m-0">
-                      <img src="assets/images/cs-pxo/brand-guidelines/bi3.png" alt="" />
-                    </figure>
-                  </div>
-                  <div className="swiper-slide">
-                    <figure className="cs-figure m-0">
-                      <img src="assets/images/cs-pxo/brand-guidelines/type1.png" alt="" />
-                    </figure>
-                  </div>
-                  <div className="swiper-slide">
-                    <figure className="cs-figure m-0">
-                      <img src="assets/images/cs-pxo/brand-guidelines/type2.png" alt="" />
-                    </figure>
-                  </div>
-                  <div className="swiper-slide">
-                    <figure className="cs-figure m-0">
-                      <img src="assets/images/cs-pxo/brand-guidelines/type3.png" alt="" />
-                    </figure>
-                  </div>
-                  <div className="swiper-slide">
-                    <figure className="cs-figure m-0">
-                      <img src="assets/images/cs-pxo/brand-guidelines/type4.png" alt="" />
-                    </figure>
-                  </div>
-                  <div className="swiper-slide">
-                    <figure className="cs-figure m-0">
-                      <img src="assets/images/cs-pxo/brand-guidelines/type5.png" alt="" />
-                    </figure>
-                  </div>
-                  <div className="swiper-slide">
-                    <figure className="cs-figure m-0">
-                      <img src="assets/images/cs-pxo/brand-guidelines/type6.png" alt="" />
-                    </figure>
-                  </div>
-                  <div className="swiper-slide">
-                    <figure className="cs-figure m-0">
-                      <img src="assets/images/cs-pxo/brand-guidelines/type7.png" alt="" />
-                    </figure>
-                  </div>
-                  <div className="swiper-slide">
-                    <figure className="cs-figure m-0">
-                      <img src="assets/images/cs-pxo/brand-guidelines/type8.png" alt="" />
-                    </figure>
-                  </div>
-                  <div className="swiper-slide">
-                    <figure className="cs-figure m-0">
-                      <img src="assets/images/cs-pxo/brand-guidelines/color1.png" alt="" />
-                    </figure>
-                  </div>
-                  <div className="swiper-slide">
-                    <figure className="cs-figure m-0">
-                      <img src="assets/images/cs-pxo/brand-guidelines/color2.png" alt="" />
-                    </figure>
-                  </div>
-                  <div className="swiper-slide">
-                    <figure className="cs-figure m-0">
-                      <img src="assets/images/cs-pxo/brand-guidelines/color3.png" alt="" />
-                    </figure>
-                  </div>
-                </div>
-                 {/* If we need pagination }
-             <div className="swiper-pagination mt-0"></div>
-              </div> */}
             </div>
           </section>
           <section className='w-full 2xl:py-32 bg-[#E5E5E5] mt-8 mb-6 xs:mb-3 lg:mt-10 lg:mb-6 2xl:mt-16 2xl:mb-16'>
@@ -1301,8 +1168,8 @@ export default function PsiChiOmega() {
               <p className='cs-paragraph--sans cs-paragraph-first'>
                 A design system is a collection of assets, guidelines and components as it relates
                 to the user interface. Design systems promote consistency throughout all products by
-                serving as the universal truth in which UI components are created. Learning from
-                these design systems such as{" "}
+                serving as the universal truth in which UI components and patterns are created.
+                Learning from these design systems such as{" "}
                 <a
                   className='underline text-blue visited:text-ruby'
                   href='https://carbondesignsystem.com/'
@@ -1367,9 +1234,9 @@ export default function PsiChiOmega() {
               <p className='cs-paragraph--sans cs-paragraph-first'>
                 When working on a large project, it&apos;s easy to get lost in the process and feel
                 overwhelmed. By focusing on creating individual components, I made steady progress
-                that allowed me to get at least something to work with. To create high quality
-                components, I compiled a list of guidelines to follow and also referenced components
-                from various design systems and UI kits.
+                that allowed me to get at least something to work with. To create components, I
+                compiled a list of guidelines to follow and referenced components from various
+                design systems and UI kits.
               </p>
             </section>
 
@@ -1508,10 +1375,12 @@ export default function PsiChiOmega() {
           <div className='cs-grid'>
             <div className='cs-section--default-region'>
               <p className='mt-4 cs-paragraph--sans'>
-                You can view the interactive prototype <a
+                You can view the interactive prototype{" "}
+                <a
                   className='underline text-[#0000EE]'
                   href='https://www.figma.com/proto/psn3sijN7IPiiFg9dSEcNZ/Psi-Chi-Omega-Website?page-id=4191%3A31847&node-id=4191%3A46499&viewport=276%2C48%2C0.04&scaling=min-zoom&starting-point-node-id=4191%3A46499&show-proto-sidebar=1'
-                >here
+                >
+                  here
                 </a>
                 .
               </p>
@@ -1543,20 +1412,26 @@ export default function PsiChiOmega() {
             <div className='cs-article-header'>
               <h2 className='cs-h2'>Development</h2>
               <p className='cs-paragraph--sans cs-paragraph-first'>
-                The main technology used is React, TailwindCSS Next.js, and Strapi. React builds the
-                UI and handles the computational logic. TailwindCSS is a utility-first CSS framework
-                used for rapid prototype styling. Next.js is a static-site generator and is rendered
+                The main technology used is React, TailwindCSS, Next.js, and Strapi.
+              </p>
+              <p className='cs-paragraph--sans'>
+                React builds the UI and handles the computational logic. TailwindCSS is a
+                utility-first CSS framework used for rapid prototype styling; however, the
+                utility-first pattern can be problematic for maintainability especially when styling
+                complex components. For large projects with a mature design system I would
+                definitely use Sass instead. Next.js is a static-site generator and is rendered
                 server side for high performance to the end user.
               </p>
               <p className='cs-paragraph--sans'>
-                Strapi is used as a headless CMS so content editors can easily create and publish
-                content without knowing how to code. It also gives me flexibility if the fraternity
-                decides to manage a blog or create news articles.
+                Strapi is a headless CMS so content editors can easily create and publish content
+                without knowing how to code. Strapi CMS was deployed on Heroku with Cloudinary for
+                image hosting.
               </p>
               <p className='cs-paragraph--sans'>
-                To create forms, I used formik. For email news subscriptions, I used google cloud to
-                add and remove emails to and from google sheets. For contacting us, the form submits
-                the data to the Gmail API which sends an email to a defined email address.
+                To create forms, I tried formik and react-hook-forms. In a previous iteration, I
+                used the google sheets API to add and remove email subscriptions to and from google
+                sheets. For contacting us, the form submits the data to the Gmail API which sends an
+                email to a defined email address.
               </p>
               <p className='cs-paragraph--sans'>The website is currently in development.</p>
             </div>

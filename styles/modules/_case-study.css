@@ -127,7 +127,7 @@
     @apply mt-2 xs:mt-3 md:mt-6 lg:mt-5 2xl:mt-7 max:mt-10 text-lg leading-relaxed font-base;
   }
   .cs-paragraph--sans {
-    @apply mt-4 xs:mt-6 md:mt-6 lg:mt-5 text-base 2xl:mt-4 max:mt-10 font-base leading-relaxed;
+    @apply mt-4 xs:mt-6 md:mt-6 lg:mt-5 text-base 2xl:mt-4 max:mt-8 font-base leading-relaxed;
   }
   .cs-paragraph-first {
     @apply max:mt-5;
@@ -155,7 +155,7 @@
     @apply mt-4 xs:mt-6 lg:mt-8;
   }
   .cs-li {
-    @apply mt-2 xs:mt-3 lg:mt-3;
+    @apply mt-2 xs:mt-3 lg:mt-2;
   }
   .cs-hero-split-container {
     @apply p-3 pt-36 

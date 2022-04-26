@@ -23,8 +23,8 @@ export default function Test() {
               <h1 className='font-display text-4xl xs:text-5xl sm:text-5xl md:text-5xl md:justify-self-center lg:text-4xl xl:text-6xl 2xl:text-[64px] max:text-8xl relative text-center mx-auto lg:mx-0 lg:text-center 2max:font-medium 2max:text-9xl'>
                 Matthew Pham
               </h1>
-              <span className='hero--subtext block text-base font-display md:text-xl text-center lg:text-center lg:text-xl max:text-[28px]'>
-                UX Engineer with a degree in Computational Cognitive Science
+              <span className='hero--subtext block text-base font-accent uppercase tracking-tight md:text-xl text-center lg:text-center lg:text-xl max:text-[24px]'>
+                UX/UI Designer & Developer
               </span>
             </div>
           </section>

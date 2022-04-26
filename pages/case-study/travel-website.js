@@ -52,8 +52,7 @@ export default function TravelWebsiteTest() {
               <h5 className='text-sm font-bold'>Technology</h5>
               <p className='mt-2'>Figma</p>
               <p>HTML, CSS, JS</p>
-              <p>Next.js, React</p>
-              <p>TailwindCSS</p>
+              <p>jQuery</p>
             </div>
           </section>
           <section className='order-2 col-span-full mt-8 mb-24 md:col-span-11 lg:order-1 lg:col-span-9 lg:col-start-2 xl:col-span-8 xl:col-start-5 2xl:col-span-6 2xl:col-start-6 2xl:mt-20'>

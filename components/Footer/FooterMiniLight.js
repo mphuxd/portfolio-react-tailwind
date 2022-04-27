@@ -11,7 +11,7 @@ function FooterMiniLight(props) {
           <Image src='/icons/logo-black.png' width={64} height={64} alt='' />
         </div>
         <div className='footer--legal'>
-          <p className='font-accent text-xs text-grey 2xl:text-sm'>V3.00 02.21.2022</p>
+          <p className='font-accent text-xs text-grey 2xl:text-sm'>©MPH 02.21.2022 V3.00</p>
           <a
             href='mailto:mph@ucdavis.edu'
             className='font-accent text-xs 2xl:text-sm text-grey hover:underline'

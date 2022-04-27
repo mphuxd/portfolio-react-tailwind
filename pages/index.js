@@ -1,10 +1,22 @@
 import Head from "next/head";
-import { Layout, FeaturedArticle, FeaturedArticleReverse } from "@/components";
+import Link from "next/link";
+import Image from "next/image";
+import {
+  Layout,
+  FeaturedArticle,
+  FeaturedArticleReverse,
+  FeaturedAboutMe,
+  Meta,
+  Geometry,
+  GeometryOrbitControl,
+} from "@/components";
+import { Canvas } from "@react-three/fiber";
 
-export default function Test() {
+export default function Home() {
   return (
     <div className=''>
       <Head>
+        <Meta />
         <title>Matthew Pham Portfolio</title>
       </Head>
 
@@ -23,7 +35,7 @@ export default function Test() {
               <h1 className='font-display text-4xl xs:text-5xl sm:text-5xl md:text-5xl md:justify-self-center lg:text-4xl xl:text-6xl 2xl:text-[64px] max:text-8xl relative text-center mx-auto lg:mx-0 lg:text-center 2max:font-medium 2max:text-9xl'>
                 Matthew Pham
               </h1>
-              <span className='hero--subtext block text-base font-accent uppercase tracking-tight md:text-xl text-center lg:text-center lg:text-xl max:text-[24px]'>
+              <span className='hero--subtext block text-base font-accent uppercase tracking-tight md:text-xl text-center lg:text-center lg:text-xl'>
                 UX/UI Designer & Developer
               </span>
             </div>
@@ -68,7 +80,7 @@ export default function Test() {
             linkAlt=''
           />
 
-          <FeaturedArticleReverse
+          {/* <FeaturedArticleReverse
             title='About Me'
             copy=' Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc diam in consequat, at adipiscing tristique amet sed vel. Molestie semper viverra et vulputate sit eu, varius. Massa magna enim enim gravida convallis turpis porta. Eget non gravida a mauris ultrices consectetur.'
             imageSrc='/images/pxo-website-image-nobg.png'
@@ -80,6 +92,22 @@ export default function Test() {
             linkHref='/about'
             linkAlt='More About Me'
             linkLabel='More About Me'
+          /> */}
+
+          <FeaturedAboutMe
+            title='About Me'
+            copy='Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc diam in consequat, at adipiscing tristique amet sed vel. Molestie semper viverra et vulputate sit eu, varius. Massa magna enim enim gravida convallis turpis porta. Eget non gravida a mauris ultrices consectetur.'
+            linkHref='/about'
+            linkAlt='Go to About Me'
+            linkLabel='More About Me'
+            geometry={
+              <Canvas className='aspect-video'>
+                <GeometryOrbitControl />
+                <ambientLight />
+                <pointLight position={[10, 10, 10]} />
+                <Geometry />
+              </Canvas>
+            }
           />
         </article>
       </Layout>

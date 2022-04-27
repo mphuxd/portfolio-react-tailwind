@@ -3,7 +3,7 @@
 \*------------------------------------*/
 
 .article-project:hover > #about-image {
-  background-color: #0062A9;
+  background-color: #0062a9;
   transition: 0.15s cubic-bezier(0.2, 0, 0.38, 0.9);
 }
 
@@ -15,6 +15,15 @@
 .article-project:hover > #featured-image-blue {
   background-color: #2f5572;
   transition: 0.15s cubic-bezier(0.2, 0, 0.38, 0.9);
+}
+
+.article-project:hover > #about-geometry {
+  background-color:#CE5374 ;
+  transition: 0.15s cubic-bezier(0.2, 0, 0.38, 0.9);
+}
+
+.article-project:hover > #about-geometry > #hero-geometry {
+  scale: 120%;
 }
 
 .article-accent-line::after {
@@ -51,9 +60,7 @@
 
 @layer components {
   .articles-container {
-    @apply flex ml-auto mr-auto justify-center items-center flex-wrap pl-3 pr-3 
-        lg:pl-20 lg:pr-20 
-        max:w-9/12;
+    @apply flex ml-auto mr-auto justify-center items-center flex-wrap pl-3 pr-3 lg:pl-20 lg:pr-20 max:w-9/12;
   }
   .article-portrait {
     @apply inline-block relative text-left mt-7 mb-7 
@@ -92,10 +99,10 @@
     @apply flex flex-col lg:flex-row hover:md:custom-shadow-tablet hover:lg:shadow-none md:justify-center max:mx-0;
   }
   .article-project-left {
-    @apply z-20 w-full p-4 sm:p-8  xl:w-1/2 2xl:p-20 2xl:bg-grey2 flex items-center;
+    @apply z-20 w-full p-4 sm:p-8 lg:w-1/2 2xl:p-20 2xl:bg-grey2 flex items-center;
   }
   .article-project-right {
-    @apply bg-white w-full block p-4 sm:p-8 lg:bg-opacity-0 xl:w-1/2 2xl:bg-opacity-0 2xl:pl-20;
+    @apply bg-white w-full block p-4 sm:p-8 lg:bg-opacity-0 lg:w-1/2 2xl:bg-opacity-0 2xl:pl-20;
   }
   .article-project-right--inner {
     @apply w-full md:w-5/6 lg:w-full max:w-3/4 h-full justify-center flex flex-col content-end p-4 lg:p-0 max-w-3xl;

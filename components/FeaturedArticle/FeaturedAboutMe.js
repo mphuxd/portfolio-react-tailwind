@@ -26,12 +26,11 @@ function FeaturedAboutMe({ title, copy, imageBGColor, linkHref, linkAlt, linkLab
   return (
     <section className='article-project-container lg:my-20 2xl:my-40 max:mt-42'>
       <div className='mx-auto cs-grid p-0 lg:p-8 2xl:p-0 w-full'>
-        <div
-          className='col-start-1 col-span-16 xl:col-start-2 xl:col-span-14 article-project flex flex-col-reverse lg:flex-row hover:custom-shadow-tablet hover:cursor-pointer max:max-w-screen-max'
-          onClick={redirectClick}
-          href='/about'
-        >
-          <div className='block bg-none p-4 sm:p-8 xl:pr-20 w-full xl:w-1/2'>
+        <div className='col-start-1 col-span-16 xl:col-start-2 xl:col-span-14 article-project flex flex-col-reverse lg:flex-row hover:custom-shadow-tablet hover:cursor-pointer max:max-w-screen-max'>
+          <div
+            className='block bg-none p-4 sm:p-8 xl:pr-20 w-full xl:w-1/2'
+            onClick={redirectClick}
+          >
             <div className='article-project-right--inner lg:float-right lg:text-right lg:items-end'>
               <Link href='/about'>
                 <a>
@@ -48,8 +47,8 @@ function FeaturedAboutMe({ title, copy, imageBGColor, linkHref, linkAlt, linkLab
             </div>
           </div>
           <div
-            id='about-geometry'
-            className='bg-grey2 w-full h-full block p-4 sm:p-8 lg:w-1/2 2xl:pl-20 pt-4 2xl:p-20'
+            id=''
+            className='bg-grey2 w-full h-full block p-4 sm:p-8 lg:w-1/2 2xl:pl-20 pt-4 2xl:p-20 hover:cursor-grab active:cursor-grabbing'
           >
             {geometry}
           </div>

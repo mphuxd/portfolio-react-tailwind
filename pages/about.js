@@ -100,7 +100,7 @@ export default function Home() {
                   1 fan and PC gamer.
                 </p>
 
-                <figure className='cs-figure mx-auto w-full 2xl:w-3/5 max:pt-20'>
+                <figure className='cs-figure mx-auto w-full 2xl:w-3/5 pt-8 max:pt-20'>
                   <Image
                     src='/images/about/cs_hexagon.svg'
                     alt=''

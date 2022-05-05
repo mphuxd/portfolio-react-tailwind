@@ -1,8 +1,7 @@
 import Head from "next/head";
-import Link from "next/link";
-import Image from "next/image";
 import {
   Layout,
+  HeroWithVideo,
   FeaturedArticle,
   FeaturedArticleReverse,
   FeaturedAboutMe,
@@ -21,26 +20,11 @@ export default function Home() {
       </Head>
 
       <Layout>
-        <div className='h-screen min-h-[700px] max-h-[775px] md:max-h-[850px] lg:max-h-[none] 2max:max-h-[1800px]'>
-          <video
-            className='object-cover w-full h-full absolute z-0 border-none overflow-hidden outline-none '
-            autoPlay
-            muted
-            loop
-          >
-            <source src='/videos/fluid_latest.mp4' />
-          </video>
-          <section className='cs-grid auto-rows-max pt-52 pb-20 xl:my-auto xl:py-48 lg:py-32 2xl:py-40 max:py-48 2max:pt-96 relative'>
-            <div className='content-center h-fit my-auto z-10 col-start-1 col-span-16 sm:col-span-16 md:py-12 lg:py-20 md:col-span-12 md:col-start-3 lg:col-span-10 lg:col-start-4 xl:col-span-8 xl:col-start-5'>
-              <h1 className='font-display text-4xl xs:text-5xl sm:text-5xl md:text-5xl md:justify-self-center lg:text-4xl xl:text-6xl 2xl:text-[64px] max:text-8xl relative text-center mx-auto lg:mx-0 lg:text-center 2max:font-medium 2max:text-9xl'>
-                Matthew Pham
-              </h1>
-              <span className='hero--subtext block text-base font-accent uppercase tracking-tight md:text-xl text-center lg:text-center lg:text-xl'>
-                UX/UI Designer & Developer
-              </span>
-            </div>
-          </section>
-        </div>
+        <HeroWithVideo
+          name='Matthew Pham'
+          title='UX/UI Designer & Developer'
+          src='/videos/fluid_latest.mp4'
+        />
 
         <article id='work' className='article-section'>
           <FeaturedArticle
@@ -80,20 +64,6 @@ export default function Home() {
             linkAlt=''
           />
 
-          {/* <FeaturedArticleReverse
-            title='About Me'
-            copy=' Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc diam in consequat, at adipiscing tristique amet sed vel. Molestie semper viverra et vulputate sit eu, varius. Massa magna enim enim gravida convallis turpis porta. Eget non gravida a mauris ultrices consectetur.'
-            imageSrc='/images/pxo-website-image-nobg.png'
-            imageAlt='About Me'
-            imageTagID='about-image'
-            imageWidth={2577}
-            imageHeight={1611}
-            imageBGColor='bg-[#0062A9]'
-            linkHref='/about'
-            linkAlt='More About Me'
-            linkLabel='More About Me'
-          /> */}
-
           <FeaturedAboutMe
             title='About Me'
             copy='Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc diam in consequat, at adipiscing tristique amet sed vel. Molestie semper viverra et vulputate sit eu, varius. Massa magna enim enim gravida convallis turpis porta. Eget non gravida a mauris ultrices consectetur.'
@@ -103,8 +73,10 @@ export default function Home() {
             geometry={
               <Canvas className='aspect-video'>
                 <GeometryOrbitControl />
-                <ambientLight />
-                <pointLight position={[10, 10, 10]} />
+                <ambientLight/>
+                {/* <pointLight position={[0, 100, 0]} />
+                <pointLight position={[100, 200, 100]} />
+                <pointLight position={[-100, -200, -100]} /> */}
                 <Geometry />
               </Canvas>
             }

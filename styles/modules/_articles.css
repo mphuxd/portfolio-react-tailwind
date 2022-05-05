@@ -58,6 +58,7 @@
   height: 1px;
 }
 
+
 @layer components {
   .articles-container {
     @apply flex ml-auto mr-auto justify-center items-center flex-wrap pl-3 pr-3 lg:pl-20 lg:pr-20 max:w-9/12;

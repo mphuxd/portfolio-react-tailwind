@@ -423,21 +423,7 @@ export default function PsiChiOmega() {
                   </ul>
                 </div>
 
-                {/* <!-- <div className="mt-16">
-                <p className="cs-paragraph--sans">Additional considerations & Barriers to entry</p>
-                <ul className="cs-ul">
-                  <li className="cs-li-first">Reputation & Trustworthiness</li>
-                  <li className="cs-li">Social or professional fraternity</li>
-                  <li className="cs-li">Difficulty of Joining process</li>
-                  <li className="cs-li">Impact on academics</li>
-                  <li className="cs-li">
-                    High Number of competitors cause uncertainty & inability to decide which
-                    fraternity to join
-                  </li>
-                  <li className="cs-li">Lack of accessible information on the fraternity</li>
-                  <li className="cs-li">Stigma and rumors associated with fraternities</li>
-                </ul>
-              </div> --> */}
+
 
                 <div className='mt-16'>
                   <p className='cs-paragraph--sans'>
@@ -476,34 +462,6 @@ export default function PsiChiOmega() {
                 </ul>
               </div>
 
-              {/* <!-- <div className="mt-16">
-                <p className="mt-8 text-base font-base">Context & Environmental Factors</p>
-                <ul className="list-inside list-disc mt-3 font-base">
-                  <li className="mt-2">Primary use case is to learn about the fraternity.</li>
-                  <li className="mt-2">
-                    Most web traffic would come from mobile devices followed by laptops. High mobile
-                    traffic suggests mobile-first design. Optimize for mobile performance.
-                  </li>
-                  <li className="mt-2">
-                    Students are busy and may have a few minute window to navigate through the website
-                    before moving on. First impressions and fast loading times are crucial.
-                  </li>
-                  <li className="mt-2">
-                    People are hesitant to attend an event based on a brief interaction. Linking the
-                    website on our flyers can nudge users into visiting the website, minimizing
-                    friction between initial contact and attending our rush events.
-                  </li>
-                  <li className="mt-2">
-                    Users need confidence and trust in the organization so they feel comfortable
-                    attending the events.
-                  </li>
-                  <li className="mt-2">Students are likely to be recruited by multiple organizations.</li>
-                  <li className="mt-2">
-                    Given the choice between several organizations, students may join the more
-                    prestigious, reputable organizations.
-                  </li>
-                </ul>
-              </div> --> */}
 
               <div className='mt-16'>
                 <p className='cs-topic mt-8 font-bold'>Competitive Analysis</p>

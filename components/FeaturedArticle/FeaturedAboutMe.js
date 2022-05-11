@@ -48,7 +48,7 @@ function FeaturedAboutMe({ title, copy, imageBGColor, linkHref, linkAlt, linkLab
           </div>
           <div
             id=''
-            className='bg-grey2 w-full h-full block p-4 sm:p-8 lg:w-1/2 2xl:pl-20 pt-4 2xl:p-20 hover:cursor-grab active:cursor-grabbing'
+            className='bg-grey3 w-full h-full block p-4 sm:p-8 lg:w-1/2 2xl:pl-20 pt-4 2xl:p-20 hover:cursor-grab active:cursor-grabbing'
           >
             {geometry}
           </div>

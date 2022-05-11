@@ -1,6 +1,6 @@
 import Head from "next/head";
 import Image from "next/image";
-import { Layout, Slideshow } from "@/components";
+import { Layout, Slideshow, LinkOut, LinkScrollUp } from "@/components";
 
 export default function TravelWebsiteTest() {
   return (
@@ -84,17 +84,14 @@ export default function TravelWebsiteTest() {
               <p className='cs-paragraph--sans'>
                 The way the website is currently constructed suggests it&apos;s a traditional travel
                 agency where users must work directly with a travel agent to plan their vacation
-                together. Instead, Clear View Escapes can present their products on the website for
-                customers to purchase without the assistance of a travel agent, saving the company
-                both time and money.
+                together. Instead, Clear View Escapes can allow customers to book their vacation
+                online without a travel agent, saving the company both time and money.
               </p>
             </div>
             <div>
               <h2 className='cs-h3'>Objective</h2>
               <p className='cs-paragraph--sans cs-paragraph--first'>
-                How can I redesign the website to make finding the right vacation package easier?
-                What optimizations, visually or in regards to the useflow, can I make to help users
-                find the right vacation for them.
+                Redesign the homepage to help users find and book vacation packages.
               </p>
 
               <figure className='cs-figure inline-block 2xl:mt-40 w-full'>
@@ -116,54 +113,50 @@ export default function TravelWebsiteTest() {
             <div className='cs-article-header'>
               <h2 className='cs-h2'>User Research</h2>
               <p className='mt-4 cs-paragraph--sans cs-paragraph-first'>
-                Most of the research was obtained through Expedia&apos;s media research team to
-                understand the travel market and demographic.
+                User research is based on real data from{" "}
+                <LinkOut
+                  text='Expedia Group Media Solutions'
+                  href='https://advertising.expedia.com/'
+                />
+                .
               </p>
             </div>
             <section className='cs-section--default-region'>
               <h3 className='cs-h3'>Who are our users?</h3>
               <p className='cs-paragraph--sans cs-paragraph-first'>
+                As a fictional company, Clear View Escapes doesn&apos;t have any users. Instead,
+                we&apos;ll be looking at the US travel market demographics. The research isn&apos;t
+                clear in which of these demographics travel the most; however, in general, Gen Z &
+                Millennials are the fastest growing travel demographic with Millennials on average
+                spending 35 days traveling, followed by Gen Z with 29 days, boomers 27 days, and Gen
+                X 26 days.
+              </p>
+              <p className='cs-paragraph--sans'>
                 Of people who traveled in 2016, 24% were solo travelers, 47% were adults, and 29%
-                were adults with children. GenZ & Millennials are the fastest growing travel
-                demographic, with millennials taking more leisure trips. Research found that solo,
-                group, and multigenerational travel travel is increasing, while family leisure
-                travel with children is decreasing. Younger generations feel more confident about
-                travel and this decreases with age. Uncertainty increases with age. Flexibility
-                drives confidence, allowing users to cancel to make changes to their plans. This is
-                more important for younger generations Followed by quiet destinations & health and
-                safety
+                were adults with children. Research found that solo, group, and multigenerational
+                travel travel is increasing, while family leisure travel with children is
+                decreasing.
               </p>
 
               <h3 className='cs-h3'>Why are they traveling?</h3>
               <p className='cs-paragraph--sans cs-paragraph-first'>
-                Three categories, business, leisure, and bleisure. There are three categories of
-                travel, business, leisure, and bleisure (extending business trips for leisure). The
-                data isn’t clear which of these categories dominate, but as a leisure based travel
-                agency, we are only concerned about leisure travel.
+                There are three categories of travel, business, leisure, and bleisure (extending
+                business trips for leisure). Leisure trips vary by generation, with Millennials
+                taking the most leisure trips (42%) followed by Gen Z (38%) and Gen X (30%).
               </p>
               <p className='cs-paragraph--sans'>
-                Leisure trips vary by generation, with Millennials taking the most leisure trips
-                (42%) followed by Gen Z (38%) and Gen X (30%) Of these leisure trips, 77% of the US
-                market travel for rejuvenative purposes - change of scenery, weather, to visit
-                friends and family, or to witness an event, sightseeing, health & relaxation Younger
-                generations are more likely to take a trip for health and wellness, while older
-                generations are looking to visit family and friends more than others. Personal
-                fulfillment sees travelers making their destination choice based on their own
-                development.
-              </p>
-              <p className='cs-paragraph--sans'>
-                Key Takeaway Health, rejuvenation, personal fulfillment continue to be major motives
-                for leisure travel. GenZ, Millennials, are driving the future of leisure travel.
-                Design to target these markets. Key takeaways: Target users through inspirational
-                messaging such as personal fulfillment, development, and enrichment to motivate
-                users to travel.
+                Of these leisure trips, 77% of the US market travel for rejuvenative purposes -
+                change of scenery, weather, to visit friends and family, or to witness an event,
+                sightseeing, health & relaxation. Younger generations are more likely to take a trip
+                for health and wellness as well as personal fulfillment, while older generations are
+                looking to visit family and friends.
               </p>
 
               <h3 className='cs-h3'>Where are they going?</h3>
               <p className='cs-paragraph--sans cs-paragraph-first'>
-                Most US travel is Domestic, with 18% having traveled internationally. The most
-                popular domestic destinations are Florida, Virgin Islands, Hawaii The most popular
-                international destinations are Riviera Maya, Mexico, Rome, Bali, London, and Paris.
+                Most US travel is domestic, with 18% having traveled internationally. The most
+                popular domestic destinations are Florida, Virgin Islands, Hawaii. The most popular
+                international destinations are Riviera Maya, Rome, Bali, London, and Paris.
               </p>
               <p className='cs-paragraph--sans'>
                 Top Cruises Caribbean Cruise (34.7%), Cancun (28.3%), Cruise – Europe (River)
@@ -173,14 +166,15 @@ export default function TravelWebsiteTest() {
               </p>
               <p className='cs-paragraph--sans'>
                 21% of families have taken their children to an all-inclusive resort for vacation,
-                68% on a family road trip, and 68% on a beach vacation
+                68% on a family road trip, and 68% on a beach vacation.
               </p>
 
               <h3 className='cs-h3'>How do they decide?</h3>
               <p className='cs-paragraph--sans cs-paragraph-first'>
                 Before booking a vacation, users are already extensively researching and consuming
-                travel related content weeks ahead with OTA being the most engaged content. 65% have
-                only 1 destination in mind 35% have more than 1 in mind.
+                travel related content weeks ahead with online travel agencies (OTA) being the most
+                engaged content. 65% have only 1 destination in mind while 35% have more than 1 in
+                mind.
               </p>
               <p className='cs-paragraph--sans'>
                 All generations are increasingly turning to travel sources for trip planning and
@@ -188,40 +182,37 @@ export default function TravelWebsiteTest() {
               </p>
               <p className='cs-paragraph--sans'>
                 Gen Alpha, which refers to those born after 2010, is showing more signs of
-                influencing family travel decisions and planning than previously thought, according
-                to Expedia Group Media Solutions.
+                influencing family travel decisions and planning.
               </p>
               <p className='cs-paragraph--sans'>
-                75% need influence/inspiration Top influences Value, deals, social media, imagery,
-                blogs & articles Activities, experiences, family, culture Adventure Discovery “off
-                the beaten path”
+                According to users, the top influences in determing where to travel are value,
+                deals, social media, imagery, blogs & articles, activities, experiences, family,
+                culture, and the sense of adventure & discovery “off the beaten path”.
               </p>
-              <p className='cs-paragraph--sans'>
-                Key takeaway: Make family vacation planning fun and exciting for all ages. Families
-                are making travel decisions based on keeping their children happy and giving them a
-                good experience.
-              </p>
-
               <h3 className='cs-h3'>What&apos;s important?</h3>
               <p className='cs-paragraph--sans cs-paragraph-first'>
                 For family travelers, 95% said their priority was keeping their families entertained
                 and happy, while deals and value (89%), outdoor activities (85%) and planning travel
-                around school holidays (85%) or near major attractions or theme parts (85%) were
-                also of utmost importance.
+                around school holidays (85%) or near major attractions or theme parts (85%) were the
+                most importance.
               </p>
               <p className='cs-paragraph--sans'>
-                Our research shows that many people (52%) want to see a range of prices and options
-                for a specific type of experience and the ability to book accommodations and
-                transportation all in one transaction (38%) (2021)
+                Travel confidence influences the likeliness to travel. Research shows that travel
+                confidence is negatively correlated with age. That is, younger generations feel more
+                confident while older generations are less so. Other factors that influence
+                confidence are travel flexibility, which can be increased by allowing users to
+                cancel or make changes to their plans, and health and safety regulations.
+              </p>
+              <p className='cs-paragraph--sans'>
+                Research shows that many people (52%) want to see a range of prices and options for
+                a specific type of experience and the ability to book accommodations and
+                transportation all in one transaction (38%).
               </p>
               <p className='cs-paragraph--sans'>
                 For online bookings, many value a site that provides the right price for the type of
                 travel experience they want (57%). Other important considerations include a site
                 that is easy to navigate (49%), a quick booking process (45%), customer support
                 (38%), a high number of listings (32%), and a variety of travel methods (27%).
-                Interestingly, nearly half (48%) of travelers say they are open to booking through
-                companies they have never used before, showing an openness to new experiences and
-                options.
               </p>
             </section>
             <section className='cs-section--default-region'>
@@ -234,7 +225,7 @@ export default function TravelWebsiteTest() {
                   src='/images/cs-travel-website/up-kate.png'
                   alt='User Persona'
                   width={2528}
-                  height={640}
+                  height={680}
                 />
                 <figcaption className='cs-figure-caption'></figcaption>
               </figure>
@@ -244,7 +235,7 @@ export default function TravelWebsiteTest() {
                   src='/images/cs-travel-website/up-kevin.png'
                   alt='User Persona'
                   width={2528}
-                  height={520}
+                  height={600}
                 />
                 <figcaption className='cs-figure-caption'></figcaption>
               </figure>
@@ -285,53 +276,42 @@ export default function TravelWebsiteTest() {
               </figure>
             </section>
             <section className='cs-section--default-region'>
-              <h3 className='cs-h3'>Actionable Insights</h3>
-              <ul className='cs-ul'>
-                <li className='cs-li'>
-                  Avoid overwhelming the user with choices. Reduce density by deferring details to
-                  other webpages and present the user with broad categories
-                </li>
-                <li className='cs-li'>
-                  Avoid using high saturation images with high amount of details. Using HD images
-                  with high saturation can be visually overstimulating especially when Only use HD
-                  images if displayed large and one at a time. Desaturate images, color should
-                  direct the attention and not take away from them. Images should have a clear focal
-                  point and should represent the general category well.
-                </li>
-                <li className='cs-li'>
-                  Users already have a location in mind to research. Make searching fast by reducing
-                  the required fields or set a default value for each field. Defer details and let
-                  the user add specifics if they want afterwards. They are looking to explore their
-                  options, not necessarily finalizing their actions.
-                </li>
-                <li className='cs-li'>
-                  Gen Z will become the largest traveling demographic soon Gen Z will be the most
-                  educated and wealthiest. Millenials are starting to become the largest demographic
-                  to travel with family & children.
-                </li>
-                <li className='cs-li'>
-                  Design and brand for younger generations while keeping in touch with the older
-                  demographics. Use curves to soothe the user and mimic the relaxation you get from
-                  travel. Suits the travel aesthetic.
-                </li>
-                <li className='cs-li'>
-                  Establish trust & expertise through blogs & relationships with companies. Display
-                  support & contact information.{" "}
-                </li>
-                <li className='cs-li'>
-                  Make space for featured content to inspire users and support them with interesting
-                  information scent. Invite them to learn by routing to the travel blog, resort
-                  information, or vacation package. For example, Ex. Africa Large category, so show
-                  support from blogs, etc Explain the differences in regions, and what to expect.
-                  Then show the packages asssociated with each region. This suits the average
-                  buyer’s mental model. They know where, but not the specifics. Starting with the
-                  specifics without foundation can overwhelm them.
-                </li>
-                <li className='cs-li'>
-                  Use bullet points & icons to break up the text and make it easy for the user to
-                  scan.
-                </li>
-              </ul>
+              <h3 className='cs-h3'>Additional Actionable Insights</h3>
+
+              <p className='cs-paragraph--sans'>
+                Avoid overwhelming the user with choices. Reduce density by deferring details to
+                other webpages and present the user with broad categories
+              </p>
+              <p className='cs-paragraph--sans'>
+                Avoid using high saturation images with high amount of details. Using images with
+                high saturation can be visually overstimulating especially in image dense content
+                areas. Only use HD images if displayed large and one at a time. Desaturate images if
+                necessary to direct the attention to appropriate areas. Images should have a clear
+                focal point.
+              </p>
+              <p className='cs-paragraph--sans'>
+                Most users already have a location in mind to research. Make searching fast by
+                reducing the required fields and set a default value for each field. Let users add
+                specifics afterwards - they are looking to explore their options and not necessarily
+                booking their package.
+              </p>
+              <p className='cs-paragraph--sans'>
+                Design and brand for younger generations while keeping in touch with the older
+                demographics. Use curves to soothe the user and mimic the relaxation you get from
+                travel. Suits the travel aesthetic.
+              </p>
+              <p className='cs-paragraph--sans'>
+                Target users through inspirational messaging such as personal fulfillment,
+                development, and enrichment to motivate users to travel.
+              </p>
+              <p className='cs-paragraph--sans'>
+                Make space for featured content to inspire users and support them with interesting
+                information scent. Invite them to learn by routing to the travel blog, resort
+                information, or vacation package.
+              </p>
+              <p className='cs-paragraph--sans'>
+                Use bullet points, icons to break up the text and make it easy for the user to scan.
+              </p>
             </section>
             <span className='cs-article--end-divider' />
           </div>
@@ -347,9 +327,9 @@ export default function TravelWebsiteTest() {
             <section className='cs-section--default-region'>
               <h3 className='cs-h3'>User Flow</h3>
               <p className='cs-paragraph--sans cs-paragraph-first'>
-                User flow can help inform the information architecture by establishing relationships
-                between web pages and determining what content needs to be displayed for the user to
-                move towards their goal.
+                I begin with user flow to inform the information architecture by establishing
+                relationships between web pages and determining what content needs to be displayed
+                for the user to move towards their goal.
               </p>
               <p className='cs-paragraph--sans'>
                 In this case, there are two main user flows that diverge from the homepage: those
@@ -359,23 +339,11 @@ export default function TravelWebsiteTest() {
               <p className='cs-paragraph--sans'>
                 For those who don’t, the path is a little more complex. For example, they might
                 choose a category, in this case a continent such as Europe, then choose a country, a
-                region, and finally a vacation package. We also must consider if or when these paths
-                should converge. Now that the user has specified an area, should they be rerouted to
-                a search result page where they can see all available packages? Or should they
-                continue to diverge until it&apos;s time to book?
+                region, and finally a vacation package. Each of these steps might be a web page,
+                which we could potentially route to from the homepage, or via navigation.
               </p>
-              <p>
-                These are important questions because the role of the homepage is to route users to
-                the right web pages, and to do so, I need to understand how they relate to each
-                other.
-              </p>
-
               <h3 className='cs-h3'>Information Architecture</h3>
-              <p className='cs-paragraph--sans cs-paragraph-first'>
-                This section mainly covers the content strategy for the homepage, while briefly
-                considering the informational hierarchy and the implications on navigation for the
-                purpose of determining the top level header links, footers, and routes.
-              </p>
+
               <h4 className='cs-topic'>Categorizing Packages</h4>
               <p className='cs-paragraph--sans cs-paragraph-first'>
                 There are two main ways to categorize packages. By environment and by continent.{" "}
@@ -384,7 +352,7 @@ export default function TravelWebsiteTest() {
                 Grouping packages by environment can be advantageous in helping users to explore
                 multiple regions while offering the same climate and setting that they might be
                 looking for. However, this can be more difficult to group and has a higher category
-                number.
+                number which can clutter navigation.
               </p>
               <p className='cs-paragraph--sans'>
                 Grouping by continents is more simple and straightforward, but also introduces
@@ -393,9 +361,9 @@ export default function TravelWebsiteTest() {
                 continent, country, or region.
               </p>
               <p className='cs-paragraph--sans'>
-                Trying to keep it simple, I decided the main way to categorize packages is by
-                continents. However, it&apos;s possible to introduce a secondary categorization
-                method by selecting a few environments such as beaches, tropical, or domestic.
+                To keep it simple, I decided the main way to categorize packages is by continents.
+                In the future, we can create featured webpages that explores vacation packages by
+                environments such as beaches.
               </p>
               <h4 className='cs-topic'>Homepage</h4>
               <p className='cs-paragraph--sans cs-paragraph-first'>
@@ -403,13 +371,13 @@ export default function TravelWebsiteTest() {
                 redirecting the user to the appropriate destination web page. The general pattern as
                 the user scrolls down the homepage is to present them with sections that help the
                 user specify what they&apos;re looking for. Any input from the user helps narrow the
-                selection to determine their desired destination. The most effective way to find is
-                through search, so that should be among the first to appear.
+                selection to determine their desired destination.
               </p>
               <p className='cs-paragraph--sans'>
-                If the user already knows their destination, they will most likely use search to go
-                directly to the product page which in that case we have achieved the goal of
-                redirecting the user so we are done.
+                Since most users already have a destination in mind, they will most likely use
+                search to go directly to the product page which in that case we have achieved the
+                goal of redirecting the user so we are done. This is the most common use case, so
+                the search module should be among the first to appear.
               </p>
               <p className='cs-paragraph--sans'>
                 If the user has more than one destination in mind, doesn’t have a destination yet,
@@ -491,10 +459,7 @@ export default function TravelWebsiteTest() {
                 <figcaption className='cs-figure-caption'></figcaption>
               </figure>
             </section>
-
-            <span className='block text-center mx-auto mt-40 mb-20 col-span-full text-[200px]'>
-              .
-            </span>
+            <LinkScrollUp />
           </div>
         </article>
       </Layout>

@@ -5,6 +5,7 @@ import {
   FeaturedArticle,
   FeaturedArticleReverse,
   FeaturedAboutMe,
+  FeaturedAboutMeReverse,
   Meta,
   Geometry,
   GeometryOrbitControl,
@@ -53,18 +54,7 @@ export default function Home() {
             linkLabel='View Case Study'
           />
 
-          <FeaturedArticle
-            title='Portfolio Website'
-            copy='First independent website. Initially created as a static website in HTML/CSS/JS, then migrated to Next.js. With four major redesigns.'
-            imageSrc='/images/pxo-website-image-nobg.png'
-            imageAlt='Mockup of Psi Chi Omega fraternity website on macbook laptop'
-            imageWidth={2577}
-            imageHeight={1611}
-            linkHref='/about'
-            linkAlt=''
-          />
-
-          <FeaturedAboutMe
+          <FeaturedAboutMeReverse
             title='About Me'
             copy='Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc diam in consequat, at adipiscing tristique amet sed vel. Molestie semper viverra et vulputate sit eu, varius. Massa magna enim enim gravida convallis turpis porta. Eget non gravida a mauris ultrices consectetur.'
             linkHref='/about'
@@ -73,10 +63,7 @@ export default function Home() {
             geometry={
               <Canvas className='aspect-video'>
                 <GeometryOrbitControl />
-                <ambientLight/>
-                {/* <pointLight position={[0, 100, 0]} />
-                <pointLight position={[100, 200, 100]} />
-                <pointLight position={[-100, -200, -100]} /> */}
+                <spotLight color={"white"} position={[1000, 1000, 1000]} castShadow />
                 <Geometry />
               </Canvas>
             }

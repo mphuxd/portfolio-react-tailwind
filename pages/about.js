@@ -18,7 +18,7 @@ export default function Home() {
                 <h1 className='text-4xl xs:text-5xl sm:text-6xl md:text-6xl 2xl:text-7xl'>
                   Matthew Pham
                 </h1>
-                <h2 className='text-lg xs:text-xl font-accent tracking-tight font-medium'>
+                <h2 className='text-lg  font-accent tracking-tight font-medium uppercase'>
                   UX/UI Designer & Developer
                 </h2>
               </div>
@@ -58,19 +58,20 @@ export default function Home() {
             <section className='mt-8 md:w-2/3 md:float-right md:pl-6 lg:float-left lg:pl-0 lg:pr-8 2xl:pr-0 2xl:w-7/12 2xl:mr-20 2xl:max-w-[700px]'>
               <article className='font-base leading-relaxed text-base space-y-4 xs:space-y-6 2xl:space-y-4 max:space-y-6 2xl:max-w-3xl'>
                 <p className=''>
-                  From a young age, I learned people experience the world differently, and that
+                  From a young age, I learned people experience the world differently — and that
                   these experiences shape the way people perceive and interact with the world.
                 </p>
                 <p className=''>
                   Born and raised in San Jose, I come from a refugee family of the Vietnam War.
                   Growing up with a grandmother with dementia and a permanently disabled father, I
-                  spent most of my time as their caregiver. As a result, I learned to be empathetic,
-                  observant, and aware as I tried to understand my environment and the people in it.
+                  spent most of my time as their caregiver. I learned to be empathetic, observant,
+                  and aware as I began to understand my environment and the people I was close to
+                  but hardly knew anything about.
                 </p>
                 <p className=''>
-                  For most of my childhood, my keen sense of awareness highlighted how different I
-                  was from my peers. Not feeling like I belonged, I found an escape and passion in
-                  technology and computers.
+                  During my childhood, my keen sense of awareness made me uncomfortable about how
+                  different I was from my peers. Not feeling like I belonged, I found an escape and
+                  passion in technology and computers.
                 </p>
                 <p className=''>
                   In high school, I spent two years in photography developing an eye for design.
@@ -79,35 +80,34 @@ export default function Home() {
                 </p>
                 <p className=''>
                   In college, I learned to channel my empathy into compassion. This call to service
-                  became especially clear to me when I devoted most of my time trying to make a
-                  change in my fraternity, sacrificing my own academics in the process. In 2018, I
-                  graduated from UC Davis with a B.S degree in Computational Cognitive Science, an
-                  interdisciplinary field that allowed me to study both of my childhood passions:
-                  computer science and psychology.
+                  became especially clear to me when I devoted myself towards making a
+                  change in my fraternity, sacrificing my own academics in the process.
                 </p>
                 <p className=''>
-                  Since then, I&apos;ve been studying, learning, refining my eye for design to
-                  become a skilled UX designer and developer. After a few years of hard work, I
-                  finally feel ready for full time opportunities to begin the next chapter in my
+                  In 2018, I graduated from UC Davis with a B.S degree in Computational Cognitive
+                  Science, an interdisciplinary field that allowed me to study both of my childhood
+                  passions: computer science and psychology.
+                </p>
+                <p className=''>
+                  Since then, I&apos;ve been studying and learning, mostly refining my eye for
+                  design, to become a skilled UX designer and developer. After years of hard work, I
+                  finally feel ready for full-time opportunities to begin the next chapter in my
                   career. As a UX generalist, I&apos;m able to play a flexible support role,
                   adapting to the needs of the team.
                 </p>
                 <p className=''>
-                  I&apos;m a curious person that&apos;s always striving to learn more. I&apos;m a
-                  generalist with a strong desire for mastery and excellence. Outside of work, I
-                  enjoy film and digital photography, pretending I’m a DJ, spending time out in
-                  nature, and immersing myself in different cultures. I&apos;m also an avid Formula
-                  1 fan and PC gamer.
+                  I&apos;m a curious person that&apos;s always striving to learn more. I have a
+                  strong desire for mastery, excellence, and thoroughness. Outside of work, I enjoy
+                  film and digital photography, pretending I’m a DJ, spending time out in nature,
+                  and immersing myself in different cultures. I&apos;m also an avid Formula 1 fan
+                  and PC gamer.
                 </p>
 
                 <figure className='cs-figure mx-auto w-full 2xl:w-3/5 pt-8 max:pt-20'>
-                  <Image
-                    src='/images/about/cs_hexagon.svg'
-                    alt=''
-                    width='513'
-                    height='436'
-                  />
-                  <figcaption className='cs-figure-caption mx-auto'>Cognitive Science Hexagon</figcaption>
+                  <Image src='/images/about/cs_hexagon.svg' alt='' width='513' height='436' />
+                  <figcaption className='cs-figure-caption mx-auto'>
+                    Cognitive Science Hexagon
+                  </figcaption>
                 </figure>
               </article>
             </section>

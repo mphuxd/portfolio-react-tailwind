@@ -1,6 +1,6 @@
 import Head from "next/head";
 import Image from "next/image";
-import { Layout, Slideshow } from "@/components";
+import { Layout, LinkScrollUp } from "@/components";
 
 export default function PsiChiOmega() {
   return (
@@ -1456,7 +1456,7 @@ export default function PsiChiOmega() {
                 changes, the information architecture needs to be modified to reflect this change.
               </p> --> */}
             </div>
-            <span className='cs-article--end-divider' />
+            <LinkScrollUp/>
           </div>
         </article>
       </Layout>

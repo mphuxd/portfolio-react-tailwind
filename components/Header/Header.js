@@ -27,7 +27,7 @@ function Header(props) {
               <li>
                 <a
                   className='header-nav-item'
-                  href='assets/files/resume.pdf'
+                  href='/files/resume.pdf'
                   target='_blank'
                   rel='noreferrer'
                 >

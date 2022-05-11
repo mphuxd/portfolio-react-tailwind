@@ -6,3 +6,4 @@ export * from "./Slideshow";
 export * from "./FeaturedArticle";
 export * from "./Meta";
 export * from "./Geometry";
+export * from "./Link";

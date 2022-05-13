@@ -1,6 +1,7 @@
 import React from "react";
 import PropTypes from "prop-types";
 import Image from "next/image";
+import ExportedImage from "next-image-export-optimizer";
 
 function FooterLight(props) {
   return (
@@ -56,13 +57,13 @@ function FooterLight(props) {
           <div className='footer--socials'>
             <div className='flex flex-row gap-x-3 self-start md:self-end'>
               <a className='w-6 h-6' href=''>
-                <Image className='h-full' src='/icons/fb-og.png' width={128} height={128} alt='' layout="responsive" />
+                <ExportedImage className='h-full' src='/images/icons/fb-og.png' width={128} height={128} alt='' layout="responsive" />
               </a>
               <a className='w-6 h-6'>
-                <Image className='h-full' src='/icons/ig-black.png' width={24} height={24} alt='' />
+                <ExportedImage className='h-full' src='/images/icons/ig-black.png' width={24} height={24} alt='' />
               </a>
               <a className='h-6 w-6'>
-                <Image className='h-full' src='/icons/linkedin-og.png' width={128} height={128} alt='' layout="responsive" />
+                <ExportedImage className='h-full' src='/images/icons/linkedin-og.png' width={128} height={128} alt='' layout="responsive" />
               </a>
             </div>
             <a
@@ -90,7 +91,7 @@ function FooterLight(props) {
         </div>
 
         <div className='footer--logo'>
-          <Image src='/icons/logo-black.png' width={64} height={64} alt='' />
+          <ExportedImage src='/images/icons/logo-black.png' width={64} height={64} alt='' />
         </div>
       </section>
     </footer>

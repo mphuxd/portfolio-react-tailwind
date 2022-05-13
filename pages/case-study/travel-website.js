@@ -1,6 +1,7 @@
 import Head from "next/head";
 import Image from "next/image";
 import Link from "next/link";
+import ExportedImage from "next-image-export-optimizer";
 import { Layout, Slideshow, LinkOut, LinkScrollUp } from "@/components";
 
 export default function TravelWebsiteTest() {
@@ -21,7 +22,7 @@ export default function TravelWebsiteTest() {
               Clear View Escapes Travel Website
             </h2>
             <div className='inline-block mt-3 col-span-full md:col-start-1 lg:col-start-2 max:col-start-4 max:col-span-13 2max:col-start-2 2max:col-span-14 xl:mt-4 md:mt-2 lg:mt-4 2xl:mt-12'>
-              <Image
+              <ExportedImage
                 src='/images/cs-travel-website/mockup_imac_travel-site-bg.png'
                 width={5760}
                 height={3900}
@@ -103,7 +104,7 @@ export default function TravelWebsiteTest() {
               </p>
 
               <figure className='cs-figure inline-block 2xl:mt-40 w-full'>
-                <Image
+                <ExportedImage
                   className=''
                   src='/images/cs-travel-website/travel-website-full.png'
                   alt=''
@@ -228,7 +229,7 @@ export default function TravelWebsiteTest() {
             </section>
             <section className='cs-section-offset-right-region 2xl:col-start-6 2xl:col-span-7 lg:flex-col'>
               <figure className='cs-figure w-full mb-0'>
-                <Image
+                <ExportedImage
                   className=''
                   src='/images/cs-travel-website/up-kate.png'
                   alt='User Persona'
@@ -238,7 +239,7 @@ export default function TravelWebsiteTest() {
                 <figcaption className='cs-figure-caption'></figcaption>
               </figure>
               <figure className='cs-figure w-full mb-0'>
-                <Image
+                <ExportedImage
                   className=''
                   src='/images/cs-travel-website/up-kevin.png'
                   alt='User Persona'
@@ -248,7 +249,7 @@ export default function TravelWebsiteTest() {
                 <figcaption className='cs-figure-caption'></figcaption>
               </figure>
               <figure className='cs-figure w-full mb-0'>
-                <Image
+                <ExportedImage
                   className=''
                   src='/images/cs-travel-website/up-karen.png'
                   alt='User Persona'
@@ -258,7 +259,7 @@ export default function TravelWebsiteTest() {
                 <figcaption className='cs-figure-caption'></figcaption>
               </figure>
               <figure className='cs-figure w-full mb-0'>
-                <Image
+                <ExportedImage
                   className=''
                   src='/images/cs-travel-website/up-ken.png'
                   alt='User Persona'
@@ -273,7 +274,7 @@ export default function TravelWebsiteTest() {
             </section>
             <section className='cs-section-offset-right-region 2xl:col-start-5'>
               <figure className='cs-figure w-full mb-0'>
-                <Image
+                <ExportedImage
                   className=''
                   src='/images/cs-travel-website/uj.png'
                   alt='User Persona'
@@ -426,7 +427,7 @@ export default function TravelWebsiteTest() {
               <section className='col-span-full md:col-start-1 md:col-span-16 lg:col-span-16 lg:col-start-1 xl:col-span-14 xl:col-start-2 2xl:col-span-14 2xl:col-start-2'>
                 <div className='flex flex-row gap-x-4 xl:gap-x-8'>
                   <figure className='cs-figure w-full max:w-1/2 mb-0'>
-                    <Image
+                    <ExportedImage
                       className=''
                       src='/images/cs-travel-website/travel-website-full.png'
                       alt='User Persona'
@@ -436,7 +437,7 @@ export default function TravelWebsiteTest() {
                     <figcaption className='cs-figure-caption'></figcaption>
                   </figure>
                   <figure className='cs-figure w-full max:w-1/2 mb-0'>
-                    <Image
+                    <ExportedImage
                       className=''
                       src='/images/cs-travel-website/travel-wireframe-short.png'
                       alt='User Persona'

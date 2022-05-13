@@ -1,5 +1,6 @@
 import Head from "next/head";
 import Image from "next/image";
+import ExportedImage from "next-image-export-optimizer";
 import { Layout } from "@/components";
 
 export default function Home() {
@@ -23,7 +24,7 @@ export default function Home() {
                 </h2>
               </div>
               <div className='mt-3 md:mt-0 md:w-1/3 2xl:w-1/4'>
-                <Image
+                <ExportedImage
                   src='/images/profile-image.png'
                   alt='Photo of Matthew Pham'
                   height={450}
@@ -104,7 +105,7 @@ export default function Home() {
                 </p>
 
                 <figure className='cs-figure mx-auto w-full 2xl:w-3/5 pt-8 max:pt-20'>
-                  <Image src='/images/about/cs_hexagon.svg' alt='' width='513' height='436' />
+                  <ExportedImage src='/images/about/cs_hexagon.svg' alt='' width='513' height='436' />
                   <figcaption className='cs-figure-caption mx-auto'>
                     Cognitive Science Hexagon
                   </figcaption>

@@ -3,4 +3,13 @@ const nextConfig = {
   reactStrictMode: false,
 };
 
-module.exports = nextConfig;
+module.exports = {
+  images: {
+    loader: "custom",
+    nextImageExportOptimizer: {
+      imageFolderPath: "public/images",
+      exportFolderPath: "out",
+      quality: 100,
+    },
+  },
+};

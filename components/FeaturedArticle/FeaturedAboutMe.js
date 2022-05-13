@@ -1,6 +1,7 @@
 import React from "react";
 import PropTypes from "prop-types";
 import Image from "next/image";
+import ExportedImage from "next-image-export-optimizer";
 import Link from "next/link";
 import { useRouter } from "next/router";
 import { useRef } from "react";
@@ -40,7 +41,7 @@ function FeaturedAboutMe({ title, copy, imageBGColor, linkHref, linkAlt, linkLab
               <span className='article-project-description'>{copy}</span>
               <Link href='/about'>
                 <a ref={mainLink} onClick={handleClick} className='article-link'>
-                  <Image src='/icons/arrow_thin.png' width={20} height={12} alt={linkAlt} />
+                  <ExportedImage src='/images/icons/arrow_thin.png' width={20} height={12} alt={linkAlt} />
                   {linkLabel}
                 </a>
               </Link>

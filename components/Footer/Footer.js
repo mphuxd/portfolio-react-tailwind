@@ -1,6 +1,7 @@
 import React from "react";
 import PropTypes from "prop-types";
 import Image from "next/image";
+import ExportedImage from "next-image-export-optimizer";
 
 function Footer(props) {
   return (
@@ -56,13 +57,13 @@ function Footer(props) {
           <div className='footer--socials'>
             <div className='flex flex-row gap-x-3 self-start md:self-end'>
               <a className='w-6 h-6' href=''>
-                <Image className='h-full' src='/icons/fb.png' width={24} height={24} alt='' />
+                <ExportedImage className='h-full' src='/images/icons/fb.png' width={24} height={24} alt='' />
               </a>
               <a className='w-6 h-6'>
-                <Image className='h-full' src='/icons/ig.png' width={24} height={24} alt='' />
+                <ExportedImage className='h-full' src='/images/icons/ig.png' width={24} height={24} alt='' />
               </a>
               <a className='h-6'>
-                <Image className='h-full' src='/icons/linkedin.png' width={29} height={24} alt='' />
+                <ExportedImage className='h-full' src='/images/icons/linkedin.png' width={29} height={24} alt='' />
               </a>
             </div>
             <a
@@ -90,7 +91,7 @@ function Footer(props) {
         </div>
 
         <div className='footer--logo'>
-          <Image src='/icons/logo.png' width={64} height={64} alt='' />
+          <ExportedImage src='/images/icons/logo.png' width={64} height={64} alt='' />
         </div>
       </section>
     </footer>

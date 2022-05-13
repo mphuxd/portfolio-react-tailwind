@@ -4,9 +4,11 @@
   "private": true,
   "scripts": {
     "dev": "next dev",
+    "export": "next export",
     "build": "next build",
     "start": "next start",
     "lint": "next lint"
+
   },
   "dependencies": {
     "@react-three/fiber": "^8.0.12",

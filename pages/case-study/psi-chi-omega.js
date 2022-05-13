@@ -1,6 +1,5 @@
 import Head from "next/head";
 import Image from "next/image";
-import ExportedImage from "next-image-export-optimizer";
 import { Layout, LinkScrollUp, LinkOut } from "@/components";
 
 export default function PsiChiOmega() {
@@ -24,7 +23,7 @@ export default function PsiChiOmega() {
                 <div className='inline-block relative w-full mt-3 md:mt-2 lg:mt-4 2xl:mt-12'>
                   <h5 className='cs-hero--center-category_desktop'>Case Study</h5>
                   <div className='cs-hero-image min-w-full'>
-                    <ExportedImage
+                    <Image
                       src='/images/cs-pxo/hero_mockup_black.png'
                       alt='Image of Poseidon statue in Berlin. Psi Chi Omega Mascot.'
                       width={2881}
@@ -132,7 +131,7 @@ export default function PsiChiOmega() {
                 </ol>
 
                 <figure className='cs-figure inline-block 2xl:mt-40 w-full'>
-                  <ExportedImage src='/images/cs-pxo/mockup_mb.png' alt='test' width={1413} height={816} />
+                  <Image src='/images/cs-pxo/mockup_mb.png' alt='test' width={1413} height={816} />
                 </figure>
               </div>
             </section>
@@ -172,7 +171,7 @@ export default function PsiChiOmega() {
                 findings from peer-reviewed research articles.
               </p>
               <figure className='cs-figure w-3/4 mb-0'>
-                <ExportedImage
+                <Image
                   className=''
                   src='/images/cs-pxo/up.png'
                   alt='User Persona'
@@ -309,7 +308,7 @@ export default function PsiChiOmega() {
               </p>
               <div className='flex flex-row content-start'>
                 <figure className='cs-figure'>
-                  <ExportedImage
+                  <Image
                     className=''
                     src='/images/cs-pxo/uj1.png'
                     alt='Current User Journey'
@@ -319,7 +318,7 @@ export default function PsiChiOmega() {
                   <figcaption className='cs-figure-caption'></figcaption>
                 </figure>
                 <figure className='cs-figure'>
-                  <ExportedImage
+                  <Image
                     className=''
                     src='/images/cs-pxo/uj2.png'
                     alt='Future User Journey'
@@ -330,7 +329,7 @@ export default function PsiChiOmega() {
                 </figure>
               </div>
               <figure className='cs-figure'>
-                <ExportedImage
+                <Image
                   className=''
                   src='/images/cs-pxo/empathymap2.png'
                   alt=''
@@ -343,7 +342,7 @@ export default function PsiChiOmega() {
 
             <aside className='cs-section-offset-right-region'>
               <figure className='cs-figure'>
-                <ExportedImage
+                <Image
                   className=''
                   src='/images/cs-pxo/userjourneydiagram.png'
                   alt=''
@@ -363,7 +362,7 @@ export default function PsiChiOmega() {
                 compiled my findings in a spreadsheet.
               </p>
               <figure className='cs-figure'>
-                <ExportedImage
+                <Image
                   className=''
                   src='/images/cs-pxo/companalysis.png'
                   alt=''
@@ -602,7 +601,7 @@ export default function PsiChiOmega() {
               </ul>
 
               <figure className='cs-figure inline-block w-full mb-0'>
-                <ExportedImage src='/images/cs-pxo/designprinciples.svg' alt='' width={1373} height={901} />
+                <Image src='/images/cs-pxo/designprinciples.svg' alt='' width={1373} height={901} />
               </figure>
             </section>
 
@@ -637,10 +636,10 @@ export default function PsiChiOmega() {
 
             <aside className='cs-section-offset-right-region'>
               <figure className='cs-figure inline-block w-full lg:w-1/2'>
-                <ExportedImage src='/images/cs-pxo/cardsorted2.png' alt='' width={2664} height={1638} />
+                <Image src='/images/cs-pxo/cardsorted2.png' alt='' width={2664} height={1638} />
               </figure>
               <figure className='cs-figure inline-block w-full lg:w-1/2'>
-                <ExportedImage
+                <Image
                   src='/images/cs-pxo/site-map-nolines.jpg'
                   alt=''
                   width={2194}
@@ -655,7 +654,7 @@ export default function PsiChiOmega() {
                 for the “Who We Are” navigation group.
               </p>
               <figure className='cs-figure inline-block w-full'>
-                <ExportedImage src='/images/cs-pxo/contentstrategy.png' alt='' width={2706} height={1362} />
+                <Image src='/images/cs-pxo/contentstrategy.png' alt='' width={2706} height={1362} />
               </figure>
               <p className='cs-paragraph--sans'>
                 These living documents represent the webpage content, structure, and hierarchy to
@@ -906,7 +905,7 @@ export default function PsiChiOmega() {
               </p>
 
               <figure className='cs-figure inline-block w-2/3'>
-                <ExportedImage
+                <Image
                   src='/images/cs-pxo/designprinciples_cropped_bw_mobile_2x.png'
                   alt=''
                   width={2212}
@@ -941,22 +940,22 @@ export default function PsiChiOmega() {
             <div className='cs-grid'>
               <div className='cs-section-default-content-block col-span-full md:col-start-6 md:col-span-11 lg:col-span-9 lg:col-start-3 xl:col-span-8 xl:col-start-5 2xl:col-span-6 2xl:col-start-6 grid grid-cols-12 gap-x-4 gap-y-4 bg-[#E5E5E5] p-4 2xl:p-8'>
                 <figure className='cs-figure inline-block m-0 col-span-4'>
-                  <ExportedImage src='/images/cs-pxo/blackgreenlogo.png' alt='' width={1284} height={945} />
+                  <Image src='/images/cs-pxo/blackgreenlogo.png' alt='' width={1284} height={945} />
                 </figure>
                 <figure className='cs-figure inline-block m-0 col-span-4'>
-                  <ExportedImage src='/images/cs-pxo/greenwhitelogo.png' alt='' width={1284} height={945} />
+                  <Image src='/images/cs-pxo/greenwhitelogo.png' alt='' width={1284} height={945} />
                 </figure>
                 <figure className='cs-figure inline-block m-0 col-span-4'>
-                  <ExportedImage src='/images/cs-pxo/greenblacklogo.png' alt='' width={1284} height={945} />
+                  <Image src='/images/cs-pxo/greenblacklogo.png' alt='' width={1284} height={945} />
                 </figure>
                 <figure className='cs-figure inline-block m-0 col-span-4'>
-                  <ExportedImage src='/images/cs-pxo/whitegreenlogo.png' alt='' width={1284} height={945} />
+                  <Image src='/images/cs-pxo/whitegreenlogo.png' alt='' width={1284} height={945} />
                 </figure>
                 <figure className='cs-figure inline-block m-0 col-span-4'>
-                  <ExportedImage src='/images/cs-pxo/blackwhitelogo.png' alt='' width={1284} height={945} />
+                  <Image src='/images/cs-pxo/blackwhitelogo.png' alt='' width={1284} height={945} />
                 </figure>
                 <figure className='cs-figure inline-block m-0 col-span-4'>
-                  <ExportedImage src='/images/cs-pxo/whiteblacklogo.png' alt='' width={1284} height={945} />
+                  <Image src='/images/cs-pxo/whiteblacklogo.png' alt='' width={1284} height={945} />
                 </figure>
               </div>
             </div>
@@ -977,7 +976,7 @@ export default function PsiChiOmega() {
                 Chi Omega.
               </p>
               <figure className='cs-figure inline-block w-full'>
-                <ExportedImage src='/images/cs-pxo/moodboard2.png' alt='' width={4743} height={2925} />
+                <Image src='/images/cs-pxo/moodboard2.png' alt='' width={4743} height={2925} />
               </figure>
             </div>
           </section>
@@ -985,7 +984,7 @@ export default function PsiChiOmega() {
             <div className='cs-grid'>
               <div className='cs-section-default-content-block col-span-full md:col-start-6 md:col-span-11 lg:col-span-9 lg:col-start-3 xl:col-span-8 xl:col-start-5 2xl:col-span-10 2xl:col-start-4 grid grid-cols-12 gap-x-4 gap-y-4'>
                 <figure className='cs-figure inline-block m-0 col-span-4'>
-                  <ExportedImage
+                  <Image
                     src='/images/cs-pxo/brand-guidelines/bi2.png'
                     alt=''
                     width={1440}
@@ -993,7 +992,7 @@ export default function PsiChiOmega() {
                   />
                 </figure>
                 <figure className='cs-figure inline-block m-0 col-span-4'>
-                  <ExportedImage
+                  <Image
                     src='/images/cs-pxo/brand-guidelines/bi3.png'
                     alt=''
                     width={1440}
@@ -1001,7 +1000,7 @@ export default function PsiChiOmega() {
                   />
                 </figure>
                 <figure className='cs-figure inline-block m-0 col-span-4'>
-                  <ExportedImage
+                  <Image
                     src='/images/cs-pxo/brand-guidelines/color2.png'
                     alt=''
                     width={1440}
@@ -1009,7 +1008,7 @@ export default function PsiChiOmega() {
                   />
                 </figure>
                 <figure className='cs-figure inline-block m-0 col-span-4'>
-                  <ExportedImage
+                  <Image
                     src='/images/cs-pxo/brand-guidelines/color3.png'
                     alt=''
                     width={1440}
@@ -1017,7 +1016,7 @@ export default function PsiChiOmega() {
                   />
                 </figure>
                 <figure className='cs-figure inline-block m-0 col-span-4'>
-                  <ExportedImage
+                  <Image
                     src='/images/cs-pxo/brand-guidelines/type2.png'
                     alt=''
                     width={1440}
@@ -1025,7 +1024,7 @@ export default function PsiChiOmega() {
                   />
                 </figure>
                 <figure className='cs-figure inline-block m-0 col-span-4'>
-                  <ExportedImage
+                  <Image
                     src='/images/cs-pxo/brand-guidelines/type3.png'
                     alt=''
                     width={1440}
@@ -1033,7 +1032,7 @@ export default function PsiChiOmega() {
                   />
                 </figure>
                 <figure className='cs-figure inline-block m-0 col-span-4'>
-                  <ExportedImage
+                  <Image
                     src='/images/cs-pxo/brand-guidelines/type4.png'
                     alt=''
                     width={1440}
@@ -1041,7 +1040,7 @@ export default function PsiChiOmega() {
                   />
                 </figure>
                 <figure className='cs-figure inline-block m-0 col-span-4'>
-                  <ExportedImage
+                  <Image
                     src='/images/cs-pxo/brand-guidelines/type5.png'
                     alt=''
                     width={1440}
@@ -1049,7 +1048,7 @@ export default function PsiChiOmega() {
                   />
                 </figure>
                 <figure className='cs-figure inline-block m-0 col-span-4'>
-                  <ExportedImage
+                  <Image
                     src='/images/cs-pxo/brand-guidelines/type6.png'
                     alt=''
                     width={1440}
@@ -1089,7 +1088,7 @@ export default function PsiChiOmega() {
           <div className='w-full bg-[#e5e5e5] mt-8 mb-6 xs:mb-3 lg:mt-10 lg:mb-6 2xl:mt-16 2xl:mb-16'>
             <div className='cs-grid'>
               <figure className='cs-figure col-span-full m-0'>
-                <ExportedImage
+                <Image
                   className=''
                   src='/images/cs-pxo/allwireframes2.png'
                   alt=''
@@ -1167,7 +1166,7 @@ export default function PsiChiOmega() {
                 resolutions (1920pt+).
               </p>
               <figure className='cs-figure'>
-                <ExportedImage
+                <Image
                   className=''
                   src='/images/cs-pxo/ds-grid.png'
                   alt=''
@@ -1182,7 +1181,7 @@ export default function PsiChiOmega() {
                 total height snaps to the 8pt grid.
               </p>
               <figure className='cs-figure'>
-                <ExportedImage
+                <Image
                   className=''
                   src='/images/cs-pxo/ds-type.png'
                   alt=''
@@ -1207,7 +1206,7 @@ export default function PsiChiOmega() {
 
             <aside className='cs-section-offset-right-region'>
               <figure className='cs-figure inline-block w-full lg:w-1/2'>
-                <ExportedImage
+                <Image
                   className=''
                   src='/images/cs-pxo/bh1.png'
                   alt=''
@@ -1217,7 +1216,7 @@ export default function PsiChiOmega() {
                 />
               </figure>
               <figure className='cs-figure inline-block w-full lg:w-1/2'>
-                <ExportedImage
+                <Image
                   className=''
                   src='/images/cs-pxo/bh2.png'
                   alt=''
@@ -1230,7 +1229,7 @@ export default function PsiChiOmega() {
 
             <aside className='cs-section-offset-right-region'>
               <figure className='cs-figure inline-block w-full lg:w-1/2'>
-                <ExportedImage
+                <Image
                   className=''
                   src='/images/cs-pxo/bh3.png'
                   alt=''
@@ -1240,7 +1239,7 @@ export default function PsiChiOmega() {
                 />
               </figure>
               <figure className='cs-figure inline-block w-full lg:w-1/2'>
-                <ExportedImage
+                <Image
                   className=''
                   src='/images/cs-pxo/bh4.png'
                   alt=''
@@ -1253,7 +1252,7 @@ export default function PsiChiOmega() {
 
             <aside className='cs-section-offset-right-region'>
               <figure className='cs-figure inline-block w-full lg:w-1/2'>
-                <ExportedImage
+                <Image
                   className=''
                   src='/images/cs-pxo/usabilityguidelines1.png'
                   alt=''
@@ -1264,7 +1263,7 @@ export default function PsiChiOmega() {
               </figure>
 
               <figure className='cs-figure inline-block w-full lg:w-1/2'>
-                <ExportedImage
+                <Image
                   className=''
                   src='/images/cs-pxo/usabilityguidelines2.png'
                   alt=''
@@ -1295,7 +1294,7 @@ export default function PsiChiOmega() {
           <div className='w-full bg-[#e5e5e5] mt-8 mb-6 xs:mb-3 lg:mt-10 lg:mb-6 2xl:mt-16 2xl:mb-16'>
             <div className='cs-grid'>
               <figure className='cs-figure col-span-full m-0'>
-                <ExportedImage
+                <Image
                   className=''
                   src='/images/cs-pxo/allprototypeswithinteractions.png'
                   alt=''
@@ -1305,7 +1304,7 @@ export default function PsiChiOmega() {
                 />
               </figure>
               <figure className='cs-figure col-span-full m-0'>
-                <ExportedImage
+                <Image
                   className=''
                   src='/images/cs-pxo/prototype_mobile_plain.png'
                   alt=''
@@ -1315,7 +1314,7 @@ export default function PsiChiOmega() {
                 />
               </figure>
               <figure className='cs-figure col-span-full m-0'>
-                <ExportedImage
+                <Image
                   className=''
                   src='/images/cs-pxo/prototype_tablet_plain.png'
                   alt=''
@@ -1325,7 +1324,7 @@ export default function PsiChiOmega() {
                 />
               </figure>
               <figure className='cs-figure col-span-full m-0'>
-                <ExportedImage
+                <Image
                   className=''
                   src='/images/cs-pxo/prototype_desktop_plain.png'
                   alt=''

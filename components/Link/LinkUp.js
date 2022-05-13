@@ -1,11 +1,10 @@
 import PropTypes from "prop-types";
 import { useState } from "react";
 import Image from "next/image";
-import ExportedImage from "next-image-export-optimizer";
 
 function LinkUp(props) {
   let [isActive, setActive] = useState(false);
-  let src = isActive ? "/images/icons/arrow--up.png" : "/images/icons/circle.png";
+  let src = isActive ? "/icons/arrow--up.png" : "/icons/circle.png";
 
   function handleHover() {
     setActive(!isActive);
@@ -26,7 +25,7 @@ function LinkUp(props) {
       className='block text-center mx-auto mt-40 mb-20 col-span-full scroll-smooth'
     >
       <button>
-        <ExportedImage src={src} width={96} height={96} alt='' />
+        <Image src={src} width={96} height={96} alt='' />
       </button>
     </a>
   );

@@ -2,7 +2,6 @@ import React from "react";
 import PropTypes from "prop-types";
 import cx from "classnames";
 import Image from "next/image";
-import ExportedImage from "next-image-export-optimizer";
 import Link from "next/link";
 import { useRouter } from "next/router";
 import { useRef } from "react";
@@ -48,7 +47,7 @@ function FeaturedArticle({
           onClick={redirectClick}
         >
           <div id='featured-image' className={imageClassNames}>
-            <ExportedImage src={imageSrc} alt={imageAlt} width={imageWidth} height={imageHeight} />
+            <Image src={imageSrc} alt={imageAlt} width={imageWidth} height={imageHeight} />
           </div>
           <div className='article-project-right'>
             <div className='article-project-right--inner'>
@@ -60,8 +59,8 @@ function FeaturedArticle({
               <p className='article-project-description'>{copy}</p>
               <Link href={linkHref}>
                 <a ref={mainLink} onClick={handleClick} className='article-link'>
-                  <ExportedImage
-                    src='/images/icons/arrow_thin.png'
+                  <Image
+                    src='/icons/arrow_thin.png'
                     width={20}
                     height={12}
                     alt={linkAlt}

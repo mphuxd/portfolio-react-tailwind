@@ -4,7 +4,6 @@ import cx from "classnames";
 import Image from "next/image";
 import Link from "next/link";
 import { useRouter } from "next/router";
-import ExportedImage from "next-image-export-optimizer";
 import { useRef } from "react";
 function FeaturedArticleReverse({
   title,
@@ -57,14 +56,14 @@ function FeaturedArticleReverse({
               <span className='article-project-description'>{copy}</span>
               <Link href={linkHref}>
                 <a ref={mainLink} onClick={handleClick} className='article-link'>
-                  <ExportedImage src='/images/icons/arrow_thin.png' width={20} height={12} alt={linkAlt} />
+                  <Image src='/icons/arrow_thin.png' width={20} height={12} alt={linkAlt} />
                   {linkLabel}
                 </a>
               </Link>
             </div>
           </div>
           <div id={imageTagID} className={imageClassNames}>
-            <ExportedImage src={imageSrc} alt={imageAlt} width={imageWidth} height={imageHeight} />
+            <Image src={imageSrc} alt={imageAlt} width={imageWidth} height={imageHeight} />
           </div>
         </div>
       </div>

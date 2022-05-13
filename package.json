@@ -4,17 +4,17 @@
   "private": true,
   "scripts": {
     "dev": "next dev",
+    "export": "next export",
     "build": "next build",
     "start": "next start",
-    "lint": "next lint",
-    "export": "next build && next export && next-image-export-optimizer"
+    "lint": "next lint"
+
   },
   "dependencies": {
     "@react-three/fiber": "^8.0.12",
     "classnames": "^2.3.1",
     "framer-motion": "^6.2.9",
     "next": "12.1.4",
-    "next-image-export-optimizer": "^0.9.6",
     "nextjs-progressbar": "^0.0.14",
     "postcss-import": "^14.1.0",
     "prop-types": "^15.8.1",

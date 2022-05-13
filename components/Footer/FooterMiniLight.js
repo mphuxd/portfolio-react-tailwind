@@ -1,7 +1,6 @@
 import React from "react";
 import PropTypes from "prop-types";
 import Image from "next/image";
-import ExportedImage from "next-image-export-optimizer";
 
 function FooterMiniLight(props) {
   return (
@@ -9,7 +8,7 @@ function FooterMiniLight(props) {
       <span className='footer--divider-horizontal-light'></span>
       <section className='cs-grid'>
         <div className='col-start-13 col-span-4 justify-self-end max:justify-self-end max:mt-6 2xl:col-start-15 2xl:col-span-1'>
-          <ExportedImage src='/images/icons/logo-black.png' width={64} height={64} alt='' />
+          <Image src='/icons/logo-black.png' width={64} height={64} alt='' />
         </div>
         <div className='footer--legal'>
           <p className='font-accent text-xs text-grey 2xl:text-sm'>©MPH 05.12.2022 V3.00</p>

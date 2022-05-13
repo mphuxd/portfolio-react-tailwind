@@ -24,7 +24,7 @@ export default function Home() {
         <HeroWithVideo
           name='Matthew Pham'
           title='UX/UI Designer & Developer'
-          src='/videos/fluid_latest.mp4'
+          src='/videos/fluid_optimized.mp4'
         />
 
         <article id='work' className='article-section'>

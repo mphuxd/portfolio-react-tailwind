@@ -1,5 +1,6 @@
 import Head from "next/head";
 import Image from "next/image";
+import Link from "next/link";
 import { Layout, Slideshow, LinkOut, LinkScrollUp } from "@/components";
 
 export default function TravelWebsiteTest() {
@@ -38,14 +39,13 @@ export default function TravelWebsiteTest() {
           <section id='cs-aside' className='cs-aside--grid'>
             <div id='timeline' className='flex justify-between overflow-x-hidden'>
               <div className='font-accent article-date-accent-line relative inline-block pr-2'>
-                Start 06/2019
+                Start 02/2019
               </div>
-              <div className='font-accent inline-block pl-2 bg-white z-10'>End 02/2022</div>
+              <div className='font-accent inline-block pl-2 bg-white z-10'>End 05/2019</div>
             </div>
             <div className='cs-sidebar-first'>
               <h5 className='text-sm font-bold'>Role</h5>
               <p className='mt-2'>Research</p>
-              <p>Strategy</p>
               <p>Design</p>
               <p>Development</p>
             </div>
@@ -54,6 +54,14 @@ export default function TravelWebsiteTest() {
               <p className='mt-2'>Figma</p>
               <p>HTML, CSS, JS</p>
               <p>jQuery</p>
+            </div>
+            <div className='cs-sidebar-next'>
+              <h5 className='text-sm font-bold'>Links</h5>
+              <LinkOut text='Travel Website' href='https://mphuxd.github.io/travel-site/' />
+              <LinkOut
+                text='Redesign Wireframe'
+                href='https://www.figma.com/proto/bGcxhWxKVQgUoJZyC3lxHA/Clear-View-Escapes-Prototype?page-id=498%3A1078&node-id=560%3A1401&viewport=274%2C458%2C0.11&scaling=min-zoom'
+              />
             </div>
           </section>
           <section className='order-2 col-span-full mt-8 mb-24 md:col-span-11 lg:order-1 lg:col-span-9 lg:col-start-2 xl:col-span-8 xl:col-start-5 2xl:col-span-6 2xl:col-start-6 2xl:mt-20 max:mt-0 '>
@@ -297,8 +305,7 @@ export default function TravelWebsiteTest() {
               </p>
               <p className='cs-paragraph--sans'>
                 Design and brand for younger generations while keeping in touch with the older
-                demographics. Use curves to soothe the user and mimic the relaxation you get from
-                travel. Suits the travel aesthetic.
+                demographics.
               </p>
               <p className='cs-paragraph--sans'>
                 Target users through inspirational messaging such as personal fulfillment,
@@ -321,7 +328,6 @@ export default function TravelWebsiteTest() {
           <div className='cs-grid'>
             <div className='cs-article-header'>
               <h2 className='cs-h2'>UX Design</h2>
-              <p className='mt-4 cs-paragraph--sans cs-paragraph-first'></p>
             </div>
 
             <section className='cs-section--default-region'>
@@ -417,19 +423,29 @@ export default function TravelWebsiteTest() {
 
           <section className='w-full 2xl:py-32 bg-[#E5E5E5] mt-8 mb-6 xs:mb-3 lg:mt-10 lg:mb-6 2xl:mt-16 2xl:mb-16'>
             <div className='cs-grid'>
-              <section className='cs-section--default-region'>
-                <h3 className='cs-h3'></h3>
-                <p className='cs-paragraph--sans cs-paragraph-first'></p>
-                <figure className='cs-figure w-full mb-0'>
-                  <Image
-                    className=''
-                    src='/images/cs-travel-website/travel-wireframe-short.png'
-                    alt='User Persona'
-                    width={3840}
-                    height={11400}
-                  />
-                  <figcaption className='cs-figure-caption'></figcaption>
-                </figure>
+              <section className='col-span-full md:col-start-1 md:col-span-16 lg:col-span-16 lg:col-start-1 xl:col-span-14 xl:col-start-2 2xl:col-span-14 2xl:col-start-2'>
+                <div className='flex flex-row gap-x-4 xl:gap-x-8'>
+                  <figure className='cs-figure w-full max:w-1/2 mb-0'>
+                    <Image
+                      className=''
+                      src='/images/cs-travel-website/travel-website-full.png'
+                      alt='User Persona'
+                      width={1903}
+                      height={3824}
+                    />
+                    <figcaption className='cs-figure-caption'></figcaption>
+                  </figure>
+                  <figure className='cs-figure w-full max:w-1/2 mb-0'>
+                    <Image
+                      className=''
+                      src='/images/cs-travel-website/travel-wireframe-short.png'
+                      alt='User Persona'
+                      width={3840}
+                      height={11400}
+                    />
+                    <figcaption className='cs-figure-caption'></figcaption>
+                  </figure>
+                </div>
               </section>
             </div>
           </section>
@@ -443,22 +459,33 @@ export default function TravelWebsiteTest() {
             <div className='cs-article-header'>
               <h2 className='cs-h2'>Takeaway</h2>
               <p className='mt-4 cs-paragraph--sans cs-paragraph-first'>
-                I developed valuable skills and insights that helped me understand the web
-                development process better. In particular, I became familiarized with Gulp and its
-                plugins to create tasks and build scripts to automate and streamline development. I
-                learned semantic HTML, the CSS Box model, BEM, various CSS tricks, and Javascript. I
-                also learned the ideas behind mobile first development, responsive design, CSS
-                flexbox and grid, and methods to optimize website performance.
+                This course introduced me to the fundamentals of web development. I learned semantic
+                HTML, the CSS Box model, BEM, various CSS tricks, and Javascript. I also learned
+                mobile first development, responsive design, CSS flexbox and grid, and methods to
+                optimize website performance. Additionally, I became familiar with Gulp and its
+                plugins to create tasks and build scripts to automate and streamline development.
+              </p>
+              <p className='cs-paragraph--sans'>
+                From the redesign, I learned the UX process is never the same and changes for
+                different projects and use cases. Some methods can be more important in one project
+                than another. For this project, user flows were really important because unlike
+                corporate websites, there was a clear goal to funnel our users towards. Introducing
+                online commerce for this website was an opportunity to create an optimal flow for
+                the website right from the start. These user flows dictated the information
+                architecture and navigational patterns.{" "}
+              </p>
+              <p className='cs-paragraph--sans'>
+                Lastly, while redesigning the homepage may seem like a simple task, it can be
+                non-trivial especially if the information architecture needs to be changed too. Then
+                it’s not only a matter of redesigning the homepage but also envisioning the entire
+                design of the website as a whole. In real projects, suggesting what seems like a
+                simple change then realizing its complexity can be a real problem and easily lose
+                you credibility. So, as obvious as it sounds, it&apos;s important to be aware of the
+                implications of any redesigns and changes, and remember to make slow, thoughtful
+                changes.
               </p>
             </div>
 
-            <section className='cs-section--default-region'>
-              <h3 className='cs-h3'></h3>
-              <p className='cs-paragraph--sans cs-paragraph-first'></p>
-              <figure className='cs-figure w-3/4 mb-0'>
-                <figcaption className='cs-figure-caption'></figcaption>
-              </figure>
-            </section>
             <LinkScrollUp />
           </div>
         </article>

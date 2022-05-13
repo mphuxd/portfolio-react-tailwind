@@ -3,7 +3,7 @@ import PropTypes from "prop-types";
 
 function LinkOut({ text, href }) {
   return (
-    <a className='underline text-blue visited:text-ruby' href={href}>
+    <a className='block underline text-blue visited:text-ruby' href={href}>
       {text}
     </a>
   );

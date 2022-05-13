@@ -1,6 +1,6 @@
 import Head from "next/head";
 import Image from "next/image";
-import { Layout, LinkScrollUp } from "@/components";
+import { Layout, LinkScrollUp, LinkOut } from "@/components";
 
 export default function PsiChiOmega() {
   return (
@@ -46,7 +46,7 @@ export default function PsiChiOmega() {
                 <div className='font-accent article-date-accent-line relative inline-block pr-2'>
                   Start 06/2019
                 </div>
-                <div className='font-accent inline-block pl-2 bg-white z-10'>End 02/2022</div>
+                <div className='font-accent inline-block pl-2 bg-white z-10'>End 04/2022</div>
               </div>
               <div className='cs-sidebar-first'>
                 <h5 className='text-sm font-bold'>Role</h5>
@@ -61,7 +61,16 @@ export default function PsiChiOmega() {
                 <p>HTML, CSS, JS</p>
                 <p>Next.js, React</p>
                 <p>TailwindCSS</p>
-                <p>Strapi</p>
+                <p>Strapi CMS</p>
+              </div>
+              <div className='cs-sidebar-next'>
+                <h5 className='text-sm font-bold mb-2'>Links</h5>
+                <LinkOut text='Demo Website' href='https://mphuxd.github.io/travel-site/' />
+                <LinkOut text='Github Repo' href='https://github.com/mphuxd/psi-chi-omega-react' />
+                <LinkOut
+                  text='Figma Prototype'
+                  href='https://www.figma.com/proto/psn3sijN7IPiiFg9dSEcNZ/Psi-Chi-Omega-Website?page-id=4191%3A31847&node-id=4191%3A46499&viewport=276%2C48%2C0.04&scaling=min-zoom&starting-point-node-id=4191%3A46499&show-proto-sidebar=1'
+                />
               </div>
             </section>
             <section
@@ -116,8 +125,8 @@ export default function PsiChiOmega() {
                     our fraternity.
                   </li>
                   <li className='ml-2 mt-2'>
-                    Represent and shape the UC Davis fraternity chapter and its&apos; brand identity,
-                    image, and culture.
+                    Represent and shape the UC Davis fraternity chapter and its&apos; brand
+                    identity, image, and culture.
                   </li>
                 </ol>
 
@@ -423,8 +432,6 @@ export default function PsiChiOmega() {
                   </ul>
                 </div>
 
-
-
                 <div className='mt-16'>
                   <p className='cs-paragraph--sans'>
                     Additional considerations and barriers to entry are: reputation &
@@ -461,7 +468,6 @@ export default function PsiChiOmega() {
                   </li>
                 </ul>
               </div>
-
 
               <div className='mt-16'>
                 <p className='cs-topic mt-8 font-bold'>Competitive Analysis</p>
@@ -1456,7 +1462,7 @@ export default function PsiChiOmega() {
                 changes, the information architecture needs to be modified to reflect this change.
               </p> --> */}
             </div>
-            <LinkScrollUp/>
+            <LinkScrollUp />
           </div>
         </article>
       </Layout>

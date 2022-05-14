@@ -47,7 +47,7 @@ function FeaturedArticle({
           onClick={redirectClick}
         >
           <div id='featured-image' className={imageClassNames}>
-            <Image layout="responsive" src={imageSrc} alt={imageAlt} width={imageWidth} height={imageHeight} />
+            <Image layout="responsive" src={imageSrc} alt={imageAlt} width={imageWidth} height={imageHeight} priority/>
           </div>
           <div className='article-project-right'>
             <div className='article-project-right--inner'>
@@ -64,6 +64,7 @@ function FeaturedArticle({
                     width={20}
                     height={12}
                     alt={linkAlt}
+                   
                   />
                   View Case Study
                 </a>

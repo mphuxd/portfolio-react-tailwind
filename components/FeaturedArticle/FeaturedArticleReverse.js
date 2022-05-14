@@ -63,7 +63,7 @@ function FeaturedArticleReverse({
             </div>
           </div>
           <div id={imageTagID} className={imageClassNames}>
-            <Image src={imageSrc} alt={imageAlt} width={imageWidth} height={imageHeight} />
+            <Image src={imageSrc} alt={imageAlt} width={imageWidth} height={imageHeight} priority />
           </div>
         </div>
       </div>

@@ -26,6 +26,8 @@ export default function TravelWebsiteTest() {
                 width={5760}
                 height={3900}
                 alt=''
+                layout='responsive'
+                priority
               />
             </div>
 
@@ -109,6 +111,7 @@ export default function TravelWebsiteTest() {
                   alt=''
                   width={1903}
                   height={3824}
+                  layout='responsive'
                 />
               </figure>
             </div>
@@ -234,6 +237,7 @@ export default function TravelWebsiteTest() {
                   alt='User Persona'
                   width={2528}
                   height={680}
+                  layout='responsive'
                 />
                 <figcaption className='cs-figure-caption'></figcaption>
               </figure>
@@ -244,6 +248,7 @@ export default function TravelWebsiteTest() {
                   alt='User Persona'
                   width={2528}
                   height={600}
+                  layout='responsive'
                 />
                 <figcaption className='cs-figure-caption'></figcaption>
               </figure>
@@ -254,6 +259,7 @@ export default function TravelWebsiteTest() {
                   alt='User Persona'
                   width={2528}
                   height={640}
+                  layout='responsive'
                 />
                 <figcaption className='cs-figure-caption'></figcaption>
               </figure>
@@ -264,6 +270,7 @@ export default function TravelWebsiteTest() {
                   alt='User Persona'
                   width={2528}
                   height={680}
+                  layout='responsive'
                 />
                 <figcaption className='cs-figure-caption'></figcaption>
               </figure>
@@ -279,6 +286,7 @@ export default function TravelWebsiteTest() {
                   alt='User Persona'
                   width={3038}
                   height={3132}
+                  layout='responsive'
                 />
                 <figcaption className='cs-figure-caption'></figcaption>
               </figure>
@@ -432,6 +440,7 @@ export default function TravelWebsiteTest() {
                       alt='User Persona'
                       width={1903}
                       height={3824}
+                      layout='responsive'
                     />
                     <figcaption className='cs-figure-caption'></figcaption>
                   </figure>
@@ -442,6 +451,7 @@ export default function TravelWebsiteTest() {
                       alt='User Persona'
                       width={3840}
                       height={11400}
+                      layout='responsive'
                     />
                     <figcaption className='cs-figure-caption'></figcaption>
                   </figure>

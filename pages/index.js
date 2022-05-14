@@ -24,7 +24,7 @@ export default function Home() {
         <HeroWithVideo
           name='Matthew Pham'
           title='UX/UI Designer & Developer'
-          src='/videos/fluid_latest.mp4'
+          src='https://res.cloudinary.com/dozdscl51/video/upload/v1652486077/fluid_optimized_aaaz0y.mp4'
         />
 
         <article id='work' className='article-section'>

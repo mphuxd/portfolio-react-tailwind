@@ -19,7 +19,7 @@ function FeaturedArticle({
   hoverImageBGColor,
 }) {
   let classNames = cx([]);
-  let imageClassNames = cx("article-project-left bg-grey2" )
+  let imageClassNames = cx("article-project-left bg-grey2 h-full block" )
   let router = useRouter();
   const mainLink = useRef(null);
 
@@ -40,14 +40,14 @@ function FeaturedArticle({
 
   return (
     <section className='article-project-container mt-8 md:mt-16 lg:mt-20 2xl:mt-40 max:mt-42'>
-      <div className='mx-auto cs-grid p-0 lg:p-8 2xl:p-0'>
+      <div className='mx-auto cs-grid p-0 lg:p-8 2xl:p-0 w-full'>
         <div
           className='col-start-1 col-span-16 xl:col-start-2 xl:col-span-14 2xl:max:col-start-2 max:col-span-14 article-project hover:custom-shadow-tablet hover:cursor-pointer max:max-w-screen-max '
           href={linkHref}
           onClick={redirectClick}
         >
           <div id='featured-image' className={imageClassNames}>
-            <Image src={imageSrc} alt={imageAlt} width={imageWidth} height={imageHeight} />
+            <Image layout="responsive" src={imageSrc} alt={imageAlt} width={imageWidth} height={imageHeight} />
           </div>
           <div className='article-project-right'>
             <div className='article-project-right--inner'>

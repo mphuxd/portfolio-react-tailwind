@@ -46,7 +46,7 @@ function FeaturedAboutMe({ title, copy, imageBGColor, linkHref, linkAlt, linkLab
               <span className='article-project-description'>{copy}</span>
               <Link href='/about'>
                 <a ref={mainLink} onClick={handleClick} className='article-link'>
-                  <Image src='/icons/arrow_thin.png' width={20} height={12} alt={linkAlt} />
+                  <Image src='/icons/arrow_thin.png' width={20} height={12} alt={linkAlt} layout='responsive' />
                   {linkLabel}
                 </a>
               </Link>

@@ -28,6 +28,8 @@ export default function PsiChiOmega() {
                       alt='Image of Poseidon statue in Berlin. Psi Chi Omega Mascot.'
                       width={2881}
                       height={1620}
+                      layout='responsive'
+                      priority
                     />
                   </div>
                 </div>
@@ -131,7 +133,7 @@ export default function PsiChiOmega() {
                 </ol>
 
                 <figure className='cs-figure inline-block 2xl:mt-40 w-full'>
-                  <Image src='/images/cs-pxo/mockup_mb.png' alt='test' width={1413} height={816} />
+                  <Image src='/images/cs-pxo/mockup_mb.png' alt='test' width={1413} height={816} layout='responsive' />
                 </figure>
               </div>
             </section>
@@ -177,6 +179,7 @@ export default function PsiChiOmega() {
                   alt='User Persona'
                   width={1200}
                   height={1337}
+                  layout='responsive'
                 />
                 <figcaption className='cs-figure-caption'></figcaption>
               </figure>
@@ -314,6 +317,7 @@ export default function PsiChiOmega() {
                     alt='Current User Journey'
                     width={928}
                     height={996}
+                    layout='responsive'
                   />
                   <figcaption className='cs-figure-caption'></figcaption>
                 </figure>
@@ -324,6 +328,7 @@ export default function PsiChiOmega() {
                     alt='Future User Journey'
                     width={928}
                     height={1452}
+                    layout='responsive'
                   />
                   <figcaption className='cs-figure-caption'></figcaption>
                 </figure>
@@ -335,6 +340,7 @@ export default function PsiChiOmega() {
                   alt=''
                   width={1200}
                   height={641}
+                  layout='responsive'
                 />
                 <figcaption className='cs-figure-caption'></figcaption>
               </figure>
@@ -348,6 +354,7 @@ export default function PsiChiOmega() {
                   alt=''
                   width={3038}
                   height={3267}
+                  layout='responsive'
                 />
                 <figcaption className='cs-figure-caption'></figcaption>
               </figure>
@@ -368,6 +375,7 @@ export default function PsiChiOmega() {
                   alt=''
                   width={1443}
                   height={782}
+                  layout='responsive'
                 />
                 <figcaption className='cs-figure-caption'></figcaption>
               </figure>
@@ -601,7 +609,7 @@ export default function PsiChiOmega() {
               </ul>
 
               <figure className='cs-figure inline-block w-full mb-0'>
-                <Image src='/images/cs-pxo/designprinciples.svg' alt='' width={1373} height={901} />
+                <Image src='/images/cs-pxo/designprinciples.svg' alt='' width={1373} height={901} layout='responsive' />
               </figure>
             </section>
 
@@ -636,7 +644,7 @@ export default function PsiChiOmega() {
 
             <aside className='cs-section-offset-right-region'>
               <figure className='cs-figure inline-block w-full lg:w-1/2'>
-                <Image src='/images/cs-pxo/cardsorted2.png' alt='' width={2664} height={1638} />
+                <Image src='/images/cs-pxo/cardsorted2.png' alt='' width={2664} height={1638} layout='responsive' />
               </figure>
               <figure className='cs-figure inline-block w-full lg:w-1/2'>
                 <Image
@@ -644,6 +652,8 @@ export default function PsiChiOmega() {
                   alt=''
                   width={2194}
                   height={1348}
+                  layout='responsive'
+                  
                 />
               </figure>
             </aside>
@@ -654,7 +664,7 @@ export default function PsiChiOmega() {
                 for the “Who We Are” navigation group.
               </p>
               <figure className='cs-figure inline-block w-full'>
-                <Image src='/images/cs-pxo/contentstrategy.png' alt='' width={2706} height={1362} />
+                <Image src='/images/cs-pxo/contentstrategy.png' alt='' width={2706} height={1362} layout='responsive' />
               </figure>
               <p className='cs-paragraph--sans'>
                 These living documents represent the webpage content, structure, and hierarchy to
@@ -910,6 +920,7 @@ export default function PsiChiOmega() {
                   alt=''
                   width={2212}
                   height={1696}
+                  layout='responsive'
                 />
                 <figcaption className='cs-figure-caption'>
                   Product sliders help define the brand identity.
@@ -940,22 +951,22 @@ export default function PsiChiOmega() {
             <div className='cs-grid'>
               <div className='cs-section-default-content-block col-span-full md:col-start-6 md:col-span-11 lg:col-span-9 lg:col-start-3 xl:col-span-8 xl:col-start-5 2xl:col-span-6 2xl:col-start-6 grid grid-cols-12 gap-x-4 gap-y-4 bg-[#E5E5E5] p-4 2xl:p-8'>
                 <figure className='cs-figure inline-block m-0 col-span-4'>
-                  <Image src='/images/cs-pxo/blackgreenlogo.png' alt='' width={1284} height={945} />
+                  <Image src='/images/cs-pxo/blackgreenlogo.png' alt='' width={1284} height={945} layout='responsive' />
                 </figure>
                 <figure className='cs-figure inline-block m-0 col-span-4'>
-                  <Image src='/images/cs-pxo/greenwhitelogo.png' alt='' width={1284} height={945} />
+                  <Image src='/images/cs-pxo/greenwhitelogo.png' alt='' width={1284} height={945} layout='responsive' />
                 </figure>
                 <figure className='cs-figure inline-block m-0 col-span-4'>
-                  <Image src='/images/cs-pxo/greenblacklogo.png' alt='' width={1284} height={945} />
+                  <Image src='/images/cs-pxo/greenblacklogo.png' alt='' width={1284} height={945} layout='responsive' />
                 </figure>
                 <figure className='cs-figure inline-block m-0 col-span-4'>
-                  <Image src='/images/cs-pxo/whitegreenlogo.png' alt='' width={1284} height={945} />
+                  <Image src='/images/cs-pxo/whitegreenlogo.png' alt='' width={1284} height={945} layout='responsive' />
                 </figure>
                 <figure className='cs-figure inline-block m-0 col-span-4'>
-                  <Image src='/images/cs-pxo/blackwhitelogo.png' alt='' width={1284} height={945} />
+                  <Image src='/images/cs-pxo/blackwhitelogo.png' alt='' width={1284} height={945} layout='responsive' />
                 </figure>
                 <figure className='cs-figure inline-block m-0 col-span-4'>
-                  <Image src='/images/cs-pxo/whiteblacklogo.png' alt='' width={1284} height={945} />
+                  <Image src='/images/cs-pxo/whiteblacklogo.png' alt='' width={1284} height={945} layout='responsive' />
                 </figure>
               </div>
             </div>
@@ -989,6 +1000,7 @@ export default function PsiChiOmega() {
                     alt=''
                     width={1440}
                     height={1024}
+                    layout='responsive'
                   />
                 </figure>
                 <figure className='cs-figure inline-block m-0 col-span-4'>
@@ -997,6 +1009,7 @@ export default function PsiChiOmega() {
                     alt=''
                     width={1440}
                     height={1024}
+                    layout='responsive'
                   />
                 </figure>
                 <figure className='cs-figure inline-block m-0 col-span-4'>
@@ -1005,6 +1018,7 @@ export default function PsiChiOmega() {
                     alt=''
                     width={1440}
                     height={1024}
+                    layout='responsive'
                   />
                 </figure>
                 <figure className='cs-figure inline-block m-0 col-span-4'>
@@ -1013,6 +1027,7 @@ export default function PsiChiOmega() {
                     alt=''
                     width={1440}
                     height={1024}
+                    layout='responsive'
                   />
                 </figure>
                 <figure className='cs-figure inline-block m-0 col-span-4'>
@@ -1021,6 +1036,7 @@ export default function PsiChiOmega() {
                     alt=''
                     width={1440}
                     height={1024}
+                    layout='responsive'
                   />
                 </figure>
                 <figure className='cs-figure inline-block m-0 col-span-4'>
@@ -1028,7 +1044,7 @@ export default function PsiChiOmega() {
                     src='/images/cs-pxo/brand-guidelines/type3.png'
                     alt=''
                     width={1440}
-                    height={1024}
+                    height={1024} layout='responsive'
                   />
                 </figure>
                 <figure className='cs-figure inline-block m-0 col-span-4'>
@@ -1037,6 +1053,7 @@ export default function PsiChiOmega() {
                     alt=''
                     width={1440}
                     height={1024}
+                    layout='responsive'
                   />
                 </figure>
                 <figure className='cs-figure inline-block m-0 col-span-4'>
@@ -1045,6 +1062,7 @@ export default function PsiChiOmega() {
                     alt=''
                     width={1440}
                     height={1024}
+                    layout='responsive'
                   />
                 </figure>
                 <figure className='cs-figure inline-block m-0 col-span-4'>
@@ -1053,6 +1071,7 @@ export default function PsiChiOmega() {
                     alt=''
                     width={1440}
                     height={1024}
+                    layout='responsive'
                   />
                 </figure>
               </div>

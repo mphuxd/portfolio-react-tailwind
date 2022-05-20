@@ -42,7 +42,7 @@ export default function Home() {
 
           <FeaturedArticleReverse
             title='Clear View Escapes Travel Website'
-            copy='Travel company website developed as part of an online web development course. Redesigned the website homepage for UX practice.'
+            copy='Travel company website developed as part of an online web development course. I later redesigned the website homepage for UX practice.'
             imageSrc='/images/cs-travel-website/travel-website.png'
             imageAlt='Clear View Escapes Homepage'
             imageTagID='featured-image-blue'
@@ -56,7 +56,7 @@ export default function Home() {
 
           <FeaturedAboutMeReverse
             title='About Me'
-            copy='Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc diam in consequat, at adipiscing tristique amet sed vel. Molestie semper viverra et vulputate sit eu, varius. Massa magna enim enim gravida convallis turpis porta. Eget non gravida a mauris ultrices consectetur.'
+            copy='San Jose native. UC Davis graduate. Just trying my best to do good things with the skills I have. Currently a UX/UI designer & front-end developer aspiring to become a UX engineer.'
             linkHref='/about'
             linkAlt='Go to About Me'
             linkLabel='More About Me'

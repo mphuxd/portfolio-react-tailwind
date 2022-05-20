@@ -5,6 +5,8 @@ import Image from "next/image";
 import Link from "next/link";
 import { useRouter } from "next/router";
 import { useRef } from "react";
+import { LinkArrow } from "@/components";
+
 function FeaturedArticleReverse({
   title,
   copy,
@@ -56,7 +58,7 @@ function FeaturedArticleReverse({
               <span className='article-project-description'>{copy}</span>
               <Link href={linkHref}>
                 <a ref={mainLink} onClick={handleClick} className='article-link'>
-                  <Image src='/icons/arrow_thin.png' width={20} height={12} alt={linkAlt} />
+                  <LinkArrow linkAlt={linkAlt} />
                   {linkLabel}
                 </a>
               </Link>

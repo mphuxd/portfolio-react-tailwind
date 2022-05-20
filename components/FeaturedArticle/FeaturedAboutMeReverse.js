@@ -4,6 +4,7 @@ import Image from "next/image";
 import Link from "next/link";
 import { useRouter } from "next/router";
 import { useRef } from "react";
+import {LinkArrow} from "@/components"
 
 function FeaturedAboutMe({ title, copy, imageBGColor, linkHref, linkAlt, linkLabel, geometry }) {
   let router = useRouter();
@@ -46,7 +47,7 @@ function FeaturedAboutMe({ title, copy, imageBGColor, linkHref, linkAlt, linkLab
               <span className='article-project-description'>{copy}</span>
               <Link href='/about'>
                 <a ref={mainLink} onClick={handleClick} className='article-link'>
-                  <Image src='/icons/arrow_thin.png' width={20} height={12} alt={linkAlt} />
+                <LinkArrow linkAlt={linkAlt} />
                   {linkLabel}
                 </a>
               </Link>

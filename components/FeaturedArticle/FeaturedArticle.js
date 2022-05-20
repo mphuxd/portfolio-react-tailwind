@@ -5,6 +5,7 @@ import Image from "next/image";
 import Link from "next/link";
 import { useRouter } from "next/router";
 import { useRef } from "react";
+import { LinkArrow } from "@/components";
 
 function FeaturedArticle({
   title,
@@ -19,7 +20,7 @@ function FeaturedArticle({
   hoverImageBGColor,
 }) {
   let classNames = cx([]);
-  let imageClassNames = cx("article-project-left bg-grey2 h-full block" )
+  let imageClassNames = cx("article-project-left bg-grey2 h-full block");
   let router = useRouter();
   const mainLink = useRef(null);
 
@@ -47,7 +48,14 @@ function FeaturedArticle({
           onClick={redirectClick}
         >
           <div id='featured-image' className={imageClassNames}>
-            <Image layout="responsive" src={imageSrc} alt={imageAlt} width={imageWidth} height={imageHeight} priority/>
+            <Image
+              layout='responsive'
+              src={imageSrc}
+              alt={imageAlt}
+              width={imageWidth}
+              height={imageHeight}
+              priority
+            />
           </div>
           <div className='article-project-right'>
             <div className='article-project-right--inner'>
@@ -59,13 +67,7 @@ function FeaturedArticle({
               <p className='article-project-description'>{copy}</p>
               <Link href={linkHref}>
                 <a ref={mainLink} onClick={handleClick} className='article-link'>
-                  <Image
-                    src='/icons/arrow_thin.png'
-                    width={20}
-                    height={12}
-                    alt={linkAlt}
-                   
-                  />
+                  <LinkArrow linkAlt={linkAlt} />
                   View Case Study
                 </a>
               </Link>

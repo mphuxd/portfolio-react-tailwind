@@ -6,12 +6,12 @@ export default function PsiChiOmega() {
   return (
     <div className=''>
       <Head>
-        <title>Psi Chi Omega | Matthew Pham Portfolio</title>
+        <title>Psi Chi Omega Case Study | Matthew Pham Portfolio</title>
       </Head>
 
       <Layout>
         <section className='bg-beige2 pt-36 md:pt-16 lg:pt-20 xl:pt-24'>
-          <div className='cs-grid md:pr-0 pb-20'>
+          <div className='cs-grid md:pr-0 pb-20 gap-y-0'>
             <div className='cs-hero--center-container'>
               <h5 className='cs-hero--center-category_mobile'>Case Study</h5>
               <div className='cs-hero--center-image-container'>
@@ -34,10 +34,10 @@ export default function PsiChiOmega() {
                   </div>
                 </div>
               </div>
-              <span id='cs-hero-caption' className='cs-hero--center-image-caption'>
+            </div>
+            <span id='cs-hero-caption' className='cs-hero--center-image-caption col-span-full md:col-start-2 xl:col-start-5 2xl:col-start-6 max:col-start-6 max:col-span-10'>
                 Excepteur sint occaecat cupidatat non proident, sunt in culpa.
               </span>
-            </div>
           </div>
         </section>
 
@@ -67,7 +67,7 @@ export default function PsiChiOmega() {
               </div>
               <div className='cs-sidebar-next'>
                 <h5 className='text-sm font-bold mb-2'>Links</h5>
-                <LinkOut text='Demo Website' href='https://mphuxd.github.io/travel-site/' />
+                <LinkOut text='Demo Website' href='https://psi-chi-omega.vercel.app/' />
                 <LinkOut text='Github Repo' href='https://github.com/mphuxd/psi-chi-omega-react' />
                 <LinkOut
                   text='Figma Prototype'
@@ -132,9 +132,15 @@ export default function PsiChiOmega() {
                   </li>
                 </ol>
 
-                <figure className='cs-figure inline-block 2xl:mt-40 w-full'>
-                  <Image src='/images/cs-pxo/mockup_mb.png' alt='test' width={1413} height={816} layout='responsive' />
-                </figure>
+                {/* <figure className='cs-figure inline-block 2xl:mt-40 w-full'>
+                  <Image
+                    src='/images/cs-pxo/mockup_mb.png'
+                    alt='test'
+                    width={1413}
+                    height={816}
+                    layout='responsive'
+                  />
+                </figure> */}
               </div>
             </section>
             <span className='cs-article--end-divider order-3' />
@@ -309,8 +315,33 @@ export default function PsiChiOmega() {
                 These methods provide insights towards use cases, UX strategy, website
                 specifications, and direction in which to structure the product.
               </p>
+              <p className='cs-paragraph--sans'>
+                To briefly explain the recruitment process, every greek organization recruits at the
+                beginning of each quarter during rush week. Rush week is designed for students to
+                familiarize themselves with the different greek organizations before deciding to
+                join. During this period, our fraternity selectively hands out flyers with
+                information about our rush events to students who look like they would fit in. If
+                they&apos;re interested, they can attend our events, build relationships, and apply
+                for an interview at the end of the week.
+              </p>
+              <figure className='cs-figure'>
+                <Image
+                  className=''
+                  src='/images/cs-pxo/recruitment-timeline.png'
+                  alt='Current User Journey'
+                  width={1584}
+                  height={900}
+                  layout='responsive'
+                />
+                <figcaption className='cs-figure-caption'></figcaption>
+              </figure>
+              <p className='cs-paragraph--sans'>
+                The main strategy behind the website is to include it on our flyers so students can
+                learn more about the fraternity, build trust and confidence in our organization,
+                then attend our events.{" "}
+              </p>
               <div className='flex flex-row content-start'>
-                <figure className='cs-figure'>
+                <figure className='cs-figure block w-full h-full'>
                   <Image
                     className=''
                     src='/images/cs-pxo/uj1.png'
@@ -321,7 +352,7 @@ export default function PsiChiOmega() {
                   />
                   <figcaption className='cs-figure-caption'></figcaption>
                 </figure>
-                <figure className='cs-figure'>
+                <figure className='cs-figure block w-full h-full'>
                   <Image
                     className=''
                     src='/images/cs-pxo/uj2.png'
@@ -347,7 +378,7 @@ export default function PsiChiOmega() {
             </section>
 
             <aside className='cs-section-offset-right-region'>
-              <figure className='cs-figure'>
+              <figure className='cs-figure block w-full h-full'>
                 <Image
                   className=''
                   src='/images/cs-pxo/userjourneydiagram.png'
@@ -567,49 +598,53 @@ export default function PsiChiOmega() {
                 Design principles root the design in fundamental truths. It helps guide the project
                 and define what is subjectively right or wrong.
               </p>
-              <ul className='cs-ul 2xl:mt-8'>
-                <li className='cs-li'>
-                  <strong>Analogous design</strong> — Create interfaces that visually and
-                  functionally resemble familiar interfaces and objects. This idea was inspired by{" "}
-                  <a
-                    className='underline text-blue visited:text-ruby'
-                    href='https://www.media.mit.edu/cogmac/lcc/hofstadter.html'
-                  >
-                    Douglas Hofstadter’s theory of Analogy as the Core of Cognition
-                  </a>
-                  .
-                </li>
-                <li className='cs-li'>
-                  <strong>Appropriate</strong> — Design within the restrictions and resources
-                  available, with an eye towards long term use and maintenance.
-                </li>
-                <li className='cs-li'>
-                  <strong>Reusable Components</strong> — Design reusable, high quality components to
-                  reduce single use components. This makes development easier and shortens the
-                  developmental period.
-                </li>
-                <li className='cs-li'>
-                  <strong>Content based</strong> — Focus on presenting the content first. Identify
-                  the content users need and design around it.
-                </li>
-                <li className='cs-li'>
-                  <strong>Goal based</strong> — Learn the users goals and design so that users can
-                  efficiently accomplish them.
-                </li>
-                <li className='cs-li'>
-                  <strong>Science based</strong> — Design intuition may lead you on the right path,
-                  but use data to confirm it.
-                </li>
-                <li className='cs-li'>
-                  <strong>Balance aesthetics with functionality</strong> — Aesthetically pleasing
-                  designs are rated as more usable. Our primary users are young and good with
-                  technology, so the trade off for more emotional design can be offset by our users
-                  technological proficiency.
-                </li>
-              </ul>
+              <p className='cs-paragraph--sans'>
+                <strong>Analogous design. </strong>Create interfaces that visually and functionally
+                resemble familiar interfaces and objects. This idea was inspired by{" "}
+                <a
+                  className='underline text-blue visited:text-ruby'
+                  href='https://www.media.mit.edu/cogmac/lcc/hofstadter.html'
+                >
+                  Douglas Hofstadter’s theory of Analogy as the Core of Cognition
+                </a>
+                .
+              </p>
+              <p className='cs-paragraph--sans'>
+                <strong>Appropriate. </strong>Design within the restrictions and resources
+                available, with an eye towards long term use and maintenance.
+              </p>
+              <p className='cs-paragraph--sans'>
+                <strong>Reusable Components. </strong>Design reusable, high quality components to
+                reduce single use components. This makes development easier and shortens the
+                developmental period.
+              </p>
+              <p className='cs-paragraph--sans'>
+                <strong>Content based. </strong>Focus on presenting the content first. Identify the
+                content users need and design around it.
+              </p>
+              <p className='cs-paragraph--sans'>
+                <strong>Goal based. </strong>Learn the users goals and design so that users can
+                efficiently accomplish them.
+              </p>
+              <p className='cs-paragraph--sans'>
+                <strong>Science based. </strong>Design intuition may lead you on the right path, but
+                use data to confirm it.
+              </p>
+              <p className='cs-paragraph--sans'>
+                <strong>Balance aesthetics with functionality. </strong>Aesthetically pleasing
+                designs are rated as more usable. Our primary users are young and good with
+                technology, so the trade off for more emotional design can be offset by our users
+                technological proficiency.
+              </p>
 
               <figure className='cs-figure inline-block w-full mb-0'>
-                <Image src='/images/cs-pxo/designprinciples.svg' alt='' width={1373} height={901} layout='responsive' />
+                <Image
+                  src='/images/cs-pxo/designprinciples.svg'
+                  alt=''
+                  width={1373}
+                  height={901}
+                  layout='responsive'
+                />
               </figure>
             </section>
 
@@ -644,7 +679,13 @@ export default function PsiChiOmega() {
 
             <aside className='cs-section-offset-right-region'>
               <figure className='cs-figure inline-block w-full lg:w-1/2'>
-                <Image src='/images/cs-pxo/cardsorted2.png' alt='' width={2664} height={1638} layout='responsive' />
+                <Image
+                  src='/images/cs-pxo/cardsorted2.png'
+                  alt=''
+                  width={2664}
+                  height={1638}
+                  layout='responsive'
+                />
               </figure>
               <figure className='cs-figure inline-block w-full lg:w-1/2'>
                 <Image
@@ -653,7 +694,6 @@ export default function PsiChiOmega() {
                   width={2194}
                   height={1348}
                   layout='responsive'
-                  
                 />
               </figure>
             </aside>
@@ -664,7 +704,13 @@ export default function PsiChiOmega() {
                 for the “Who We Are” navigation group.
               </p>
               <figure className='cs-figure inline-block w-full'>
-                <Image src='/images/cs-pxo/contentstrategy.png' alt='' width={2706} height={1362} layout='responsive' />
+                <Image
+                  src='/images/cs-pxo/contentstrategy.png'
+                  alt=''
+                  width={2706}
+                  height={1362}
+                  layout='responsive'
+                />
               </figure>
               <p className='cs-paragraph--sans'>
                 These living documents represent the webpage content, structure, and hierarchy to
@@ -951,22 +997,58 @@ export default function PsiChiOmega() {
             <div className='cs-grid'>
               <div className='cs-section-default-content-block col-span-full md:col-start-6 md:col-span-11 lg:col-span-9 lg:col-start-3 xl:col-span-8 xl:col-start-5 2xl:col-span-6 2xl:col-start-6 grid grid-cols-12 gap-x-4 gap-y-4 bg-[#E5E5E5] p-4 2xl:p-8'>
                 <figure className='cs-figure inline-block m-0 col-span-4'>
-                  <Image src='/images/cs-pxo/blackgreenlogo.png' alt='' width={1284} height={945} layout='responsive' />
+                  <Image
+                    src='/images/cs-pxo/blackgreenlogo.png'
+                    alt=''
+                    width={1284}
+                    height={945}
+                    layout='responsive'
+                  />
                 </figure>
                 <figure className='cs-figure inline-block m-0 col-span-4'>
-                  <Image src='/images/cs-pxo/greenwhitelogo.png' alt='' width={1284} height={945} layout='responsive' />
+                  <Image
+                    src='/images/cs-pxo/greenwhitelogo.png'
+                    alt=''
+                    width={1284}
+                    height={945}
+                    layout='responsive'
+                  />
                 </figure>
                 <figure className='cs-figure inline-block m-0 col-span-4'>
-                  <Image src='/images/cs-pxo/greenblacklogo.png' alt='' width={1284} height={945} layout='responsive' />
+                  <Image
+                    src='/images/cs-pxo/greenblacklogo.png'
+                    alt=''
+                    width={1284}
+                    height={945}
+                    layout='responsive'
+                  />
                 </figure>
                 <figure className='cs-figure inline-block m-0 col-span-4'>
-                  <Image src='/images/cs-pxo/whitegreenlogo.png' alt='' width={1284} height={945} layout='responsive' />
+                  <Image
+                    src='/images/cs-pxo/whitegreenlogo.png'
+                    alt=''
+                    width={1284}
+                    height={945}
+                    layout='responsive'
+                  />
                 </figure>
                 <figure className='cs-figure inline-block m-0 col-span-4'>
-                  <Image src='/images/cs-pxo/blackwhitelogo.png' alt='' width={1284} height={945} layout='responsive' />
+                  <Image
+                    src='/images/cs-pxo/blackwhitelogo.png'
+                    alt=''
+                    width={1284}
+                    height={945}
+                    layout='responsive'
+                  />
                 </figure>
                 <figure className='cs-figure inline-block m-0 col-span-4'>
-                  <Image src='/images/cs-pxo/whiteblacklogo.png' alt='' width={1284} height={945} layout='responsive' />
+                  <Image
+                    src='/images/cs-pxo/whiteblacklogo.png'
+                    alt=''
+                    width={1284}
+                    height={945}
+                    layout='responsive'
+                  />
                 </figure>
               </div>
             </div>
@@ -1044,7 +1126,8 @@ export default function PsiChiOmega() {
                     src='/images/cs-pxo/brand-guidelines/type3.png'
                     alt=''
                     width={1440}
-                    height={1024} layout='responsive'
+                    height={1024}
+                    layout='responsive'
                   />
                 </figure>
                 <figure className='cs-figure inline-block m-0 col-span-4'>
@@ -1364,26 +1447,12 @@ export default function PsiChiOmega() {
                   href='https://www.figma.com/proto/psn3sijN7IPiiFg9dSEcNZ/Psi-Chi-Omega-Website?page-id=4191%3A31847&node-id=4191%3A46499&viewport=276%2C48%2C0.04&scaling=min-zoom&starting-point-node-id=4191%3A46499&show-proto-sidebar=1'
                 >
                   here
-                </a>
-                .
+                </a>{" "}
+                and the demo website{" "}
+                <LinkOut inline={true} href='https://psi-chi-omega.vercel.app/' text='here.' />
               </p>
             </div>
           </div>
-
-          {/* <!-- <div className="w-full bg-[#e5e5e5] mt-8 mb-6 xs:mb-3 lg:mt-10 lg:mb-6 2xl:mt-16 2xl:mb-16">
-            <div className="cs-grid">
-              <figure className="cs-figure col-span-full m-0">
-                <img className="" src="assets/images/cs-pxo/prototype_mobile_plain.png" alt="" />
-              </figure>
-              <figure className="cs-figure col-span-full m-0">
-                <img className="" src="assets/images/cs-pxo/prototype_tablet_plain.png" alt="" />
-              </figure>
-              <figure className="cs-figure col-span-full m-0">
-                <img className="" src="assets/images/cs-pxo/prototype_desktop_plain.png" alt="" />
-              </figure>
-            </div>
-          </div> --> */}
-
           <div className='cs-grid'>
             <div className='cs-section--default-region'></div>
             <span className='cs-article--end-divider' />
@@ -1435,9 +1504,9 @@ export default function PsiChiOmega() {
                 technical debt.
               </p>
               <p className='cs-paragraph--sans'>
-                As I worked and learned new concepts about UX, I constantly went back to revise the
-                project. The amount of iterations and backtracking in order to deliver a product
-                within my standards made this process extremely time consuming.
+                As I learned new concepts about UX & web-development, I constantly went back to
+                revise the project. The amount of iterations and backtracking in order to deliver a
+                product within my standards made this process extremely time consuming.
               </p>
               <p className='cs-paragraph--sans'>
                 When faced with tough decisions, I often found myself in analysis paralysis;
@@ -1455,6 +1524,52 @@ export default function PsiChiOmega() {
           </div>
         </article>
 
+        <article id='takeaways' className='mt-8 mb-24 cs-grid-wrapper w-full'>
+          <div className='cs-grid'>
+            <div className='cs-article-header'>
+              <h2 className='cs-h2'>Takeaways</h2>
+              <p className='cs-paragraph--sans cs-paragraph-first'>
+                <strong>Don’t reinvent the wheel.</strong> Unless there’s a good reason, use
+                prebuilt packages & libraries. Having a separate dev team behind the development &
+                maintenance of a UI library can save countless man hours which can be devoted
+                towards other things instead.
+              </p>
+              <p className='cs-paragraph--sans'>
+                <strong>There’s no shame in using website templates. </strong> Trying to create
+                original designs could be a good learning exercise, but until you’re confident in
+                your design skills, patterns, and general design knowledge, it&apos;s better to take
+                inspiration and learn from other websites and templates.
+              </p>
+              <p className='cs-paragraph--sans'>
+                <strong>Get more people involved. </strong>
+                Initially this was a simple learning project and I didn’t want to get people
+                involved until I was fully committed to delivering the project. However, I missed
+                having people to discuss and debate over design decisions and generally help build
+                the project.
+              </p>
+              <p className='cs-paragraph--sans'>
+                <strong>Continue to optimize your workflow. </strong>Keep an eye out for tools that
+                make it easier for you to do your best work. When I first started, I created a
+                website with pure HTML, CSS, and JS because that&apos;s what I was familiar with and
+                didn’t know any better. It wasn’t a practical solution and tech stack, so I had to
+                start from scratch. The point is, don&apos;t just stick to what you know and
+                continue to look for other methods of doing things that might be better in the
+                future. For this reason, I&apos;m curious about Webflow as it looks interesting and
+                I&apos;ve heard good things about it.
+              </p>
+              <p className='cs-paragraph--sans'>
+                <strong>Keep it simple, stupid. </strong>Inevitably, some aspects of design and
+                development by its very nature will be complex. However, it&apos;s important to
+                translate complexity into simplicity when possible to keep the process manageable
+                and easy to follow. Remember to keep your eye on the big picture to avoid getting
+                lost in the details. Keep component abstractions simple, easy to maintain, limit
+                variations, and just focus on getting a working prototype.
+              </p>
+            </div>
+            <span className='cs-article--end-divider' />
+          </div>
+        </article>
+
         <article id='conclusion' className='mt-8 mb-24 cs-grid-wrapper w-full'>
           <div className='cs-grid'>
             <div className='cs-article-header'>
@@ -1466,20 +1581,17 @@ export default function PsiChiOmega() {
               </p>
               <p className='cs-paragraph--sans'>
                 My vision for this project was to create a design with a nostalgic, timeless feeling
-                of fondness in homage to the journey, experiences, memories I’ve made being a part
-                of Psi Chi Omega, and hope that this feeling is conveyed through the design and felt
-                by my users. I want them to feel like they’ve discovered something special that
-                makes them want to become a part of us. I hope this website reaches someone out
-                there who really needs it.
+                in homage to the journey, experiences, memories I’ve made being a part of Psi Chi
+                Omega, and hope that this feeling is conveyed through the design and felt by my
+                users. I want them to feel like they’ve discovered something special that makes them
+                want to become a part of us.
               </p>
-              {/* <!-- <p className="cs-paragraph--sans">
-                However, business goals are always changing. At this time, this website could become
-                the national board website for Psi Chi Omega, which focuses on representing the
-                organization. instead of recruiting. This is an important milestone because as an
-                official representation of the organization, we are held liable and accountable for
-                actions of the individual chapters and their members. If the goal of the website
-                changes, the information architecture needs to be modified to reflect this change.
-              </p> --> */}
+              <p className='cs-paragraph--sans'>
+                With this project on the back-burner, I&apos;m excited to take the new skills &
+                knowledge I learned and apply them to my next project whatever that may be. It might
+                not seem like much but this was a big milestone for me, so thank you for reading
+                this and I hope at least you found this interesting. ✌️
+              </p>
             </div>
             <LinkScrollUp />
           </div>

@@ -42,7 +42,9 @@ export default function Home() {
             >
               <div className='font-accent border border-grey2 p-5'>
                 <h5 className='text-sm font-bold'>Contact</h5>
-                <p className='mt-2'>mph@ucdavis.edu</p>
+                <a href='mailto:mph@ucdavis.edu' className='mt-2 hover:underline'>
+                  mph@ucdavis.edu
+                </a>
                 <p>408-833-8967</p>
               </div>
               <div className='font-accent border border-t-0 border-grey2 p-5'>
@@ -53,7 +55,7 @@ export default function Home() {
                   className='relative inline-block sidebar-external-link-arrow pl-3 underline'
                   href='assets/files/resume.pdf'
                 >
-                  CV
+                  Resume
                 </a>
               </div>
             </section>
@@ -66,9 +68,9 @@ export default function Home() {
                 <p className=''>
                   Born and raised in San Jose, I come from a refugee family of the Vietnam War.
                   Growing up with a grandmother with dementia and a permanently disabled father, I
-                  spent most of my time as their caregiver. I learned to be empathetic, observant,
-                  and aware as I began to understand my environment and the people I was close to
-                  but hardly knew anything about.
+                  spent countless hours as their caregiver. I learned to be empathetic, observant, and
+                  understanding as I became more aware of my environment, my upbringing, and the
+                  people around me.
                 </p>
                 <p className=''>
                   During my childhood, my keen sense of awareness made me uncomfortable about how
@@ -81,19 +83,19 @@ export default function Home() {
                   the darkroom developing film.
                 </p>
                 <p className=''>
-                  In college, I learned to channel my empathy into compassion. This call to service
-                  became especially clear to me when I devoted myself towards making a
-                  change in my fraternity, sacrificing my own academics in the process.
+                  In college, I learned to channel my empathy into compassion. My passion for helping people
+                  became especially clear to me when I devoted myself towards making a change in a
+                  fraternity I had joined, sacrificing my own academics in the process.
                 </p>
                 <p className=''>
                   In 2018, I graduated from UC Davis with a B.S degree in Computational Cognitive
-                  Science, an interdisciplinary field that allowed me to study both of my childhood
+                  Science, an interdisciplinary field that allowed me to study both of my
                   passions: computer science and psychology.
                 </p>
                 <p className=''>
-                  Since then, I&apos;ve been studying and learning, mostly refining my eye for
-                  design, to become a skilled UX designer and developer. After years of hard work, I
-                  finally feel ready for full-time opportunities to begin the next chapter in my
+                  Since then, I&apos;ve been studying, learning, practicing, refining my eye for
+                  design, to become a UX designer and front-end developer. After years of hard work and ups-and downs, I
+                  finally feel ready to take what I&apos;ve learned to begin the next chapter in my
                   career. As a UX generalist, I&apos;m able to play a flexible support role,
                   adapting to the needs of the team.
                 </p>
@@ -101,12 +103,17 @@ export default function Home() {
                   I&apos;m a curious person that&apos;s always striving to learn more. I have a
                   strong desire for mastery, excellence, and thoroughness. Outside of work, I enjoy
                   film and digital photography, pretending I’m a DJ, spending time out in nature,
-                  and immersing myself in different cultures. I&apos;m also an avid Formula 1 fan
-                  and PC gamer.
+                  and immersing myself in new environments. On weekends, you might find me watching Formula 1 or on my PC gaming.
                 </p>
 
                 <figure className='cs-figure mx-auto w-full 2xl:w-3/5 pt-8 max:pt-20'>
-                  <Image src='/images/about/cs_hexagon.svg' alt='' width='513' height='436' layout="responsive" />
+                  <Image
+                    src='/images/about/cs_hexagon.svg'
+                    alt=''
+                    width='513'
+                    height='436'
+                    layout='responsive'
+                  />
                   <figcaption className='cs-figure-caption mx-auto'>
                     Cognitive Science Hexagon
                   </figcaption>

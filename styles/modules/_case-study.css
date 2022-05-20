@@ -38,7 +38,7 @@
     @apply hidden md:inline-block cs-hero-category-vertical font-display text-2xl;
   }
   .cs-hero--center-image-container {
-    @apply inline-block relative w-full mt-3  md:mt-2 lg:mt-4 2xl:mt-12;
+    @apply inline-block relative w-full mt-3 md:mt-2 lg:mt-4 2xl:mt-12;
   }
   .cs-hero--center-image-caption {
     @apply mt-3 font-accent leading-tight relative inline-block lg:pl-0 2xl:mt-4;

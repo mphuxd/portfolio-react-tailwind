@@ -1,9 +1,15 @@
 import React from "react";
 import PropTypes from "prop-types";
+import cx from "classnames";
 
-function LinkOut({ text, href }) {
+function LinkOut({ text, href, inline = false }) {
+  let classNames = cx(
+    "underline text-blue visited:text-ruby",
+    { inline: inline },
+    { block: !inline }
+  );
   return (
-    <a className='block underline text-blue visited:text-ruby' href={href}>
+    <a className={classNames} href={href}>
       {text}
     </a>
   );

@@ -35,9 +35,12 @@ export default function PsiChiOmega() {
                 </div>
               </div>
             </div>
-            <span id='cs-hero-caption' className='cs-hero--center-image-caption col-span-full md:col-start-2 xl:col-start-5 2xl:col-start-6 max:col-start-6 max:col-span-10'>
-                Excepteur sint occaecat cupidatat non proident, sunt in culpa.
-              </span>
+            <span
+              id='cs-hero-caption'
+              className='cs-hero--center-image-caption col-span-full md:col-start-2 xl:col-start-5 2xl:col-start-6 max:col-start-6 max:col-span-10'
+            >
+              Psi Chi Omega Website homepage mockup.
+            </span>
           </div>
         </section>
 
@@ -1442,12 +1445,11 @@ export default function PsiChiOmega() {
             <div className='cs-section--default-region'>
               <p className='mt-4 cs-paragraph--sans'>
                 You can view the interactive prototype{" "}
-                <a
-                  className='underline text-[#0000EE]'
+                <LinkOut
+                  inline
+                  text='here'
                   href='https://www.figma.com/proto/psn3sijN7IPiiFg9dSEcNZ/Psi-Chi-Omega-Website?page-id=4191%3A31847&node-id=4191%3A46499&viewport=276%2C48%2C0.04&scaling=min-zoom&starting-point-node-id=4191%3A46499&show-proto-sidebar=1'
-                >
-                  here
-                </a>{" "}
+                />{" "}
                 and the demo website{" "}
                 <LinkOut inline={true} href='https://psi-chi-omega.vercel.app/' text='here.' />
               </p>

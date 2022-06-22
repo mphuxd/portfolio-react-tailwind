@@ -3,7 +3,7 @@ import Image from "next/image";
 import Link from "next/link";
 import { Layout, Slideshow, LinkOut, LinkScrollUp } from "@/components";
 
-export default function TravelWebsiteTest() {
+export default function TravelWebsite() {
   return (
     <div>
       <Head>

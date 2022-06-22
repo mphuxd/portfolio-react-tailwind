@@ -17,8 +17,13 @@
   transition: 0.15s cubic-bezier(0.2, 0, 0.38, 0.9);
 }
 
+.article-project:hover > #featured-image-handbook {
+  background-color: #111111;
+  transition: 0.15s cubic-bezier(0.2, 0, 0.38, 0.9);
+}
+
 .article-project:hover > #about-geometry {
-  background-color:#CE5374 ;
+  background-color: #ce5374;
   transition: 0.15s cubic-bezier(0.2, 0, 0.38, 0.9);
 }
 
@@ -57,7 +62,6 @@
   width: 64px;
   height: 1px;
 }
-
 
 @layer components {
   .articles-container {

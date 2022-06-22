@@ -424,7 +424,6 @@ export default function PsiChiOmega() {
 
             <section className='cs-section--default-region'>
               <h3 className='cs-h3'>User Research Summary</h3>
-
               <div className='overflow-hidden mt-16'>
                 <h4 className='cs-topic mt-8 font-bold'>Who are our users?</h4>
                 <p className='cs-paragraph--sans cs-paragraph-first'>

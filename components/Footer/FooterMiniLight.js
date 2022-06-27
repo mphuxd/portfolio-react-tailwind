@@ -14,7 +14,7 @@ function FooterMiniLight(props) {
           </div>
         </Link>
         <div className='footer--legal'>
-          <p className='font-accent text-xs text-black 2xl:text-sm'>©MPH 05.20.2022 V3.01</p>
+          <p className='font-accent text-xs text-black 2xl:text-sm'>©MPH 06.26.2022 V3.10</p>
           <a
             href='mailto:mph@ucdavis.edu'
             className='font-accent text-xs 2xl:text-sm text-black uppercase hover:underline'
@@ -26,7 +26,5 @@ function FooterMiniLight(props) {
     </footer>
   );
 }
-
-FooterMiniLight.propTypes = {};
 
 export default FooterMiniLight;

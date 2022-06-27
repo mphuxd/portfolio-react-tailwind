@@ -28,6 +28,20 @@ export default function Home() {
         />
 
         <article id='work' className='article-section'>
+          <FeaturedArticleReverse
+            title='UX Interview Handbook'
+            copy='Free online collection of resources to help UX practitioners prepare for interviews. Started as a personal project to prepare for my own interviews, decided to make it open source to benefit others. Created with Docusaurus.'
+            imageSrc='/images/cs-ux-handbook/ux-interviewhandbook.png'
+            imageAlt='UX Interview Handbook Landing Page'
+            imageTagID='featured-image-handbook'
+            imageWidth={2133}
+            imageHeight={1041}
+            imageBGColor='bg-[#F33939]'
+            linkHref='/case-study/ux-handbook'
+            linkAlt='Read More'
+            linkLabel='View Case Study'
+          />
+
           <FeaturedArticle
             title='Psi Chi Omega Fraternity Website'
             copy='Corporate style website for an Asian-American interest fraternity to help member recruitment. Involves validation, user research, UX strategy, and branding with custom design system & UI designed in Figma. Developed with JAMstack, deployed on Heroku & Vercel. Independent project from start to finish.'

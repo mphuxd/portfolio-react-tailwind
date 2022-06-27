@@ -5,7 +5,7 @@ import Link from "next/link";
 function Header(props) {
   return (
     <header className='header w-full 2max:pt-8'>
-      <div className=' cs-grid my-auto w-full 2xl:px-4'>
+      <div className=' cs-grid my-auto w-full 2xl:px-0'>
         <div className='header-inner col-span-full 2xl:col-start-2 2xl:col-span-14'>
           <Link href='/'>
             <a className='my-auto py-4'>

@@ -40,7 +40,7 @@ function FeaturedArticle({
   }
 
   return (
-    <section className='article-project-container mt-8 md:mt-16 lg:mt-20 2xl:mt-40 max:mt-42'>
+    <section className='article-project-container mt-16 md:mt-16 lg:mt-20 2xl:mt-40 max:mt-42'>
       <div className='mx-auto cs-grid p-0 lg:p-8 2xl:p-0 w-full'>
         <div
           className='col-start-1 col-span-16 xl:col-start-2 xl:col-span-14 2xl:max:col-start-2 max:col-span-14 article-project hover:custom-shadow-tablet hover:cursor-pointer max:max-w-screen-max '

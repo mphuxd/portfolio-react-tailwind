@@ -1,7 +1,7 @@
 import Head from "next/head";
 import Image from "next/image";
 import Link from "next/link";
-import { Layout, Slideshow, LinkOut, LinkScrollUp, List } from "@/components";
+import { Layout, Slideshow, LinkOut, LinkScrollUp, List, UpNext } from "@/components";
 
 export default function UXHandbook() {
   return (
@@ -21,7 +21,7 @@ export default function UXHandbook() {
                   <div className='cs-hero-image min-w-full'>
                     <Image
                       src='/images/cs-ux-handbook/ux-interview-handbook-mockup-bg.png'
-                      alt='Image of Poseidon statue in Berlin. Psi Chi Omega Mascot.'
+                      alt='UX Interview Handbook Homepage mocked up on iMac'
                       width={3930}
                       height={2210}
                       layout='responsive'
@@ -51,11 +51,12 @@ export default function UXHandbook() {
               </div>
               <div className='cs-sidebar-first'>
                 <h5 className='text-sm font-bold'>Role</h5>
-                <p className='mt-2'>Sole Creator</p>
+                <p className='mt-2'>Creator</p>
                 <p>Research</p>
                 <p>Content & Strategy</p>
                 <p>Design</p>
                 <p>Development</p>
+                <p>Project Maintainer</p>
               </div>
               <div className='cs-sidebar-next'>
                 <h5 className='text-sm font-bold'>Technology</h5>
@@ -66,8 +67,8 @@ export default function UXHandbook() {
               </div>
               <div className='cs-sidebar-next'>
                 <h5 className='text-sm font-bold mb-2'>Links</h5>
-                <LinkOut text='Demo Website' href='https://psi-chi-omega.vercel.app/' />
-                <LinkOut text='Github Repo' href='https://github.com/mphuxd/psi-chi-omega-react' />
+                <LinkOut text='Production Website' href='https://uxinterviewhandbook.com/' />
+                <LinkOut text='Github' href='https://github.com/mphuxd/ux-handbook' />
               </div>
             </section>
             <section
@@ -79,9 +80,21 @@ export default function UXHandbook() {
                 <p className='cs-paragraph--sans cs-paragraph-first enlarge-first'>
                   The UX Interview Handbook is a free collection of resources designed to help UX
                   professionals prepare for their interviews. Inspired by similar resources such as
-                  the Front End Interview Handbook & The Tech Interview Handbook, this started as a
-                  personal resource to help me study and prepare for UX interviews and decided to
-                  make it open source to help others prepare for their interviews too.
+                  the{"  "}
+                  <LinkOut
+                    text='Front End Interview Handbook'
+                    href='https://www.frontendinterviewhandbook.com/'
+                    inline
+                  />{" "}
+                  {"  "}& the {"  "}
+                  <LinkOut
+                    text='Tech Interview Handbook'
+                    href='https://www.techinterviewhandbook.org/'
+                    inline
+                  />
+                  , this started as a personal resource to help me study and prepare for UX
+                  interviews and decided to make it open source to help others prepare for their
+                  interviews too.
                 </p>
               </div>
               <div className='2xl:mt-20'>
@@ -120,16 +133,13 @@ export default function UXHandbook() {
               <div className='2xl:mt-20'>
                 <h2 className='cs-h3'>The Solution</h2>
                 <p className='cs-paragraph--sans  cs-paragraph-first'>
-                  The UX industry is rapidly growing faster than ever, but we also have a
-                  responsibility to pave a path to help UX juniors follow along.
-                </p>
-                <p className='cs-paragraph--sans'>
                   When I was studying for front-end interviews, I came across so many comprehensive
                   interview studying guides such as front-end & tech handbook, etc. But for UX,
                   there were only medium articles or the standard blog post with the same questions
                   repeated over and over. Most of them didn’t even provide answers, so if users had
                   problems answering the question, they have to go and find the answer themselves.
                 </p>
+
                 <p className='cs-paragraph--sans'>
                   A more convenient approach is to have a single collection with questions and
                   answers immediately available with links to reliable sources so the user can learn
@@ -195,9 +205,9 @@ export default function UXHandbook() {
             <section className='cs-section--default-region'>
               <ul className='list-outside p-4 list-disc space-y-2 font-base'>
                 <li>
-                  These are only single page blog posts on broad content websites designed to bring
-                  in web traffic to make money through ad revenue and by selling courses, products,
-                  and services.
+                  These are single page blog posts on broad content websites designed to bring in
+                  web traffic to make money through ad revenue and by selling courses, products, and
+                  services.
                 </li>
                 <li>
                   They mostly only ask behavioral questions. While these are important, it can be
@@ -269,8 +279,9 @@ export default function UXHandbook() {
                 SWE & Front-end have a big open-source culture so there are tons of free guides to
                 help people interview. Despite existing competition, these Tech Handbook & Front-end
                 Handbook have both become a popular resource. If we imagine a website like this
-                except for UX, then we can see what a successful UX interview handbook looks like.
-                However to tailor it to UX, we need to understand our potential users.
+                except for UX, then we can see what a successful UX Interview Handbook looks like.
+                The challenge now is to tailor it to UX, so we begin by furthering our understanding
+                of the potential users.
               </p>
             </section>
 
@@ -278,9 +289,9 @@ export default function UXHandbook() {
               <h3 className='cs-h3'>Who are our users?</h3>
               <p className='cs-paragraph--sans cs-paragraph-first'>
                 Primary demographics will be young, new graduates preparing for their first UX
-                interviews. They might have a variety of different degrees and backgrounds. Most
+                interviews. They might have a variety of different degrees and backgrounds, but most
                 will not have a comprehensive knowledge of all interdisciplinary fields that
-                influence UX, so the resource should briefly cover the all of the basics to make
+                influence UX, so the handbook should briefly cover the all of the basics to make
                 them more well-rounded UX practitioners.
               </p>
               <List>
@@ -305,31 +316,32 @@ export default function UXHandbook() {
                   When are they studying? What kind of mindset are they in? What are they doing?
                   What are their habits? Some people really immerse themselves into the preparation
                   process, studying whenever they have the downtime to think-during bus rides, car
-                  rides, etc. This means it needs to be accessible and responsive to support all
-                  users and devices. Additionally, they could be at their desk, room, library, etc -
-                  in deep flow state.
+                  rides, etc. They could be at their desk, room, library, etc - in deep flow state.
+                  This means it needs to be accessible and responsive to support all users and
+                  devices.
                 </p>
                 <p className='cs-paragraph--sans'>
                   Behavioral questions require a lot of reflection to answer honestly, so its
-                  important that the website supports that by removing any distractions - no flashy
-                  animations, no surprises or anything unexpected, annoying, or distracting. Dark
-                  mode is essential here in case they study throughout the night to make it easier
-                  on their eyes and gives them more control of their environment.
+                  important that the website supports that by removing any distractions. No flashy
+                  animations or anything unexpected, annoying, or distracting. Dark mode is
+                  essential should they study throughout the night to make it easier on their eyes
+                  while also giving them more control of their environment.
                 </p>
                 <p className='cs-paragraph--sans'>
-                  Some people might use it as a quick refresher before going into the interview.
-                  Search should be important here so users can easily discover and reference the
-                  content.
+                  Another use case is to use it as a quick refresher before going into the
+                  interview. Search should be important here so users can easily discover and
+                  reference the content which was eventually implemented using Algolia DocSearch.
                 </p>
               </div>
-              <div className='overflow-hidden'>
+              <div className=''>
                 <h4 className='cs-topic font-bold'>User Goals & Needs</h4>
                 <p className='cs-paragraph--sans cs-paragraph-first'>
                   Users are here because they are looking to prepare for their interviews. Their
                   idea of preparation might be to get interview questions and answers, but its
                   important to remember that preparation goes beyond that in order more fully meet
                   their needs and goals. With this perspective, it makes sense to also include
-                  sections to prepare users for design challenges and presentations.
+                  sections to prepare users for design challenges and presentations which is
+                  arguably the more challenging parts of UX interviews.
                 </p>
                 <p className='cs-paragraph--sans'>
                   How do users know to trust the information on this website? Briggs, Simpson, and
@@ -337,7 +349,7 @@ export default function UXHandbook() {
                   website—advice websites and developed a model of how people determine whether or
                   not to trust the advice they receive from websites. The authors developed a
                   22-point scale designed to break down trust into a set of judgments that can be
-                  measured.
+                  measured. They are:
                 </p>
                 <List>
                   <li>
@@ -361,21 +373,20 @@ export default function UXHandbook() {
                   <li>if the site behaved in a predictable way</li>
                 </List>
                 <p className='cs-paragraph--sans'>
-                  With this list, there are a few ways to tackle these issue. The first is through
-                  transparency. For each question, cite the resources used to answer them. Show how
-                  the questions were sourced, from experiences, medium articles, UX professionals
-                  who interview others, glassdoor, and from UX colleagues in their own interviews.
-                  It&apos;s possible to add user testimonials in the future so users can read about
-                  real outcomes.
+                  {" "}
+                  Some of these issues cannot be realistically addressed, such as user comments, or
+                  reputable ownership, but for the other issues there are a few way to tackle them.
+                  The first is through transparency. For each question, cite the resources used to
+                  answer them. Show how the questions were sourced, from experiences, medium
+                  articles, UX professionals who interview others, Glassdoor, and from UX colleagues
+                  in their own interviews. In the future, we may consider adding user
+                  testimonies/reviews so users can read about real outcomes.
                 </p>
                 <p className='cs-paragraph--sans'>
-                  NN Group also suggests creating an about me that makes it easy for people to find
-                  information about the website and its intentions, and offer ways for the
-                </p>
-                <p className='cs-paragraph--sans'>
-                  Additionally, I can ask for feedback in order to show them that we&apos;re
-                  constantly looking to improve, and provide a way for people to contact me
-                  directly. Open-source so its thoroughly proofread.
+                  Asking for feedback can be used to demonstrate to them that we value their
+                  opinions and are constantly looking to improve, while providing contact
+                  information helps additional trust. Advertising that we are open-source can also
+                  signify that its community focused and thoroughly proofread.
                 </p>
               </div>
               <div className='overflow-hidden'>
@@ -384,7 +395,7 @@ export default function UXHandbook() {
                   For normal prep, users can explore the website however they want. For people who
                   are more busy or have an interview coming up soon, they might be more selective of
                   things to learn, so it could be important to indicate which questions they should
-                  focus on. For interviewers, they might use it as a question bank.
+                  focus on.
                 </p>
               </div>
             </section>
@@ -392,7 +403,8 @@ export default function UXHandbook() {
               <h3 className='cs-h3'>Business Strategy & Goals</h3>
               <p className='cs-paragraph--sans cs-paragraph-first'>
                 The general business strategy is to create a MVP for market validation and feedback,
-                so set a deadline and limit the development scope in order to meet the deadline.
+                so I set a deadline and scaled back the development scope in order to meet that
+                deadline.
               </p>
               <p className='cs-paragraph--sans'>
                 Monetization through sponsors & advertising deals. This means the website needs to
@@ -403,8 +415,8 @@ export default function UXHandbook() {
               <p className='cs-paragraph--sans'>
                 The idea is easy to copy and isn&apos;t difficult to develop, so being the first to
                 market is going to be key to capture the initial market and gain an advantage on
-                potential competitors. Should be released soon in June so new grads can use it to
-                study for their interviews.
+                potential competitors. The project should be released soon in June so new grads can
+                use it to study for their interviews.
               </p>
             </section>
             <section className='cs-section--default-region'>
@@ -419,12 +431,19 @@ export default function UXHandbook() {
                   Docusaurus.
                 </li>
                 <li>
+                  Since this is an advice/information/content-based website, copywriting is going to
+                  be extremely important and might be a potential challenge. In order to deliver
+                  high quality content to my users, I need to essentially become an expert in
+                  interviewing and focus more on UX writing.
+                </li>
+                <li>
                   Limited developmental sources. Since I would have to do both the design,
                   development, and copywriting, I need to limit the scope of the project in order to
                   meet the deadlines. The plan was to focus on development and technical questions
                   first, then get the behavioral questions sorted and figure how to answer those
                   later.
                 </li>
+
                 <li>
                   To work within these constraints, design and development went hand in hand. I
                   basically prototyped and designed the website as I developed it. This was a huge
@@ -447,6 +466,10 @@ export default function UXHandbook() {
             <section className='cs-section--default-region'>
               <h3 className='cs-h3'>Design Principles</h3>
               <List>
+                <li>
+                  <b>Convenient. </b>Making things more convenient is usually more than enough to
+                  get people to start using your product. It saves time, money, and effort.
+                </li>
                 <li>
                   <b>Reliable. </b>This means easily accessible from all devices, for all
                   environments, time of day. No paywalls. Fast with minimal payloads so you can
@@ -489,11 +512,11 @@ export default function UXHandbook() {
                   where they can dive deeper into the topics.
                 </p>
                 <p className='cs-paragraph--sans cs-paragraph-first'>
-                  The strategy for behavioral questions were a little different because these
+                  The strategy for behavioral questions was a little different because these
                   questions are designed to assess personality traits and etc. These were more
                   challenging and thus more time consuming to answer, so I decided to defer this
                   content later until I had more time to write my own answers and determine good
-                  approaches. To do so, I&apos;m currently reading a few books on how to answer
+                  approaches. Additionally, I am currently reading a few books on how to answer
                   these types of questions.
                 </p>
               </div>
@@ -551,7 +574,7 @@ export default function UXHandbook() {
                 <p className='cs-paragraph--sans cs-paragraph-first'>
                   I refactored the layout to include the footer inside the main document container
                   primarily for aesthetic reasons but also because UX designers who use design
-                  systems are used to this type of format more. Also when you scroll down, the
+                  systems are used to this type of format more. Also, when you scroll down, the
                   footer pushes the sidebar out of view. With the footer inside the document page,
                   the sidebar remains in the same location.
                 </p>
@@ -584,7 +607,8 @@ export default function UXHandbook() {
                 Some of these changes negatively impacted SEO. The navbar is important because it
                 helps web crawlers understand the structure of the website. Without it, it could
                 influence whether or not search engines show sitelinks. Additionally, not having a
-                dedicated homepage made it difficult for the homepage to be indexed properly.
+                dedicated homepage made it a little more difficult for the homepage to be indexed
+                properly.
               </p>
             </section>
             <section className='cs-section--default-region'>
@@ -606,18 +630,18 @@ export default function UXHandbook() {
                 <p className='cs-paragraph--sans cs-paragraph-first'>
                   Designers love Helvetica. Designers also use Macs, so using Helvetica would be
                   very familiar to them. But since Helvetica isn&apos;t a free font, I had to choose
-                  a font that was similar and free to use from google fonts. So I picked Arimo.
-                  However, I noticed that design websites like to use a serif font, so I tried
-                  finding a serif font to use for headlines but wasn&apos;t able to find one that I
-                  liked yet.
+                  a font that was similar and free to use from Google Fonts. So I picked Arimo.
+                  However, in reviewing other design websites, they tend to use serif fonts, so I
+                  tried finding a serif font to use for headlines but wasn&apos;t able to find one
+                  that I liked yet.
                 </p>
               </div>
               <div className='overflow-hidden'>
                 <h4 className='cs-topic font-bold'>Logo Design</h4>
                 <p className='cs-paragraph--sans cs-paragraph-first'>
-                  I saw this diagram from a HCI textbook I was reading and thought it was fitting.
-                  It&apos;s a diagram of how to draw the golden rectangle, which I thought was a
-                  fitting metaphor for the handbook.
+                  I saw this diagram from a HCI textbook I was reading and thought it was fitting
+                  metaphor for the handbook. It&apos;s a diagram of how to draw the golden
+                  rectangle.
                 </p>
               </div>
               <div className='overflow-hidden'>
@@ -635,31 +659,60 @@ export default function UXHandbook() {
         <article id='Prototype' className='cs-grid-wrapper mt-8 mb-24 w-full'>
           <div className='cs-grid'>
             <div className='cs-article-header'>
-              <h2 className='cs-h2'>Prototyping</h2>
+              <h2 className='cs-h2'>Prototype</h2>
               <p className='mt-4 cs-paragraph--sans cs-paragraph-first'>
                 Because this website was easy to develop, I decided to skip the traditional
                 wireframing and prototyping process on Figma and went straight into design and
-                prototyping with code.
+                prototyping in production code. You can view the website here for more details.
+                {"  "}
+                <LinkOut
+                  inline
+                  text='https://uxinterviewhandbook.com/'
+                  href='https://uxinterviewhandbook.com/'
+                />
               </p>
             </div>
+          </div>
+          <div className='w-full bg-[#e5e5e5] mt-8 mb-6 xs:mb-3 lg:mt-10 lg:mb-6 2xl:mt-16 2xl:mb-16'>
+            <div className='cs-grid'>
+              <figure className='cs-figure col-span-full  m-0'>
+                <Image
+                  className=''
+                  src='/images/cs-ux-handbook/ss-homepage--all2.png'
+                  alt=''
+                  width={1893}
+                  height={908}
+                  layout='responsive'
+                />
+              </figure>
+              {/* <figure className='cs-figure col-span-full m-0'>
+                <Image
+                  className=''
+                  src='/images/cs-ux-handbook/ss-ux-behavioral--all.png'
+                  alt=''
+                  width={1894}
+                  height={982}
+                  layout='responsive'
+                />
+              </figure> */}
+            </div>
+          </div>
 
+          <div className='cs-grid'>
             <section className='cs-section--default-region'>
-              <h3 className='cs-h3'>Design Principles</h3>
-              <List>
-                <li>
-                  <b>Reliable.</b>This means easily accessible from all devices, for all
-                  environments, time of day. No paywalls. Fast with minimal payloads so you can
-                  study at any time, or during last minute prep. On the go, or in bed.
-                </li>
-                <li>
-                  <b>Simple.</b> Keeping it simple helps users focus on whats important-the content.
-                  No distractions, no reason to make things more complicated than it has to be.{" "}
-                </li>
-                <li>
-                  <b>Helpful.</b> The entire point of this project is to help people. Any feature
-                  must be implemented with the intention to help.
-                </li>
-              </List>
+              <h3 className='cs-h3'>Technology Used</h3>
+              <p className='cs-paragraph--sans cs-paragraph-first'>
+                To talk a bit about the technology used - the website was developed using Docusaurus
+                which uses MDX for easy content writing and allows the use of React components all
+                in the same file. It&apos;s also a static site generator so we can expect high
+                performance and better SEO.
+              </p>
+
+              <p className='cs-paragraph--sans'>
+                The website is deployed on Cloudflare Pages. I selected Cloudflare Pages because it
+                has unlimited free bandwidth which will save money if the website scales and gets a
+                lot of traffic. DocSearch by Algolia is used to implement search.{" "}
+              </p>
             </section>
             <span className='cs-article--end-divider order-3' />
           </div>
@@ -668,31 +721,100 @@ export default function UXHandbook() {
           <div className='cs-grid'>
             <div className='cs-article-header'>
               <h2 className='cs-h2'>Evaluation</h2>
-              <p className='mt-4 cs-paragraph--sans cs-paragraph-first'>
-                Because this website was easy to develop, I decided to skip the traditional
-                wireframing and prototyping process on Figma and went straight into design and
-                prototyping with code.
-              </p>
+              <p className='mt-4 cs-paragraph--sans cs-paragraph-first'></p>
             </div>
+            <section className='cs-section--default-region'>
+              <h3 className='cs-h3'>Analytics</h3>
+              <p className='cs-paragraph--sans cs-paragraph-first'>
+                Analytics are collected using Google Analytics (GA) and Cloudflare&apos;s built in
+                analytics. There&apos;s a big discrepancy between GA and CF because GA doesn&apos;t
+                count web crawlers or bots but is easily blocked by ad-blockers, while Cloudflare
+                counts all traffic. However, without Cloudflare&apos;s paid analytics service, GA
+                has more useful, in-depth data. Currently there isn&apos;t enough data to make any
+                insights except perhaps focus more on marketing.
+              </p>
+              <div className='overflow-hidden'>
+                <h4 className='cs-topic font-bold'>Key Metrics</h4>
+                <p className='cs-paragraph--sans cs-paragraph-first'>
+                  Following the Heart Framework..
+                </p>
+                <List>
+                  <li>
+                    <b>Happiness:</b> NPS, Satisfaction, Overall Experience. Currently no feedback.
+                  </li>
+                  <li>
+                    <b>Engagement:</b> Monitoring events and engagement time. However, if users are
+                    answering the questions alongside, then users might have it open but have
+                    another browser window focused instead. If this is the case, then I would expect
+                    to have a low average engagement time with a high views per user as they might
+                    be tabbing in and out, which seems to be the case for pages with questions but
+                    needs to be verified.
+                  </li>
+                  <li>
+                    <b>Adoption:</b> Unique Users, DAU
+                  </li>
+                  <li>
+                    <b>Retention:</b> Returning Users.
+                  </li>
+                  <li>
+                    <b>Task Success:</b> N/A.
+                  </li>
+                </List>
+              </div>
+            </section>
 
             <section className='cs-section--default-region'>
-              <h3 className='cs-h3'>Expert Walk-through</h3>
+              <h3 className='cs-h3'>Usability Testing</h3>
+              <p className='cs-paragraph--sans cs-paragraph-first'>
+                Primary usability testing methods were the usability inspection methods Heuristic
+                Evaluations and Cognitive Walk-throughs.
+              </p>
             </section>
             <section className='cs-section--default-region'>
-              <h3 className='cs-h3'>Heuristic Evaluation</h3>
+              <h4 className='cs-topic font-bold'>Heuristic Evaluations</h4>
+              <p className='cs-paragraph--sans cs-paragraph-first'>
+                NN Usability Heuristics were used along with guidelines I compiled from from NN
+                group articles and research articles. Usability heuristic evaluation was performed
+                through a mix of task and aspect analysis- evaluators were given tasks and sections
+                to perform and evaluate while reporting any heuristic violations.
+              </p>
             </section>
             <section className='cs-section--default-region'>
-              <h3 className='cs-h3'>Selecting Key Metrics</h3>
-            </section>
-            <section className='cs-section--default-region'>
-              <h3 className='cs-h3'>Analysis</h3>
-              <p>
-                While there might be too little data to make a clear conclusion about the bounce
-                rate, the results did make me think a little more critically of the landing page. I
-                had modeled the landing page from design systems like Spectrum and IBM, but those
-                websites don't really care about SEO so maybe the design requirements were different
-                than mine. I might've undervalued the homepage, so now I'm reconsidering re-adding
-                it to market and sell the website better to new users.
+              <h4 className='cs-topic font-bold'>Results</h4>
+              <List>
+                <li>
+                  <b>Homepage.</b> Does not articulate how we are different from the competitors.
+                </li>
+                <li>
+                  <b>
+                    Find the about page and learn about their mission, purpose, values, and history.
+                  </b>{" "}
+                  Sidebar and Footer have different group labels Misc & More for the same group.
+                  About me may not be easy to find in the sidebar, so I resorted to the footer.
+                  About section lacks IA and should more clearly present principles, values, and
+                  mission.
+                </li>
+                <li>
+                  <b>Find a way to contact us.</b> Contact information can be found in the
+                  contribute section but may be hard to find. add a contact section or make it more
+                  visible.
+                </li>
+                <li>
+                  <b>Identify high priority tasks.</b> Add more visual emphasis to the pagination
+                  buttons, emphasize important questions not only just in the table of contents but
+                  also throughout the page and mini-IA.
+                </li>
+                <li>
+                  <b>Mobile Optimization.</b> Reduce text density by reducing overall word count.
+                </li>
+                <li>
+                  <b>Navigation.</b> Consider color-coding different sections and headings. Rename
+                  Link text to reduce ambiguity. Edit this page button leads to 404.
+                </li>
+              </List>
+              <p className='cs-paragraph--sans'>
+                For the most part these changes have been implemented and corrected except for those
+                that require more time and effort.
               </p>
             </section>
             <span className='cs-article--end-divider order-3' />
@@ -701,17 +823,23 @@ export default function UXHandbook() {
         <article id='conclusion' className='mt-8 mb-24 cs-grid-wrapper w-full'>
           <div className='cs-grid'>
             <div className='cs-article-header'>
-              <h2 className='cs-h2'>Looking Forward</h2>
-              <p className='cs-paragraph--sans'>
-                With this project on the back-burner, I&apos;m excited to take the new skills &
-                knowledge I learned and apply them to my next project whatever that may be. It might
-                not seem like much but this was a big milestone for me, so thank you for reading
-                this and I hope at least you found this interesting. ✌️
+              <h2 className='cs-h2'>What&apos;s Next?</h2>
+              <p className='cs-paragraph--sans cs-paragraph-first'>
+                At this point the project is moving into a new phase of the product lifecycle where
+                the biggest next step forward is to invest more time and effort into content writing
+                and strategy to ensure delivery of high-quality content while investing more into
+                marketing to increase product discoverability.
               </p>
             </div>
-            <LinkScrollUp />
+            {/* <LinkScrollUp /> */}
+            <span className='cs-article--end-divider order-3' />
           </div>
         </article>
+        <UpNext
+          href='/case-study/psi-chi-omega'
+          text='Up Next - Psi Chi Omega'
+          alt='Go to next case study psi chi omega'
+        />
       </Layout>
     </div>
   );

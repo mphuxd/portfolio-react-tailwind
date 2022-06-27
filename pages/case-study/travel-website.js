@@ -1,7 +1,7 @@
 import Head from "next/head";
 import Image from "next/image";
 import Link from "next/link";
-import { Layout, Slideshow, LinkOut, LinkScrollUp } from "@/components";
+import { Layout, Slideshow, LinkOut, LinkScrollUp, UpNext } from "@/components";
 
 export default function TravelWebsite() {
   return (
@@ -567,9 +567,11 @@ export default function TravelWebsite() {
               </p>
             </div>
 
-            <LinkScrollUp />
+            {/* <LinkScrollUp /> */}
+            <span className='cs-article--end-divider order-3' />
           </div>
         </article>
+        <UpNext href='/about' text='Up Next - About Me' alt='Go to About Me' />
       </Layout>
     </div>
   );

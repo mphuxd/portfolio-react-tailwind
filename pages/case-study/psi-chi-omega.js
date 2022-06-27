@@ -1,6 +1,6 @@
 import Head from "next/head";
 import Image from "next/image";
-import { Layout, LinkScrollUp, LinkOut } from "@/components";
+import { Layout, LinkScrollUp, LinkOut, UpNext } from "@/components";
 
 export default function PsiChiOmega() {
   return (
@@ -1594,9 +1594,11 @@ export default function PsiChiOmega() {
                 this and I hope at least you found this interesting. ✌️
               </p>
             </div>
-            <LinkScrollUp />
+            {/* <LinkScrollUp /> */}
+            <span className='cs-article--end-divider order-3' />
           </div>
         </article>
+        <UpNext href='/case-study/travel-website' text='Up Next - Travel Website' alt='Up Next - Travel Website' />
       </Layout>
     </div>
   );

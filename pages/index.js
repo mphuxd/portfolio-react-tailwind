@@ -31,11 +31,11 @@ export default function Home() {
           <FeaturedArticleReverse
             title='UX Interview Handbook'
             copy='Free online collection of resources to help UX practitioners prepare for interviews. Started as a personal project to prepare for my own interviews, decided to make it open source to benefit others. Created with Docusaurus.'
-            imageSrc='/images/cs-ux-handbook/ux-interviewhandbook.png'
+            imageSrc='/images/cs-ux-handbook/ux-interviewhandbook--new.png'
             imageAlt='UX Interview Handbook Landing Page'
             imageTagID='featured-image-handbook'
-            imageWidth={2133}
-            imageHeight={1041}
+            imageWidth={1903}
+            imageHeight={937}
             imageBGColor='bg-[#F33939]'
             linkHref='/case-study/ux-handbook'
             linkAlt='Read More'

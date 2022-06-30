@@ -796,7 +796,7 @@ export default function UXHandbook() {
                 </li>
                 <li>
                   <b>Find a way to contact us.</b> Contact information can be found in the
-                  contribute section but may be hard to find. add a contact section or make it more
+                  contribute section but may be hard to find. Add a contact section or make it more
                   visible.
                 </li>
                 <li>

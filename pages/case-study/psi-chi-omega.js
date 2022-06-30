@@ -1589,9 +1589,7 @@ export default function PsiChiOmega() {
               </p>
               <p className='cs-paragraph--sans'>
                 With this project on the back-burner, I&apos;m excited to take the new skills &
-                knowledge I learned and apply them to my next project whatever that may be. It might
-                not seem like much but this was a big milestone for me, so thank you for reading
-                this and I hope at least you found this interesting. ✌️
+                knowledge I learned and apply them to my next project whatever that may be. This was a big milestone project for me, so thanks for checking it out. ✌️
               </p>
             </div>
             {/* <LinkScrollUp /> */}
